@@ -1,0 +1,457 @@
+﻿source_file,name,shop_id,rating,review_count,avg_price,category,area,recommended_dishes,has_group_buy,has_promotion,detail_url
+debug_page_1.html,clip coffee,l4WjL3mL6Jo5qEmF,4.5星,4070,￥30,咖啡,珠江路沿线,燕麦拿铁 | 西班牙拿铁 | 桃汽美式,否,否,https://www.dianping.com/shop/l4WjL3mL6Jo5qEmF
+debug_page_1.html,食社,H6wzqRvVVFvMr1Cg,4.0星,5933,￥97,西餐,南大/南师大,招牌鸡肉芝士饼 | 班尼迪克蛋佐烟熏三文鱼与牛油果 | 招牌牛油果沙拉,是,否,https://www.dianping.com/shop/H6wzqRvVVFvMr1Cg
+debug_page_1.html,小潘记鸭血粉丝汤,G1z32BbnpHwOoWeE,4.0星,22572,￥34,快餐简餐,新街口/德基广场,小潘记特色鸭血粉丝汤 | 鸭血粉丝汤 | 烤鸭,否,否,https://www.dianping.com/shop/G1z32BbnpHwOoWeE
+debug_page_1.html,馨方园食府·市井老南京菜,G3bgicwiYi0MlKXe,4.0星,9415,￥89,南京/江浙菜,新街口地区,老南京砂锅鱼头汤（小份） | 金陵双臭 | 手工牛肉煎饺,是,否,https://www.dianping.com/shop/G3bgicwiYi0MlKXe
+debug_page_1.html,南京大牌档(夫子庙平江府店),k3C8ZELK1il7FZFb,4.0星,46522,￥74,南京/江浙菜,夫子庙地区,民国美龄粥 | 天王烤鸭包 | 古法糖芋苗,是,是,https://www.dianping.com/shop/k3C8ZELK1il7FZFb
+debug_page_1.html,花迹(熙南里店),HagS4npWFBXaagzd,4.5星,4267,￥109,淮扬菜,升州路/集庆路,花迹一品牛肉 | 特色炝蚌片 | 花迹红烧肉,是,是,https://www.dianping.com/shop/HagS4npWFBXaagzd
+debug_page_1.html,一天到晚OK FINE!(仙鹤街店),G39J6caWdsw5O1WA,4.0星,2480,￥47,咖啡,升州路/集庆路,世界最可爱的咖啡 | 插画蛋糕（圆形） | 香蕉挞,否,否,https://www.dianping.com/shop/G39J6caWdsw5O1WA
+debug_page_1.html,钟吾小馆(金奥店),Ha4exxZ1dqaxSrAa,4.0星,4147,￥180,淮扬菜,奥体中心,暂无,否,否,https://www.dianping.com/shop/Ha4exxZ1dqaxSrAa
+debug_page_1.html,水林间·寿喜烧自助火锅(紫峰店),k6sEb6vP5KdVKNA7,4.0星,17166,￥193,自助餐,紫峰购物广场,寿喜锅 | 霜降牛肉 | 天妇罗炸虾,是,否,https://www.dianping.com/shop/k6sEb6vP5KdVKNA7
+debug_page_1.html,许阿姨糕团店(南京总店),k6OwuaHUAVZvw2Q0,4.5星,19295,￥24,小吃,常府街/长白街,蛋黄肉松青团 | 豆沙青团 | 芝麻青团,是,否,https://www.dianping.com/shop/k6OwuaHUAVZvw2Q0
+debug_page_1.html,craftsman101%面包(珠江路店),k1RFTNiN7Pj4rMsL,4.0星,2444,￥25,面包蛋糕,珠江路沿线,南瓜红豆麻薯 | 碱水面包 | 碱水芝士球,是,否,https://www.dianping.com/shop/k1RFTNiN7Pj4rMsL
+debug_page_1.html,强烨饭店(长白街店),k6hpkb7awo5nYGBR,3.5星,8591,￥136,苏浙菜,常府街/长白街,鸭舌田鸡嘟嘟煲 | 抽炝墨鱼仔 | 抽炝腰花,否,否,https://www.dianping.com/shop/k6hpkb7awo5nYGBR
+debug_page_1.html,叶新小吃店(来凤小区总店),H3NmzzEqnksPOwzE,3.5星,7726,￥25,快餐简餐,升州路/集庆路,鸭血粉丝 | 全家福鸭血粉丝汤 | 鸭肠,是,否,https://www.dianping.com/shop/H3NmzzEqnksPOwzE
+debug_page_1.html,南京大牌档(中山陵 紫金坊店),H73t5UHURV0sUMlM,4.0星,31387,￥72,南京/江浙菜,卫岗/下马坊,民国美龄粥 | 古法糖芋苗 | 金陵烤鸭包,是,是,https://www.dianping.com/shop/H73t5UHURV0sUMlM
+debug_page_1.html,翠园(南京德基广场店),G6YOcLMLGbwwNRi6,4.0星,14712,￥234,粤菜,新街口地区,菠萝包 | 鲜果拿破仑 | 铁板叉烧,是,否,https://www.dianping.com/shop/G6YOcLMLGbwwNRi6
+debug_page_2.html,清真·西北桥头拉面大王(丁家桥店),l73ugKJf1qxFqcks,4.0星,18492,￥29,生煎/锅贴,山西路/湖南路,牛肉锅贴 | 牛肉馄饨 | 牛杂汤,否,否,https://www.dianping.com/shop/l73ugKJf1qxFqcks
+debug_page_2.html,韩聚HANKUU,l8gYUyeAjmqXrh6N,4.5星,4405,￥86,韩式料理,珠江路沿线,炸鸡 | 部队火锅 | 辣炒鸡爪,是,否,https://www.dianping.com/shop/l8gYUyeAjmqXrh6N
+debug_page_2.html,芳姐重庆名小吃(八宝前街店),igwCzSCaEwLs2bmf,4.0星,5657,￥30,小吃,瑞金路沿线,泡椒鸡杂米线 | 小酥肉 | 冰粉,否,否,https://www.dianping.com/shop/igwCzSCaEwLs2bmf
+debug_page_2.html,米店·啖一啖(夫子庙店),G3CnKtpOtZbNFAdb,3.5星,7910,￥108,日本料理,夫子庙地区,北海道土豆饼 | 澳洲牛肉寿喜锅 | 米布丁,是,否,https://www.dianping.com/shop/G3CnKtpOtZbNFAdb
+debug_page_2.html,寻魏·金陵十二菜(老门东店),k1EhKRAqZpzm69QY,4.5星,12073,￥117,南京/江浙菜,夫子庙地区,金陵雨花茶虾球 | 淮扬煮干丝 | 手拆蟹粉嫩豆腐,是,是,https://www.dianping.com/shop/k1EhKRAqZpzm69QY
+debug_page_2.html,cherrybomb cafe(咖啡店一店),k5a2leEnPfBTEcEv,4.5星,3643,￥45,咖啡,新街口地区,提拉米苏 | 拿铁 | 柚子抹茶巴斯克,否,否,https://www.dianping.com/shop/k5a2leEnPfBTEcEv
+debug_page_2.html,随遇而安Cafe(石鼓路店),H4EKmUFC6vQz5X2G,5.0星,2578,￥35,咖啡,新街口地区,法式烤布蕾 | 咖啡拿铁 | 可可脆巧慕斯,否,否,https://www.dianping.com/shop/H4EKmUFC6vQz5X2G
+debug_page_2.html,澳门陈光记烧味饭店(南京德基广场店),k6QezLyj8uZia6po,3.5星,11840,￥68,茶餐厅,珠江路沿线,黑椒烧鸭 | 蜜汁肥叉 | 招牌漏奶华,是,否,https://www.dianping.com/shop/k6QezLyj8uZia6po
+debug_page_2.html,荣悦楼,k4duDDqpL9tgglfx,4.5星,6347,￥92,特色菜,广成/荣昌,荣悦楼红烧肉 | 淮南王点卤豆皮 | 八珍鱼头王,是,否,https://www.dianping.com/shop/k4duDDqpL9tgglfx
+debug_page_2.html,江南灶中餐厅(南京香格里拉店),GaquSGNRIhETw2c7,5.0星,33801,￥260,淮扬菜,南瑞路/新模范马路,江南灶红烧肉 | 年糕大黄鱼 | 淮扬炒软兜,是,是,https://www.dianping.com/shop/GaquSGNRIhETw2c7
+debug_page_2.html,A Lot cafe and canteen(新街口店),k6vlTOT8u0hBTPCo,4.0星,2619,￥58,甜品,新街口地区,可爱岛的草莓冰 | 提拉米苏日式厚松饼 | 小岛冰奶咖,是,否,https://www.dianping.com/shop/k6vlTOT8u0hBTPCo
+debug_page_2.html,三品堂精致淮扬菜(玄武湖店),Ha12ZvPdeVS12FNN,4.5星,9143,￥109,淮扬菜,火车站/玄武湖,【老口味】自制彩椒虾干老豆腐 | 【老南京】椒麻乳鸽 | 鸭汤,否,否,https://www.dianping.com/shop/Ha12ZvPdeVS12FNN
+debug_page_2.html,脂肪-家庭厨房(莫愁店),l519fBK3ejaLFzS5,5.0星,2655,￥103,私房菜,莫愁湖/水西门,昂刺鱼炖锅 | 鸭舌啫啫煲 | 炸货拼盘,否,否,https://www.dianping.com/shop/l519fBK3ejaLFzS5
+debug_page_2.html,柏烤堂烧烤(洪武路店),k59mu8isiLFbJvo9,5.0星,12982,￥86,烧烤烤串,新街口地区,鸡爪 | 鸡翅 | 烤花蛤,否,否,https://www.dianping.com/shop/k59mu8isiLFbJvo9
+debug_page_2.html,福·燒鳥酒場(汉中门店),l1xgMnkDEP9G1bsX,4.5星,4381,￥122,日式料理,莫愁湖/水西门,葱花蛋卷 | 烧鸟拼盘 | 松板肉,否,否,https://www.dianping.com/shop/l1xgMnkDEP9G1bsX
+debug_page_3.html,新白鹿餐厅(中央商场店),k7zpTiobvm6JnepY,4.5星,16608,￥71,浙菜,新街口地区,冰淇淋烤布雷 | 蛋黄鸡翅 | 酱烤活鲈鱼,是,是,https://www.dianping.com/shop/k7zpTiobvm6JnepY
+debug_page_3.html,Oasis绿洲西餐吧(1912店),H7JpvRxslIZHScgC,4.0星,3661,￥98,西餐,总统府/1912商圈,西班牙海鲜饭 | 蔓越莓苹果鸡肉沙拉 | 美式烤肉大拼盘,是,否,https://www.dianping.com/shop/H7JpvRxslIZHScgC
+debug_page_3.html,POETS泰狮(金鹰店),H94HQXmO4tz9ipUV,5.0星,19232,￥150,泰国菜,新街口地区,招牌泰皇咖喱蟹 | 冬阴功海鲜汤 | 菠萝海鲜炒饭,是,是,https://www.dianping.com/shop/H94HQXmO4tz9ipUV
+debug_page_3.html,La Mia Casa漫味意式小馆(上海路店),k6MIFv2KgImI5Jqj,5.0星,11361,￥122,意大利菜,南大/南师大,蘑菇汤 | 夏威夷菠萝火腿披萨 | 奶油培根面,是,是,https://www.dianping.com/shop/k6MIFv2KgImI5Jqj
+debug_page_3.html,鱼满楼(汉中门大街店),H8PbTg1ANNFBdqyb,5.0星,6160,￥80,南京/江浙菜,莫愁湖/水西门,黑椒牛眼粒 | 炭火现烤羊排 | 鱼满楼手工狮子头,是,否,https://www.dianping.com/shop/H8PbTg1ANNFBdqyb
+debug_page_3.html,梓贤阁精品菜馆(江宁汤山店),H77RKpWKstOOPJPf,4.5星,8287,￥61,淮扬菜,汤山镇,香酥鸭头 | 泼辣鱼片 | 草鸡汤泡炒米,是,否,https://www.dianping.com/shop/H77RKpWKstOOPJPf
+debug_page_3.html,富临轩私房菜(集庆门大街店),ka2nJltziG4Vs2Ru,5.0星,2757,￥102,私房菜,集庆门大街,特色牛筋骨 | 黄记凉粉 | 银芽腰花,否,否,https://www.dianping.com/shop/ka2nJltziG4Vs2Ru
+debug_page_3.html,上好余味·20年家庭厨房(新街口店),ESgfeYKnyRWgqNy6,3.5星,6336,￥80,私房菜,新街口地区,山楂话梅排骨 | 总裁炒饭 | 鱿鱼海鲜炒饭,否,否,https://www.dianping.com/shop/ESgfeYKnyRWgqNy6
+debug_page_3.html,里山四季中餐厅(来凤街店),l84LLElAl51TgZDG,3.5星,2357,￥115,快餐简餐,升州路/集庆路,黑松露走地鸡 | 鱼头佛跳墙 | 有机蚕豆蜂窝烩,否,否,https://www.dianping.com/shop/l84LLElAl51TgZDG
+debug_page_3.html,No Worries·brunch&bistro(石婆婆庵店),l89EHp33Mm3sEh86,4.5星,7370,￥120,西餐,珠江路沿线,班尼迪克蛋 | 莓果法式吐司 | 悉尼西瓜草莓蛋糕,是,否,https://www.dianping.com/shop/l89EHp33Mm3sEh86
+debug_page_3.html,寻魏随园·南京菜(老门东店),H7IyNny2NLHhaU79,5.0星,6657,￥117,南京/江浙菜,夫子庙地区,鸡汤捞扬州干丝 | 松鼠大桂鱼 | 雨花石汤圆,是,否,https://www.dianping.com/shop/H7IyNny2NLHhaU79
+debug_page_3.html,调鼎居·手工淮扬菜,H9EaNvh3OVL1CG2M,4.5星,8814,￥102,淮扬菜,新街口地区,淮安软兜 | 美极炝腰丝 | 厚海带黑猪红烧肉,是,是,https://www.dianping.com/shop/H9EaNvh3OVL1CG2M
+debug_page_3.html,鮨極kiwami,kabYjn7QFaI0hN1r,5.0星,1067,￥1895,日本料理,山西路/湖南路,蓝鳍金枪鱼大脂 | 水果密瓜配海胆冰淇淋 | 炙烤活北极贝,是,否,https://www.dianping.com/shop/kabYjn7QFaI0hN1r
+debug_page_3.html,南瓜食堂호박식당(莫愁路店),k6qdhlm1UcVd18f0,4.5星,5681,￥132,韩式烤肉,莫愁湖/水西门,南瓜粥 | 蜜香五花肉 | 特牛隔膜,是,否,https://www.dianping.com/shop/k6qdhlm1UcVd18f0
+debug_page_3.html,秀·爱尔兰餐吧(上海路店),H9FDs4rS651uu5Ex,4.5星,2225,￥129,牛排,南大/南师大,蒜香黄油法包 | 奥尔良鸡肉披萨 | 炭烤菲力牛排佐黑胡椒汁,是,否,https://www.dianping.com/shop/H9FDs4rS651uu5Ex
+debug_page_4.html,BROWNSTONE布朗石西班牙餐厅(紫峰店),G66dABaYjmwTzxSq,5.0星,7569,￥150,西餐,南大/南师大,西班牙传统土豆饼 | 牛肝菌奶油蘑菇汤 | 伊比利亚绿标火腿后腿24月,是,是,https://www.dianping.com/shop/G66dABaYjmwTzxSq
+debug_page_4.html,山姆墨西哥餐厅(D9街区店),l7MgKU9nWfta3s1j,4.0星,4493,￥68,西餐,总统府/1912商圈,墨西哥馅饼 | 墨西哥脆皮塔可 | 墨西哥牛肉卷,是,否,https://www.dianping.com/shop/l7MgKU9nWfta3s1j
+debug_page_4.html,宴心望湖·南京菜(九龙湖滨天地店),H4DGqvP0y8pQTbdg,4.0星,5167,￥73,淮扬菜,九龙湖滨天地,石锅养生豆腐 | 金牌脆皮乳鸽 | 特色黄焖三丝盅,是,否,https://www.dianping.com/shop/H4DGqvP0y8pQTbdg
+debug_page_4.html,晶丽海鲜自助餐厅,k8kiP00RWZNojIDI,5.0星,24495,￥195,自助餐,玄武区,三文鱼 | 生蚝 | 晶丽糖排,是,否,https://www.dianping.com/shop/k8kiP00RWZNojIDI
+debug_page_4.html,紫滇源云南生态菜(丹凤街店),G5Uq7Vxwj1e1bCgY,4.5星,8113,￥77,云南菜|滇菜,珠江路沿线,香茅草烤罗非鱼 | 柠檬手撕鸡 | 菠萝饭,是,否,https://www.dianping.com/shop/G5Uq7Vxwj1e1bCgY
+debug_page_4.html,清真·西来顺牛肉拉面食府(小卫街店),l8BYSb6e7SIz3I2B,4.0星,8653,￥30,面馆,孝陵卫/森林摩尔,干切牛肉拉面 | 牛肉锅贴 | 红烧牛肉面,否,否,https://www.dianping.com/shop/l8BYSb6e7SIz3I2B
+debug_page_4.html,食物招领,k53ky8aBEaX1geCv,4.5星,3468,￥26,快餐简餐,珠江路沿线,盐酥鸡咖喱饭 | 免费的红茶 | 照烧鸡腿饭,否,否,https://www.dianping.com/shop/k53ky8aBEaX1geCv
+debug_page_4.html,COMMUNE幻师(总统府1912店),H1UCgdwjOCxu0EBB,4.0星,7095,￥92,咖啡,珠江路沿线,红咖喱大虾意面 | 卡布奇诺 | 黑松露风干火腿披萨,是,是,https://www.dianping.com/shop/H1UCgdwjOCxu0EBB
+debug_page_4.html,逆鳞(来凤街店),kazM5hx2HpzHL30w,5.0星,11724,￥141,日本料理,升州路/集庆路,烧肉丼 | 寿喜锅 | 厚炸豆腐,否,否,https://www.dianping.com/shop/kazM5hx2HpzHL30w
+debug_page_4.html,禾牛社·和牛寿喜烧自助火锅(水游城店),H9quwmsKFvYSHiJB,4.0星,18784,￥132,自助餐,夫子庙/水游城,牛乳布丁 | 寿喜锅 | 和牛M3上脑,是,否,https://www.dianping.com/shop/H9quwmsKFvYSHiJB
+debug_page_4.html,江南里·新浙菜(新百店),l2jSszKxHENc4UL3,4.5星,34989,￥80,浙菜,新街口地区,宋嫂鱼羹 | 鸡丝凉面 | 蛋黄鸡翅,是,否,https://www.dianping.com/shop/l2jSszKxHENc4UL3
+debug_page_4.html,莎莎·麦克西 SALSA MEX(新街口店),HaHWhqBNnISMeyTO,5.0星,6331,￥89,西餐,新街口地区,孜然小牛柳芝士馅饼 | 南美青虾芒果沙拉（橙味千岛酱） | 烤鸡肉鲜蔬酸奶卷,是,否,https://www.dianping.com/shop/HaHWhqBNnISMeyTO
+debug_page_4.html,悦舍食单(盘式甜品·大行宫店),G1qBPUaEAbL2JKqH,4.5星,3563,￥75,甜品,常府街/长白街,金萱乌龙 | 小蘑菇 | 冷泡白桃乌龙,是,否,https://www.dianping.com/shop/G1qBPUaEAbL2JKqH
+debug_page_4.html,龙吟山房(青龙山庄店),k6dAEZk7tuQ3woTi,5.0星,5871,￥330,淮扬菜,江宁区,山房意境冷菜拼 | 淮扬拆烩鱼脸烩鱼翅 | 火山岩雪花牛排,是,否,https://www.dianping.com/shop/k6dAEZk7tuQ3woTi
+debug_page_4.html,Gelateria di Orcia 奥尔恰(熙南里店),k5JHqmcOiIwhpy6z,5.0星,5510,￥26,冰淇淋,升州路/集庆路,西西里开心果冰淇淋 | 荔枝玫瑰 | 皮埃蒙特榛子冰淇淋,是,否,https://www.dianping.com/shop/k5JHqmcOiIwhpy6z
+debug_page_5.html,老爷锅(新街口科巷店),k4DPGwReixFGk7Rq,4.5星,11964,￥66,小火锅,新街口地区,鱼籽福袋 | 人气卤肉饭 | 西米露,是,是,https://www.dianping.com/shop/k4DPGwReixFGk7Rq
+debug_page_5.html,廣東阿生魚撈·斑魚海鮮粥火鍋(新街口店),G4Veb4scQd7vzokk,5.0星,16318,￥101,鱼火锅,新街口地区,0.5毫米斑鱼片 | 鱼汤 | 粥火锅,是,是,https://www.dianping.com/shop/G4Veb4scQd7vzokk
+debug_page_5.html,南山翁新概念川菜(花园路店),G2pXVb8uL8DnBCf0,4.5星,8852,￥65,川菜馆,火车站/玄武湖,川味粉皮 | 传统毛血旺 | 菠萝咕咾肉,是,是,https://www.dianping.com/shop/G2pXVb8uL8DnBCf0
+debug_page_5.html,米纸越南小馆(IFCX店),H7ZtxFpyIE344uTx,4.0星,18598,￥74,越南菜,新街口地区,越南鲜虾米纸卷 | 越南香茅烧肉 | 河内熟牛肉汤河粉,是,否,https://www.dianping.com/shop/H7ZtxFpyIE344uTx
+debug_page_5.html,南京大牌档(鼓楼紫峰店),G2TRx2TnTbdoP6yT,4.0星,22376,￥72,南京/江浙菜,紫峰购物广场,美龄美颜粥 | 古法糖芋苗 | 天王烤鸭包,是,是,https://www.dianping.com/shop/G2TRx2TnTbdoP6yT
+debug_page_5.html,幸福朝食部(新世界中心店),HaoNT2gkYQ7eO6jL,4.5星,3168,￥53,甜品,珠江路沿线,青梅气泡水 | 日本柚子千层 | 浮云卷,是,否,https://www.dianping.com/shop/HaoNT2gkYQ7eO6jL
+debug_page_5.html,眷江南之小蓝鲸(王府大街店),H4lq3hfmHYFKqw3a,5.0星,13168,￥79,南京/江浙菜,新街口地区,鲶鱼粉皮 | 南瓜馒头 | 荠菜元子,是,是,https://www.dianping.com/shop/H4lq3hfmHYFKqw3a
+debug_page_5.html,递酒烤场·东北烤肉(湛江路店),l6zw3kB9JnOYc2l7,5.0星,5160,￥85,融合烤肉,凤凰西街,东北香汁拉皮 | 烤五花肉 | 烤风干肠,是,是,https://www.dianping.com/shop/l6zw3kB9JnOYc2l7
+debug_page_5.html,Wagas 沃歌斯(新街口金鹰店),kal3ygHBCOOM1Azz,3.5星,3266,￥81,西餐,新街口地区,煎牛肉能量Bowl | 胡萝卜蛋糕 | 香草鸡肉空心面,是,否,https://www.dianping.com/shop/kal3ygHBCOOM1Azz
+debug_page_5.html,富临轩私房菜,k4yEGPCiaSTTlZwP,5.0星,1205,￥80,私房菜,东山镇,牛筋骨 | 黄记凉粉 | 银芽腰片,是,否,https://www.dianping.com/shop/k4yEGPCiaSTTlZwP
+debug_page_5.html,丈母娘的饭局·新金陵菜(创始店),jJleivtjq3Ypuywo,4.5星,15971,￥79,家常菜,草场门/龙江,小龙虾 | 家烧猪肚鸡 | 鱼头泡饼,是,是,https://www.dianping.com/shop/jJleivtjq3Ypuywo
+debug_page_5.html,蟹叁寳·蟹家宴·蟹黄捞饭(南京新街口店),G8oONlaes2ckKytv,4.0星,12372,￥99,创意菜,新街口地区,蟹黄捞饭 | 鸡汁蟹粉拌面 | 蟹粉虾仁面,是,否,https://www.dianping.com/shop/G8oONlaes2ckKytv
+debug_page_5.html,竹里馆·淮扬菜·功夫茶(老门东店),l5ZkksNe9IaE7BvF,4.5星,9152,￥108,淮扬菜,夫子庙地区,竹里三杯鸡 | 荔浦芋头夹肉 | 竹里小炒,是,否,https://www.dianping.com/shop/l5ZkksNe9IaE7BvF
+debug_page_5.html,三猫黑鱼花(南大店),H39wCbrxCMWHE5Qy,4.5星,8177,￥86,川菜馆,珠江路沿线,麻辣黑鱼花 | 渣渣土豆 | 冰粉,否,否,https://www.dianping.com/shop/H39wCbrxCMWHE5Qy
+debug_page_5.html,国际青年会议酒店·鄉·全日餐厅(邺城路店),FManvjmsbd2w0lR9,4.5星,3873,￥153,自助餐,江东中路/河西大街,炙烤羊排拼盘 | 三文鱼 | 彩虹冰激凌,是,否,https://www.dianping.com/shop/FManvjmsbd2w0lR9
+debug_page_6.html,味至小山南·时令鲜烧·南京私房菜(熙南里店),k3kaZ6lb71vp0Lwt,4.5星,4298,￥102,私房菜,升州路/集庆路,梅香松子焗小排 | 脆皮谷饲牛小腩 | 招牌红焖狮子头,是,是,https://www.dianping.com/shop/k3kaZ6lb71vp0Lwt
+debug_page_6.html,美庐餐厅(中山陵店),l5JLjxpxLs2DAA7D,5.0星,855,￥200,私房菜,玄武区,牛肉粒 | 公馆狮子头 | 石锅跳水蛙,是,否,https://www.dianping.com/shop/l5JLjxpxLs2DAA7D
+debug_page_6.html,金杏仁餐厅,l1QadWOvaoKEqHb9,4.0星,340,￥104,私房菜,君临紫金商业街,杨枝甘露 | 琥珀明虾球 | 鲍鱼红焖芦花鸡,是,否,https://www.dianping.com/shop/l1QadWOvaoKEqHb9
+debug_page_6.html,山囿里·植物料理餐厅(南京首店),G6Md3O3rxRZeK17s,4.5星,589,￥163,私房菜,玄武区,金牌烤笋 | 普洱红烧肉 | 艾草发糕,是,否,https://www.dianping.com/shop/G6Md3O3rxRZeK17s
+debug_page_6.html,脂肪-家庭厨房(莫愁店),l519fBK3ejaLFzS5,5.0星,2655,￥103,私房菜,莫愁湖/水西门,昂刺鱼炖锅 | 鸭舌啫啫煲 | 炸货拼盘,否,否,https://www.dianping.com/shop/l519fBK3ejaLFzS5
+debug_page_6.html,品大三·经典淮扬菜(大行宫店),k22L7WHgXDvpTjJl,4.5星,7642,￥78,南京/江浙菜,常府街/长白街,石锅虎皮凤爪 | 特色小笼包 | 烧味双拼,是,是,https://www.dianping.com/shop/k22L7WHgXDvpTjJl
+debug_page_6.html,花园一号(中央路店),G9V0J6i6aa8eaSuT,5.0星,2376,￥280,私房菜,山西路/湖南路,卡夫牛排 | 石锅海带花 | 红龙大虾,是,否,https://www.dianping.com/shop/G9V0J6i6aa8eaSuT
+debug_page_6.html,上好余味·20年家庭厨房(新街口店),ESgfeYKnyRWgqNy6,3.5星,6336,￥80,私房菜,新街口地区,山楂话梅排骨 | 总裁炒饭 | 鱿鱼海鲜炒饭,否,否,https://www.dianping.com/shop/ESgfeYKnyRWgqNy6
+debug_page_6.html,云几茶馆·私房菜(仙林金鹰店),H1KpYzy0trunGcux,4.5星,1461,￥163,私房菜,仙林大学城,云几特色炒饭 | 宫保虾仁 | 自制年糕黄鱼,是,否,https://www.dianping.com/shop/H1KpYzy0trunGcux
+debug_page_6.html,富临轩私房菜,k4yEGPCiaSTTlZwP,5.0星,1205,￥80,私房菜,东山镇,牛筋骨 | 黄记凉粉 | 银芽腰片,是,否,https://www.dianping.com/shop/k4yEGPCiaSTTlZwP
+debug_page_6.html,富临轩私房菜(集庆门大街店),ka2nJltziG4Vs2Ru,5.0星,2757,￥102,私房菜,集庆门大街,特色牛筋骨 | 黄记凉粉 | 银芽腰花,否,否,https://www.dianping.com/shop/ka2nJltziG4Vs2Ru
+debug_page_6.html,四号小馆 RESTAURANT&BAR,k6muzRS2OPD9rOHt,4.0星,1734,￥71,私房菜,南大/南师大,三杯鸡 | 冷锅三脆 | 豆花肥肠鱼,是,否,https://www.dianping.com/shop/k6muzRS2OPD9rOHt
+debug_page_6.html,郭氏臻品(云南北路店),l15N81znAyHuHQFk,5.0星,1260,￥260,私房菜,山西路/湖南路,过桥河豚 | 干烧臭桂鱼 | 黑椒牛肉粒,是,否,https://www.dianping.com/shop/l15N81znAyHuHQFk
+debug_page_6.html,无双·晓厨(太平南路店),GaLTGjipOnL8SSW2,4.0星,245,￥298,私房菜,常府街/长白街,脆皮牛肉富士山 | 松茸金汤焗膏蟹 | 兰州百合,是,否,https://www.dianping.com/shop/GaLTGjipOnL8SSW2
+debug_page_6.html,迟慢厨房·土菜(后宰门店),l8VRHkFlOzSrEL1w,4.5星,3110,￥133,私房菜,珠江路沿线,家烧生态深水大黄鱼 | 功夫牛排煲 | 金爷草鸽,是,否,https://www.dianping.com/shop/l8VRHkFlOzSrEL1w
+debug_page_7.html,榕树汇(金沙江东街店),G3a13ann2226aauH,3.5星,805,￥138,特色菜,雨润大街,东沟盐水鹅 | 意大利黑醋红烧肉 | 九宫格淮阳干丝,是,否,https://www.dianping.com/shop/G3a13ann2226aauH
+debug_page_7.html,真睦南京民间菜(博物院店),H8KlWpB6bCztjvmh,4.0星,1311,￥82,私房菜,瑞金路沿线,椒麻鱼 | 西红柿牛腩 | 淮扬小炒,是,否,https://www.dianping.com/shop/H8KlWpB6bCztjvmh
+debug_page_7.html,未见山·无想茶室,l4fGZzrV9Y2UEofd,4.5星,363,￥79,私房菜,溧水区,无想清汤大鱼头 | 石山下手撕鸡 | 农家手工藕饼,是,否,https://www.dianping.com/shop/l4fGZzrV9Y2UEofd
+debug_page_7.html,金川府·庭院私房菜(建宁路店),G6enbIyJwB59GCTh,5.0星,1244,￥208,私房菜,建宁路商圈,至尊佛跳墙 | 蟹黄包 | 凤凰巢脆皮乳鸽,是,否,https://www.dianping.com/shop/G6enbIyJwB59GCTh
+debug_page_7.html,新远饭店(无想山店),l5i5L6S94iFK5swT,4.5星,396,￥81,私房菜,洪蓝镇,炖土鸡 | 素蛋饺 | 鱼头豆腐,否,否,https://www.dianping.com/shop/l5i5L6S94iFK5swT
+debug_page_7.html,耕读山阴里·美术馆私享菜(山阴路店),k5bE77GM4pFVDUGD,4.0星,793,￥190,私房菜,南大/南师大,薏仁米虾球 | 松鼠鳜鱼仔 | 清凉绿豆糕,否,否,https://www.dianping.com/shop/k5bE77GM4pFVDUGD
+debug_page_7.html,原舍(不老村店),GapyyRjcSqHcQmq7,3.5星,164,￥140,私房菜,浦口区,招牌手工豆腐 | 藤椒清蒸多宝鱼 | 芥味花螺,是,否,https://www.dianping.com/shop/GapyyRjcSqHcQmq7
+debug_page_7.html,8号菜馆,G5eRzqyFRwCPEEpb,4.0星,212,￥169,私房菜,东山镇,甲鱼泡饭 | 狮子头 | 黑豆腐,否,否,https://www.dianping.com/shop/G5eRzqyFRwCPEEpb
+debug_page_7.html,一字街私房菜馆(高淳老街店),l98BYJqjl6tz5F79,3.5星,12,暂无,私房菜,高淳老街,蟹黄包 | 高淳小炒 | 仔糕豆腐园,否,否,https://www.dianping.com/shop/l98BYJqjl6tz5F79
+debug_page_7.html,一勺鲜(林公堤店),G3r5PxFOGJ4QIT5K,4.5星,2613,￥93,私房菜,江浦,【头牌爆款】爱上一勺鲜 | 柴火锅巴 | 香酥鸭头,是,否,https://www.dianping.com/shop/G3r5PxFOGJ4QIT5K
+debug_page_7.html,南秀·三省里(民国私厨),k479sVR5V96Z1g0e,3.5星,172,￥247,私房菜,南大/南师大,沙律青芥凤尾虾 | XO酱爆海螺 | 金瓜桂圆盅,否,否,https://www.dianping.com/shop/k479sVR5V96Z1g0e
+debug_page_7.html,3鱼·私懿膳(新街口店),H4uDFrBUCW2CNRMF,5.0星,372,￥463,私房菜,新街口地区,红酒牛尾 | 灵芝松茸老鸡汤 | 鸡汁生态黄鱼,是,否,https://www.dianping.com/shop/H4uDFrBUCW2CNRMF
+debug_page_7.html,美龄轩私房菜(大明路店),k7M0w93COKINt5Vk,5.0星,3806,￥82,私房菜,秦虹/大明路,招牌美龄胖鱼头 | 麦香茄夹 | 老卤盐水鹅,是,否,https://www.dianping.com/shop/k7M0w93COKINt5Vk
+debug_page_7.html,八方来客私房菜(莱茵达路店),H2xMMT8AqD50pcNp,3.5星,124,￥67,私房菜,江宁科学园,农家烧土公鸡 | 铁板蒜茸虾 | 手工老卤豆腐,是,否,https://www.dianping.com/shop/H2xMMT8AqD50pcNp
+debug_page_7.html,私房小厨(燕舞园店),FajuyHI7sobeZH5V,4.0星,5887,￥55,私房菜,丁家庄商业街区,柠檬茶烤肉 | 香辣小土豆 | 石板蒜蓉虾,否,否,https://www.dianping.com/shop/FajuyHI7sobeZH5V
+debug_page_8.html,梅琳私房菜,k9CT80hJtEsaWe3h,3.5星,19,￥78,私房菜,大厂商圈,挂胚鸭 | 红烧鱼头 | 鸡,否,否,https://www.dianping.com/shop/k9CT80hJtEsaWe3h
+debug_page_8.html,南唐茶舍·私房菜(德盈大厦店),k5zZtHSPQbVCILbM,3.5星,83,￥112,私房菜,集庆门大街,杏鲍鱼菇牛籽粒 | 荷塘月色 | 帝王蟹,否,否,https://www.dianping.com/shop/k5zZtHSPQbVCILbM
+debug_page_8.html,小魏私房菜馆(金燕路店),G7vDS9Z7wDGCG9DH,4.0星,43,￥74,私房菜,金陵小区,美人腿 | 红烧扒皮鱼 | 清蒸小公鸡,否,否,https://www.dianping.com/shop/G7vDS9Z7wDGCG9DH
+debug_page_8.html,鱼品鲜私房菜(新篁西路店),G2HDgzDlubc4QCe7,3.5星,11,暂无,私房菜,六合区,蒜泥苋菜 | 泡菜青鱼 | 椒麻青鱼,否,否,https://www.dianping.com/shop/G2HDgzDlubc4QCe7
+debug_page_8.html,口回品私房菜(恒信缔景名苑店),H7qOaclvDIZSXITl,3.5星,54,￥111,私房菜,江浦,特色砂锅肉圆 | 红烧大肠 | 红烧牛腩,是,否,https://www.dianping.com/shop/H7qOaclvDIZSXITl
+debug_page_8.html,陶厨私房菜,k9Ie5pBkvad1Lc17,3.5星,12,暂无,私房菜,弯子口,红烧鸡 | 红烧小黄鱼,否,否,https://www.dianping.com/shop/k9Ie5pBkvad1Lc17
+debug_page_8.html,茗庐·茶餐(仁恒江湾新天地店),k4mQUWVemoUFRitP,3.5星,22,￥150,私房菜,江东中路/河西大街,金汁小米辽参 | 黑椒雪花牛肉粒 | 黑椒牛排,是,否,https://www.dianping.com/shop/k4mQUWVemoUFRitP
+debug_page_8.html,醉山河(金龙路店),G6HSL9uGbfABXVto,3.5星,46,￥111,私房菜,溧水区,田园蔬菜卷 | 南瓜蛋挞 | 麦香茄夹,否,否,https://www.dianping.com/shop/G6HSL9uGbfABXVto
+debug_page_8.html,野村•土菜(金融城店),F9HKPgHisCUxSHhk,4.0星,935,￥103,私房菜,江东中路/河西大街,特色牛筋骨 | 黄记凉粉 | 银芽炝腰片,否,否,https://www.dianping.com/shop/F9HKPgHisCUxSHhk
+debug_page_8.html,品味阁特色私房菜(大厂店),G8avbGGf6YUqH1Uz,4.0星,271,￥78,私房菜,大厂商圈,豉油猫眼螺 | 特色沸腾鱼 | 锦绣凤尾虾,是,否,https://www.dianping.com/shop/G8avbGGf6YUqH1Uz
+debug_page_8.html,玖味坊私房菜馆(上元大街店),H298UzibonuCnn6P,3.5星,49,￥102,私房菜,东山镇,酸菜鱼 | 鹅卵石煎蛋 | 烤羊排,否,否,https://www.dianping.com/shop/H298UzibonuCnn6P
+debug_page_8.html,云半轩·雅食私宴(太阳宫店),jWqapWs2AwFVU5lZ,3.5星,103,￥126,私房菜,火车站/玄武湖,手抓羊肉 | 招牌特色红烧大甲鱼 | 蒜泥虾,是,否,https://www.dianping.com/shop/jWqapWs2AwFVU5lZ
+debug_page_8.html,年年宴酒楼(美丽新城北区店),jUTlq2rQlB3Wg5O4,3.0星,3,暂无,私房菜,溧水开发区,暂无,否,否,https://www.dianping.com/shop/jUTlq2rQlB3Wg5O4
+debug_page_8.html,先锋私房菜(仙林南邮广场店),H3kg2h12gotiIqMO,3.5星,277,￥53,私房菜,南邮广场,酸菜鱼 | 糖醋里脊 | 锅包肉,是,否,https://www.dianping.com/shop/H3kg2h12gotiIqMO
+debug_page_8.html,壮云私房菜馆(拓塘镇店),G7OC0cp7ixmoOpb7,3.5星,13,￥78,私房菜,柘塘镇,猪头肉 | 烧鸡公 | 鲁猪蹄,否,否,https://www.dianping.com/shop/G7OC0cp7ixmoOpb7
+debug_page_9.html,未见山·东郊书房,k7hfXH3FBm7SlOWO,4.5星,944,￥145,私房菜,玄武区,青麦雪花牛肉粒 | 东郊秘制醉龙虾 | 脆皮乳鸽,是,否,https://www.dianping.com/shop/k7hfXH3FBm7SlOWO
+debug_page_9.html,子墨佳宴.精致土菜,G9zWIzmkX9Z8iBQc,4.5星,1296,￥86,私房菜,小市,淮安一品软兜 | 鱼头泡饼 | 糖醋里脊,是,是,https://www.dianping.com/shop/G9zWIzmkX9Z8iBQc
+debug_page_9.html,德玉私房菜(应天大街店),k8FHUW6dHCRO3Ufj,4.0星,532,￥113,私房菜,应天大街/文体路,一品美极虾 | 散养土公鸡 | 老家头道菜,是,否,https://www.dianping.com/shop/k8FHUW6dHCRO3Ufj
+debug_page_9.html,布衣人家·南京菜(后标营店),G7LAwYwBeioQYGq9,3.5星,756,￥74,私房菜,苜蓿园,黄豆猪手 | 铁板大虾 | 豇豆饼,是,否,https://www.dianping.com/shop/G7LAwYwBeioQYGq9
+debug_page_9.html,永赋御品·私房菜,l2FAGbcRIIB827DW,4.0星,219,￥200,私房菜,浦口区,桥林豆腐 | 御品农家杀猪菜 | 清蒸鲈鱼,是,否,https://www.dianping.com/shop/l2FAGbcRIIB827DW
+debug_page_9.html,鱼米香私房菜(泉塘公寓店),k5IJK5BXUrlSpck8,3.5星,70,￥65,私房菜,谷里,烤羊排 | 私房牛肉煎饺 | 朱门臭豆腐肥肠,否,否,https://www.dianping.com/shop/k5IJK5BXUrlSpck8
+debug_page_9.html,卿云斋,H8632DBqoOS8fqcT,3.5星,5,￥124,私房菜,秦虹村/中华门,暂无,否,否,https://www.dianping.com/shop/H8632DBqoOS8fqcT
+debug_page_9.html,天天私房菜,H3rtfeiGaPiifRZW,4.0星,554,￥67,私房菜,安德门/小行,米糊 | 民间神仙鸡 | 宫保鸡丁,是,否,https://www.dianping.com/shop/H3rtfeiGaPiifRZW
+debug_page_9.html,团子饭店烟酒,H6qUa8FlE9AvuZ88,3.5星,13,￥85,私房菜,溧水开发区,红烧河豚 | 糖醋排骨 | 剁椒皮蛋,否,否,https://www.dianping.com/shop/H6qUa8FlE9AvuZ88
+debug_page_9.html,佳源餐厅,idb8t6TQvdRwXKYL,3.5星,35,￥42,私房菜,南瑞路/新模范马路,水煮牛柳 | 宫保鸡丁 | 千页豆腐烧咸鹅,否,否,https://www.dianping.com/shop/idb8t6TQvdRwXKYL
+debug_page_9.html,民间私房菜(水西门大街店),G7JmUDh8b6qU6WOE,3.5星,556,￥50,私房菜,莫愁湖/水西门,酸菜鱼 | 干锅花菜 | 小炒肉,是,否,https://www.dianping.com/shop/G7JmUDh8b6qU6WOE
+debug_page_9.html,恒香园私房菜,H21zJS4kfhb12cfw,3.5星,51,￥68,私房菜,东山镇,狗肉 | 红烧蛋饺 | 锅仔昂子鱼,是,否,https://www.dianping.com/shop/H21zJS4kfhb12cfw
+debug_page_9.html,萍乐轩私房菜(卸甲山庄店),l1HrAyXkbxFqRxW2,3.5星,12,暂无,私房菜,南钢/凤南创业街,凉拌空心菜 | 蛋黄龙虾 | 荷叶飘香鸡,否,否,https://www.dianping.com/shop/l1HrAyXkbxFqRxW2
+debug_page_9.html,凤鸣小厨,H1dVF5PvNMwrdacw,4.0星,870,￥57,私房菜,丹凤街,地锅鸡 | 包菜粉丝 | 香菠里脊,是,否,https://www.dianping.com/shop/H1dVF5PvNMwrdacw
+debug_page_9.html,岁阅书院,G4ZqRUTYb6QlrcTB,3.5星,191,￥328,私房菜,安德门/小行,鲍鱼捞饭 | 单饼银鱼干 | 麻婆豆腐,否,否,https://www.dianping.com/shop/G4ZqRUTYb6QlrcTB
+debug_page_10.html,姐妹私房菜馆(妈妈的味道),H1dZGfOxUO4PKDWG,3.5星,27,￥31,私房菜,桥北,大青菜烧油渣 | 咸鹅大白菜 | 干锅手撕面筋,是,否,https://www.dianping.com/shop/H1dZGfOxUO4PKDWG
+debug_page_10.html,渝粤轩·盛禾私房菜(清凉门大街店),H4gdCMd2dhC11J1M,3.5星,50,￥85,私房菜,环宇城,干煸小龙虾 | 藤椒鱼 | 芙蓉清水龙虾,否,否,https://www.dianping.com/shop/H4gdCMd2dhC11J1M
+debug_page_10.html,紫金缘私房菜,k499ZLNg89ToPDZM,4.0星,534,￥63,私房菜,樱驼花园/花园路,自制老酸奶 | 碳火烤鱼 | 蒜香龙虾,是,否,https://www.dianping.com/shop/k499ZLNg89ToPDZM
+debug_page_10.html,明仔·粗菜馆(湖滨路店),k2GXX0jv7LzqfBCH,3.5星,239,￥146,私房菜,胜太路沿线,鹅拼盘 | 鱼籽鱼泡 | 酸汤黑鱼,否,否,https://www.dianping.com/shop/k2GXX0jv7LzqfBCH
+debug_page_10.html,保信紫云阁,l9ilRYwg9RJSqzc5,3.5星,48,￥96,私房菜,马群街道商圈,羊肉锅仔 | 江米扣肉 | 妃子笑花开富贵帝王蟹,是,否,https://www.dianping.com/shop/l9ilRYwg9RJSqzc5
+debug_page_10.html,阿香私房菜,k6ISvkNnmNfyPNSi,3.5星,80,￥77,私房菜,南瑞路/新模范马路,美极虾 | 菠萝里脊 | 小杂鱼,否,否,https://www.dianping.com/shop/k6ISvkNnmNfyPNSi
+debug_page_10.html,耕读园·别墅里的私享菜(华新巷小区店),kaKOnhovYy3lQDWU,4.0星,148,￥156,淮扬菜,南大/南师大,一品番茄汁牛腩 | 饹馍茶馓 | 薏仁米虾球,否,否,https://www.dianping.com/shop/kaKOnhovYy3lQDWU
+debug_page_10.html,峰林阁家常菜馆(二店),k1BH6OOTG12ND4Vm,3.5星,94,￥73,私房菜,岱山新城,鱼籽鱼泡 | 鸭头 | 干切咸猪爪,是,否,https://www.dianping.com/shop/k1BH6OOTG12ND4Vm
+debug_page_10.html,孙记私房菜(冠城大通蓝郡店),G1Uwd4XrFcIF99qQ,3.5星,113,￥56,私房菜,龙池/时代广场,湖南小炒肉 | 重庆烤鱼 | 铁板蒜泥虾,是,否,https://www.dianping.com/shop/G1Uwd4XrFcIF99qQ
+debug_page_10.html,再回头私房菜·老南京菜,l4S5BP5hbcDPlXVQ,4.0星,1565,￥81,私房菜,莫愁湖/水西门,能喝汤的椒麻鱼 | 干锅手撕包菜 | 黄山臭鳜鱼,是,否,https://www.dianping.com/shop/l4S5BP5hbcDPlXVQ
+debug_page_10.html,郝一家私房菜,k7syRvh4RUAU6f3Z,3.5星,15,￥36,私房菜,东山镇,郝一家鱼羊鲜 | 郝一家酸菜鱼 | 三色鸡丁,是,否,https://www.dianping.com/shop/k7syRvh4RUAU6f3Z
+debug_page_10.html,金扬私房菜,k5vcWLbK6ysQMUcU,3.5星,40,￥60,私房菜,卫岗/下马坊,铁板牛柳 | 秘制红烧肉 | 萝卜肚肺煲,否,否,https://www.dianping.com/shop/k5vcWLbK6ysQMUcU
+debug_page_10.html,方山里私房菜(招商方山里花园店),l5d5DDKVvF2b3m5w,3.5星,50,￥52,私房菜,江宁大学城,酸菜鱼青鱼 | 地锅鸡 | 肥肠臭豆腐,否,否,https://www.dianping.com/shop/l5d5DDKVvF2b3m5w
+debug_page_10.html,鸿禧菜馆,l2gqJms5Ufn2icIe,3.5星,6,￥53,私房菜,江宁区,地锅土鸡 | 老母鸡汤 | 牛肉煎饺,是,否,https://www.dianping.com/shop/l2gqJms5Ufn2icIe
+debug_page_10.html,一勺鲜(弘阳广场店),l97nW2cnoXCN3ICI,4.0星,1480,￥66,家常菜,弘阳广场/印象汇,香酥鸭头 | 鱼头炖老家豆腐 | 杂菌老豆腐,是,否,https://www.dianping.com/shop/l97nW2cnoXCN3ICI
+debug_page_11.html,小韩土菜馆(奥体店),H6xUUz1W9JUdfU6O,3.5星,152,￥143,私房菜,奥体中心,牛肋排 | 清润肥肠 | 菊叶鱼圆汤,否,否,https://www.dianping.com/shop/H6xUUz1W9JUdfU6O
+debug_page_11.html,鹊宴(软件大道店),H22G9oEYv2fy7NLS,5.0星,439,￥139,私房菜,安德门/小行,脆皮乳鸽 | 鲍汁豆腐 | 顺德手打虾饼,是,是,https://www.dianping.com/shop/H22G9oEYv2fy7NLS
+debug_page_11.html,食韵家私房菜(芳庭店),k7eAr4Y3kzJAg1QH,3.5星,10,￥55,私房菜,南京信息工程大学,鱼子鱼泡鱼划水 | 铁板牛仔骨 | 板栗烧鸡,否,否,https://www.dianping.com/shop/k7eAr4Y3kzJAg1QH
+debug_page_11.html,桂客私房菜(盘龙山庄店),l3Ko90TYfHB9POvT,3.5星,40,￥103,私房菜,南京信息工程大学,井水泡菜鱼 | 清汤羊肉锅 | 黄山臭桂鱼,否,否,https://www.dianping.com/shop/l3Ko90TYfHB9POvT
+debug_page_11.html,尚岛私房菜(西方巷店),l6i3M2zualbHvBqY,4.0星,3104,￥78,私房菜,新街口地区,五味大虾 | 泰式茄条 | 黑椒牛肉粒,是,否,https://www.dianping.com/shop/l6i3M2zualbHvBqY
+debug_page_11.html,鼎香小院,G16QHign4EsDAcGB,3.5星,49,￥90,私房菜,和燕路,意大利牛排 | 毛血旺 | 特色石烹豆花,否,否,https://www.dianping.com/shop/G16QHign4EsDAcGB
+debug_page_11.html,悠仙美地(软件大道店),H8cib14AldtPIita,4.0星,558,￥111,私房菜,铁心桥/楚翘城,黑椒牛柳饭 | 陈年花雕松子排骨 | 宫保鸡丁,是,否,https://www.dianping.com/shop/H8cib14AldtPIita
+debug_page_11.html,凤姐私家菜馆,H2oTGotP1oHzviWx,3.5星,56,￥57,私房菜,江宁区,凤姐蛋饺 | 散养老母鸡汤 | 红烧铜鸭,否,否,https://www.dianping.com/shop/H2oTGotP1oHzviWx
+debug_page_11.html,福记私房菜(恒通大道店),FFmCX2rb7tRNaaT8,3.5星,19,￥87,私房菜,新港开发区,干锅土豆片 | 酸菜鱼 | 蒜苗肉丝,否,否,https://www.dianping.com/shop/FFmCX2rb7tRNaaT8
+debug_page_11.html,老宅院私房菜(麒麟店),k8gB1trcgxfAixDI,5.0星,2706,￥76,私房菜,麒麟门,散养一年土公鸡 | 淮安软兜 | 韭香腰花,是,否,https://www.dianping.com/shop/k8gB1trcgxfAixDI
+debug_page_11.html,兴化味道,G6d4k0ABqgcedqvP,4.0星,367,￥67,私房菜,奥体中心,兴化水牛肉烧青菜 | 兴化大杂烩 | 烫干丝,是,否,https://www.dianping.com/shop/G6d4k0ABqgcedqvP
+debug_page_11.html,二七私房菜(璇子巷店),k9mM8u27WtAcWeb0,4.0星,163,￥58,私房菜,夫子庙地区,牛筋牛腩煲 | 手工蛋饺 | 毛豆烧鸡,是,否,https://www.dianping.com/shop/k9mM8u27WtAcWeb0
+debug_page_11.html,隆湾私房菜(正阳路店),H2PvMT91Mzsz64hZ,4.0星,250,￥62,私房菜,禄口机场,招牌雪花牛肉 | 脆皮乳鸽 | 腊味糯米糍粑,是,否,https://www.dianping.com/shop/H2PvMT91Mzsz64hZ
+debug_page_11.html,聚味轩私家菜馆(三条巷店),kail8mmOXkI38O6h,3.5星,99,￥71,私房菜,常府街/长白街,玉米烙 | 酸菜鱼 | 水煮牛柳,否,否,https://www.dianping.com/shop/kail8mmOXkI38O6h
+debug_page_11.html,宝合人家,l98s1QbJixqm9gGQ,3.5星,224,￥84,私房菜,虹悦城,淮安软兜 | 农家锅巴 | 金网掌中宝,否,否,https://www.dianping.com/shop/l98s1QbJixqm9gGQ
+debug_page_12.html,春子小菜馆(谷里店),H2scizXOUtMfTHeA,3.0星,23,￥61,私房菜,谷里,激情椒麻鱼黑鱼 | 铁板牛肉煎饺 | 川味毛血汪,是,否,https://www.dianping.com/shop/H2scizXOUtMfTHeA
+debug_page_12.html,滋味源酒楼(三元新村店),H8jEPD5PEWPen3WC,3.5星,41,￥104,私房菜,弯子口,滋味鸭 | 大肉包 | 四件萝卜汤,是,否,https://www.dianping.com/shop/H8jEPD5PEWPen3WC
+debug_page_12.html,黄海私房菜(亚东商业广场店),l48vZCQqeLLvQfY1,4.5星,126,￥87,私房菜,仙林大学城,砂锅焗仔鸡 | 香辣花甲 | 土豆烧牛肉,否,否,https://www.dianping.com/shop/l48vZCQqeLLvQfY1
+debug_page_12.html,杨胖子私房菜(秦虹路店),G49nno7Nj9LniJB4,3.5星,500,￥87,私房菜,秦虹村/中华门,腊味糍粑 | 淮阳小炒 | 鱼香肉丝,否,否,https://www.dianping.com/shop/G49nno7Nj9LniJB4
+debug_page_12.html,南京人南京菜(山西路店),H6AO7OO9hKQ75tOM,4.5星,1868,￥78,私房菜,山西路/湖南路,葱油腰花 | 私房焖烧肉 | 酸菜鱼,是,否,https://www.dianping.com/shop/H6AO7OO9hKQ75tOM
+debug_page_12.html,味多娇私房菜(艾菲花园店),k2D2opcEfZ8TONPI,3.5星,79,￥41,私房菜,浦口区,暂无,是,否,https://www.dianping.com/shop/k2D2opcEfZ8TONPI
+debug_page_12.html,锅里香私房菜(郁金香路店),k6R3tgfPT5iyLUyA,3.0星,59,￥67,私房菜,雨花台区,暂无,是,否,https://www.dianping.com/shop/k6R3tgfPT5iyLUyA
+debug_page_12.html,老猫私房菜馆,l6jPNc7b4jyiVpZa,3.5星,13,￥77,私房菜,湖熟镇,暂无,否,否,https://www.dianping.com/shop/l6jPNc7b4jyiVpZa
+debug_page_12.html,老南京私房菜·鱼头泡饼(麒麟门店),k8aR5QsCmkfK0zlw,4.5星,1581,￥85,私房菜,麒麟门,暂无,是,否,https://www.dianping.com/shop/k8aR5QsCmkfK0zlw
+debug_page_12.html,如东私房菜(御江金城店),iCErU5WrCahkpWD1,3.5星,128,￥158,私房菜,奥体中心,暂无,是,否,https://www.dianping.com/shop/iCErU5WrCahkpWD1
+debug_page_12.html,鑫雨咖啡·棋牌·私房菜(金地自在城店),if0Uhi839A4y2dg8,3.5星,23,￥42,私房菜,板桥商圈,暂无,是,否,https://www.dianping.com/shop/if0Uhi839A4y2dg8
+debug_page_12.html,金雅阁金牌私房菜馆(红花村店),H59ag4LeyN2cNsmH,4.0星,1674,￥91,私房菜,秦虹村/中华门,暂无,是,否,https://www.dianping.com/shop/H59ag4LeyN2cNsmH
+debug_page_12.html,天云阁私房菜,k13HtzQNEA0B5kJE,3.5星,14,￥107,私房菜,三牌楼,暂无,否,否,https://www.dianping.com/shop/k13HtzQNEA0B5kJE
+debug_page_12.html,谢家私房菜馆(中南锦城店),idKKnutizfosbThJ,3.5星,24,￥60,私房菜,溧水区,暂无,否,否,https://www.dianping.com/shop/idKKnutizfosbThJ
+debug_page_12.html,昇龙轩·农场饭庄,G4dAa17hlLJoRLZt,4.0星,330,￥139,私房菜,环宇城,暂无,是,否,https://www.dianping.com/shop/G4dAa17hlLJoRLZt
+debug_page_13.html,品香鑫.特色菜(所街店),l34MTYc7AkWPy3Ix,5.0星,687,￥87,家常菜,应天大街/文体路,椒麻鱼 | 炝腰丝 | 伴汤龙虾,是,否,https://www.dianping.com/shop/l34MTYc7AkWPy3Ix
+debug_page_13.html,3虾·私懿膳(新街口店),ErSwTcMrMVO0bJvd,3.5星,21,￥598,私房菜,新街口地区,珍珠板栗烧鱼扣 | 灌云豆丹 | 砂锅鸡煲翅,是,否,https://www.dianping.com/shop/ErSwTcMrMVO0bJvd
+debug_page_13.html,昊院·家宴·庭院餐厅(中山北路店),k73ECcTZXzKlQYDl,5.0星,489,￥300,私房菜,大桥南路,红烧吴山贡鹅 | 妙炒波士顿龙虾 | 盐水掌翼拼,是,是,https://www.dianping.com/shop/k73ECcTZXzKlQYDl
+debug_page_13.html,茶香丽舍(汉中路店),H4aHqPjruUaSOfk9,3.5星,151,￥119,私房菜,莫愁湖/水西门,花雕原味鸡(整张) | 茶香招牌烧麦 | 火龙牛肉粒,否,否,https://www.dianping.com/shop/H4aHqPjruUaSOfk9
+debug_page_13.html,丹园餐饮(奥体店),G72U2eq5BWwclMVm,5.0星,817,￥258,私房菜,奥体中心,陈皮脆牛肉 | 浓汤大巴鱼 | 卤水鹅翅,是,是,https://www.dianping.com/shop/G72U2eq5BWwclMVm
+debug_page_13.html,周记私房菜·20年老品牌(解放路店),l8w4jpePhS04Umhj,4.5星,625,￥94,私房菜,瑞金路沿线,赛螃蟹 | 红烧臭鳜鱼 | 本椒小蛙,是,否,https://www.dianping.com/shop/l8w4jpePhS04Umhj
+debug_page_13.html,玉千园(绿地之窗店),jkf4OaxuMN0Ld1F6,3.5星,22,￥82,私房菜,南京南站/明发,农家筒骨煲 | 古树雨林红茶 | 椒麻生态黑毛肚,是,否,https://www.dianping.com/shop/jkf4OaxuMN0Ld1F6
+debug_page_13.html,兄弟缘私房菜(光华东街店),l4LawJvLvHCwBnpY,4.0星,119,￥141,私房菜,瑞金路沿线,红烧牛肉 | 昂刺鱼 | 红豆元宵,否,否,https://www.dianping.com/shop/l4LawJvLvHCwBnpY
+debug_page_13.html,品味居私房菜(天元城碧水座店),G5lAlYD961VrdL9j,3.0星,18,￥72,私房菜,江宁科学园,酸汤肥牛 | 毛血旺 | 藕圆烧毛豆,否,否,https://www.dianping.com/shop/G5lAlYD961VrdL9j
+debug_page_13.html,紫气来私房菜(舜禹大厦店),k5YkU4jkQ83sXoug,3.5星,132,￥159,私房菜,雨润大街,特色蛏汤 | 美极文蛤 | 清蒸小黄鱼,是,否,https://www.dianping.com/shop/k5YkU4jkQ83sXoug
+debug_page_13.html,萍聚私房菜馆(湖西街店),G5YNU1ubWcJ69qZV,4.0星,123,￥48,私房菜,集庆门大街,松鼠鲈鱼 | 杭椒牛柳 | 鲍汁大锅巴,是,否,https://www.dianping.com/shop/G5YNU1ubWcJ69qZV
+debug_page_13.html,味公公烧烤私房菜(兴隆新寓兴宏园店),l59xPGsZ3nwGq7fx,3.5星,24,￥72,私房菜,奥体中心,椒香炒花甲 | 味公公烤鱼 | 铁板黑椒牛柳,否,否,https://www.dianping.com/shop/l59xPGsZ3nwGq7fx
+debug_page_13.html,农家私房菜(杉湖西路店),H2NEQBy8iHQNgjFw,3.5星,358,￥73,私房菜,大成名店,鱼籽烧鱼泡（精选鲤鱼籽） | 鱼泡烧牛腩 | 干锅有机花菜,是,否,https://www.dianping.com/shop/H2NEQBy8iHQNgjFw
+debug_page_13.html,周记私房菜·20年老品牌(郁金香路店),G4x3AOvR96CJxJXV,5.0星,563,￥87,私房菜,紫荆广场/宜家,本椒青蛙 | 红烧黄山臭鳜鱼 | 葱油河虾,是,否,https://www.dianping.com/shop/G4x3AOvR96CJxJXV
+debug_page_13.html,邵公馆私房菜,G2G1aixN479NFOyw,3.5星,30,￥79,私房菜,六合区,鱼头豆腐汤 | 酸汤肥牛锅仔 | 白汤羊肉,否,否,https://www.dianping.com/shop/G2G1aixN479NFOyw
+debug_page_14.html,杨府私房菜,l6qDS1B9CKBVjjId,3.5星,16,暂无,私房菜,玉桥市场,花菜肉片 | 夫妻肺片 | 紫菜蛋汤,否,否,https://www.dianping.com/shop/l6qDS1B9CKBVjjId
+debug_page_14.html,家之味(雨花万象天地店),G3tRCEvuQNkIpSAt,4.5星,1357,￥59,私房菜,西善桥/油坊桥,精品铁板蒜蓉虾 | 特色泡菜黑鱼 | 咸蛋黄焗茶树菇,是,否,https://www.dianping.com/shop/G3tRCEvuQNkIpSAt
+debug_page_14.html,三毛私房菜(延龄巷店),k5KibXXr79L4aapW,3.5星,41,￥57,私房菜,新街口地区,鲜椒小草鱼 | 酸菜鱼 | 徐州地锅鸡,否,否,https://www.dianping.com/shop/k5KibXXr79L4aapW
+debug_page_14.html,红枫私房菜(廖家巷店),l4OXRVMztRrzLXiA,3.5星,19,￥57,私房菜,火车站/玄武湖,龙虾 | 泡菜酸菜鱼 | 臭鳜鱼,否,否,https://www.dianping.com/shop/l4OXRVMztRrzLXiA
+debug_page_14.html,经典私房菜(仙鹤门二号路店),l87KG5g2nSkFu8vv,3.5星,116,￥61,私房菜,仙鹤门新天地广场,酸菜鱼 | 干锅有机花菜 | 小炒肉,否,否,https://www.dianping.com/shop/l87KG5g2nSkFu8vv
+debug_page_14.html,百姓人家私房菜(东宝路店),k863H2aSLAobvJIy,3.5星,66,￥79,私房菜,河西,臭桂鱼 | 腌菜烧肥肠 | 黄鳝红烧肉,是,否,https://www.dianping.com/shop/k863H2aSLAobvJIy
+debug_page_14.html,真膳美餐厅,E4iXaAToS81JTR4X,3.5星,18,￥135,私房菜,集庆门大街,招牌水煮肉片 | 黑鱼酸菜鱼 | 秘卤黄牛肉,否,否,https://www.dianping.com/shop/E4iXaAToS81JTR4X
+debug_page_14.html,阿土仔私房菜(止马村店),l4UzBRLvSql2IEOL,3.5星,51,￥81,私房菜,莫愁湖/水西门,清蒸农家香肠 | 沸腾黑鱼片 | 水煮全腰皮肚,否,否,https://www.dianping.com/shop/l4UzBRLvSql2IEOL
+debug_page_14.html,品味私房菜(万汇城店),k2G1K46AN73ZUBm3,4.0星,805,￥96,私房菜,江浦,臭豆腐肥肠煲 | 香葱炒草鸡蛋 | 荠菜圆砂锅,否,否,https://www.dianping.com/shop/k2G1K46AN73ZUBm3
+debug_page_14.html,五谷屯私房菜(解放路店),H2ujD2ig4XywQExT,3.5星,103,￥71,私房菜,瑞金路沿线,赛螃蟹 | 特色红烧蛙 | 五谷一绝,否,否,https://www.dianping.com/shop/H2ujD2ig4XywQExT
+debug_page_14.html,厨当家私房菜,laWGTtc1YhMV9PjE,3.5星,29,￥67,私房菜,麒麟门,香酥猪蹄 | 肥肠豆腐煲 | 扣肉芋头,否,否,https://www.dianping.com/shop/laWGTtc1YhMV9PjE
+debug_page_14.html,聚福土菜馆(汤山店),l5GUorYB6A7PR26V,5.0星,2126,￥61,苏帮菜,汤山镇,地锅土鸡 | 自家烧手工蛋饺 | 农家藕丸子,是,否,https://www.dianping.com/shop/l5GUorYB6A7PR26V
+debug_page_14.html,许锅私房菜馆(大光路店),k2kVfMNgaMHnKRvB,4.5星,2712,￥64,私房菜,夫子庙/水游城,湖南小炒肉 | 非遗招牌鱼头泡饼 | 干锅手撕包菜,是,否,https://www.dianping.com/shop/k2kVfMNgaMHnKRvB
+debug_page_14.html,京泰御,l9ig4GUrjOMEI5nZ,3.5星,47,￥420,私房菜,秦虹村/中华门,西湖龙井虾仁 | 老卤金钱肚 | 椒麻石斑鱼,否,否,https://www.dianping.com/shop/l9ig4GUrjOMEI5nZ
+debug_page_14.html,陈年味道,EV3HPJTobMU9sHYL,4.0星,716,￥132,私房菜,清凉门大街,淮安软兜 | 青菜烧牛肉 | 陈年坛香肉,否,否,https://www.dianping.com/shop/EV3HPJTobMU9sHYL
+debug_page_15.html,厨娘当家(湖西街店),k19hd5rqLJTLBcqD,4.5星,691,￥78,私房菜,莫愁湖/水西门,松鼠桂鱼 | 脆皮蹄膀 | 茶香排骨,是,否,https://www.dianping.com/shop/k19hd5rqLJTLBcqD
+debug_page_15.html,东部山庄·农家乐,G1s3WNvqMpnUe85w,4.5星,1295,￥108,私房菜,栖霞街道商圈,烤全羊 | 手工酸奶 | 老鸡汤泡锅巴,是,否,https://www.dianping.com/shop/G1s3WNvqMpnUe85w
+debug_page_15.html,仙馥肴私房菜(光华路店),Ga90NIdaiLz5AGDP,3.5星,120,￥139,私房菜,苜蓿园,梅干菜烧黑猪肉 | 鸡蛋牛楠 | 特色黑猪肉肥肠,否,否,https://www.dianping.com/shop/Ga90NIdaiLz5AGDP
+debug_page_15.html,巴蜀人家私房菜(翠屏水晶广场店),k2XxXBEPJ1ivsueA,3.5星,32,￥72,私房菜,新港开发区,干锅千叶豆腐 | 蜀味小炒肉 | 青椒土豆丝,是,否,https://www.dianping.com/shop/k2XxXBEPJ1ivsueA
+debug_page_15.html,满顺私房菜(殷富街店),H1G14hebBUjbfTU5,3.5星,40,￥86,私房菜,殷巷,毛豆仔鸡 | 清蒸特色大黄鱼 | 腌菜烧鸡,是,否,https://www.dianping.com/shop/H1G14hebBUjbfTU5
+debug_page_15.html,老香阁私房菜(碑亭巷店),G6V2EArhACMjB82t,3.5星,62,￥73,私房菜,珠江路沿线,古桥酸菜鱼 | 羊肉锅仔 | 碳烤鱿鱼虾,是,否,https://www.dianping.com/shop/G6V2EArhACMjB82t
+debug_page_15.html,善银私房菜馆(金舟花园小区店),G24rSquj4xawBpRu,4.0星,242,￥112,私房菜,草场门/龙江,鸭舌烧田鸡 | 酱骨虾 | 坛香肉,否,否,https://www.dianping.com/shop/G24rSquj4xawBpRu
+debug_page_15.html,逅院私房菜·清水龙虾·河豚·咸猪头,G9NatuflNK4OE0nY,3.5星,25,￥71,私房菜,梅山商圈,麻辣香锅鸭头 | 私房臭鳜鱼 | 椒麻鱼,否,否,https://www.dianping.com/shop/G9NatuflNK4OE0nY
+debug_page_15.html,随意小院,k3CLbjjIhVXgfMVn,5.0星,469,￥117,私房菜,苜蓿园,砂锅香芋煲 | 金牌酥蹄膀 | 肥肠烧鱼泡,是,否,https://www.dianping.com/shop/k3CLbjjIhVXgfMVn
+debug_page_15.html,西鹏私房菜(园中园公寓店),j2l6pLHARYWNTwsK,3.5星,42,￥55,私房菜,莫愁湖/水西门,酸菜腰片 | 六合头道菜 | 水芹千张,否,否,https://www.dianping.com/shop/j2l6pLHARYWNTwsK
+debug_page_15.html,西苑小厨家常菜,l2ZCcHP6I2y3hewq,4.0星,45,￥60,私房菜,岱山新城,嫩千张 | 鱼籽鱼泡 | 酸萝卜鱼,否,否,https://www.dianping.com/shop/l2ZCcHP6I2y3hewq
+debug_page_15.html,顺峰私房菜(东井村店),k2whXPgFPsP2bOM6,3.5星,94,￥65,私房菜,和燕路,盐焗虾 | 椒麻鱼 | 玉米烙,否,否,https://www.dianping.com/shop/k2whXPgFPsP2bOM6
+debug_page_15.html,田园私房菜(南湾营润康苑店),HaWH1VgQtBlIY89k,3.5星,103,￥49,私房菜,马群街道商圈,香酥猪蹄 | 红烧肉 | 香波咕咾肉,是,否,https://www.dianping.com/shop/HaWH1VgQtBlIY89k
+debug_page_15.html,戴家私房菜,l5s1ssz34rLhvWfs,3.5星,33,￥57,私房菜,迈皋桥老街,爆炒腰花 | 红烧肥肠 | 鱼香茄子,否,否,https://www.dianping.com/shop/l5s1ssz34rLhvWfs
+debug_page_15.html,品香楼私房菜(金泰商务店),j88GCCVx54L3Cm8g,3.0星,97,￥51,私房菜,浦口区,蒜香铁板虾 | 铁板小黄鱼 | 麻辣豆腐,否,否,https://www.dianping.com/shop/j88GCCVx54L3Cm8g
+debug_page_16.html,五谷屯·三十年手工南京菜(博物院店),k9lbr2lsrA3uwlYE,4.0星,1401,￥82,私房菜,瑞金路沿线,香菠虾蓉卷 | 私房臭桂鱼 | 秘制坛香肉,是,否,https://www.dianping.com/shop/k9lbr2lsrA3uwlYE
+debug_page_16.html,民间私房菜(积善新寓睦和园店),l4FGIkXy1DE7D5s7,3.5星,58,￥31,私房菜,应天大街/文体路,蒜蓉龙虾 | 铁板包菜粉丝 | 铁板鱿鱼须,否,否,https://www.dianping.com/shop/l4FGIkXy1DE7D5s7
+debug_page_16.html,格格私房菜馆(苏鲜农贸市场店),H79WNu7jTE9u2gPn,3.5星,17,￥63,私房菜,江宁大学城,香辣螺丝 | 红烧麻鸭 | 酸菜鱼青鱼,否,否,https://www.dianping.com/shop/H79WNu7jTE9u2gPn
+debug_page_16.html,方苑·湖景宴(玄武湖店),l3zck60aTRNBz2VR,5.0星,1974,￥239,私房菜,火车站/玄武湖,葱油芥味明虾球 | 蜜椒菲力牛肉粒 | 陈皮红豆沙,是,是,https://www.dianping.com/shop/l3zck60aTRNBz2VR
+debug_page_16.html,黑皮私房菜,k3yT5kaHyn0VkH9z,3.5星,133,￥185,私房菜,升州路/集庆路,糖醋排骨便当 | 蟹黄汤包 | 炖生敲,否,否,https://www.dianping.com/shop/k3yT5kaHyn0VkH9z
+debug_page_16.html,紫悦阁家常菜,l2ywwkd3aWGEhS1g,3.5星,53,￥67,私房菜,江宁科学园,千叶豆腐 | 特色辣子鸡 | 酸萝卜鱼,是,否,https://www.dianping.com/shop/l2ywwkd3aWGEhS1g
+debug_page_16.html,王二私房菜(尧新大道店),k6hkkxIrWR67eqnx,3.5星,16,￥74,私房菜,尧化门街区,雪菜小黄鱼 | 三鲜锅巴 | 京酱肉丝,否,否,https://www.dianping.com/shop/k6hkkxIrWR67eqnx
+debug_page_16.html,农家小院·邻里餐厅(碧树园店),k174BTCFEsr01O1J,3.5星,72,￥85,私房菜,草场门/龙江,酸菜黑鱼 | 咸肉河蚌 | 清汤羊肉,否,否,https://www.dianping.com/shop/k174BTCFEsr01O1J
+debug_page_16.html,外婆人家家常菜(瑞丽路店),l6iZMTrE3IYeTs6t,4.0星,348,￥57,私房菜,栖霞区,激情椒麻鱼 | 牛腩烧牛筋 | 秘制双椒鱼头,是,否,https://www.dianping.com/shop/l6iZMTrE3IYeTs6t
+debug_page_16.html,村理·国泰人家(熊猫新兴软件园店),kaELolMRHpyRlgu2,3.5星,38,￥188,私房菜,南京艺术学院/龙江,双吃小黄鱼 | 石板牛仔粒 | 板栗烧驴肉,否,否,https://www.dianping.com/shop/kaELolMRHpyRlgu2
+debug_page_16.html,拾月楼(南京·罗托鲁拉小镇店),H6odEeaxoyQjooMu,3.5星,112,￥97,湖北菜,竹山路沿线,蒜蓉汉虾 | 家常牛三鲜 | 腊味藕粉皮,否,否,https://www.dianping.com/shop/H6odEeaxoyQjooMu
+debug_page_16.html,朋客园私房菜·烧烤羊蝎子火锅,H83d1yyOqnqgoWtH,3.5星,63,￥57,私房菜,西善桥/油坊桥,酸菜鱼 | 地锅鸡 | 莴笋炒肉片,是,否,https://www.dianping.com/shop/H83d1yyOqnqgoWtH
+debug_page_16.html,福怡阁私房菜馆(朗诗未来家店),k4X8jxtPevV8qQJG,3.5星,39,￥38,私房菜,江宁滨江开发区,酸菜鱼 | 山城毛血旺 | 地锅鸡,是,否,https://www.dianping.com/shop/k4X8jxtPevV8qQJG
+debug_page_16.html,吴记私房菜(梅山店),GaHYC6zJd3auKWIr,3.5星,39,￥61,私房菜,梅山商圈,特色猪手 | 糖醋里脊 | 固始老鹅,否,否,https://www.dianping.com/shop/GaHYC6zJd3auKWIr
+debug_page_16.html,庄稼地私房菜(永乐路店),H6VT5jxJeSTBcgOB,4.0星,133,￥66,私房菜,秦虹/大明路,德国咸猪手 | 酸菜鱼 | 椒麻鱼,否,否,https://www.dianping.com/shop/H6VT5jxJeSTBcgOB
+debug_page_17.html,红枫小厨(不老村店),l5MWG5cJNqxvcaps,3.5星,17,￥201,私房菜,浦口区,蟹黄汤包 | 盐水虾 | 脆皮牛肉,否,否,https://www.dianping.com/shop/l5MWG5cJNqxvcaps
+debug_page_17.html,子善私房菜(乐业村店),k1v6yGkn98r5Dsbh,3.5星,129,￥59,私房菜,山西路/湖南路,蒜泥精品龙虾 | 红烧麻鸭 | 酸菜鱼,是,否,https://www.dianping.com/shop/k1v6yGkn98r5Dsbh
+debug_page_17.html,俺家菜清源小厨,igZy12RWAt64ryfv,3.5星,78,￥72,私房菜,徐庄软件园,青椒土豆丝 | 雪花酸汤肥牛 | 酸菜鱼,是,否,https://www.dianping.com/shop/igZy12RWAt64ryfv
+debug_page_17.html,小付酒家,ivXBfntY2Fmo3eLu,3.5星,25,￥59,私房菜,溧水区,腌菜花炒肉丝 | 辣子鸡 | 青椒炒臭干,否,否,https://www.dianping.com/shop/ivXBfntY2Fmo3eLu
+debug_page_17.html,马老汉私房菜(桥北直营店),G4SMSFHaYOsGeUN5,3.5星,38,暂无,私房菜,桥北,小炒黄牛肉 | 爆炒腰花 | 砂锅鱼头,否,否,https://www.dianping.com/shop/G4SMSFHaYOsGeUN5
+debug_page_17.html,五谷屯私房菜·始于2005(中山陵童卫路店),G6eWLVjaTYJjjBxO,4.5星,759,￥80,私房菜,苜蓿园,五谷一绝 | 地锅鸡 | 酸汤肥牛,是,是,https://www.dianping.com/shop/G6eWLVjaTYJjjBxO
+debug_page_17.html,灶执淮扬精品私房菜馆,G7fQ7v5gDz2qPX58,3.5星,46,￥368,私房菜,江东中路/河西大街,招牌狮子头 | 青椒肉丝拌面 | 葱烧海参,否,否,https://www.dianping.com/shop/G7fQ7v5gDz2qPX58
+debug_page_17.html,瑞兴华菜馆(峨眉路店),k6lHtT8Mqaj63yBg,3.5星,97,￥55,私房菜,火车站/玄武湖,松鼠鱼 | 咸蛋黄锅巴 | 鱼茸狮子头,是,否,https://www.dianping.com/shop/k6lHtT8Mqaj63yBg
+debug_page_17.html,小锅菜私房菜(汤城汇店),l8r4bHlw2Nrteauf,3.5星,150,￥69,私房菜,汤山镇,锅包肉 | 东北大拉皮 | 蒜香大虾,否,否,https://www.dianping.com/shop/l8r4bHlw2Nrteauf
+debug_page_17.html,王老大私房菜馆,GajBw32bmhqUI2Px,4.0星,84,￥73,私房菜,南京艺术学院/龙江,正宗盱眙小龙虾 | 烧鸡公 | 小杂鱼,是,否,https://www.dianping.com/shop/GajBw32bmhqUI2Px
+debug_page_17.html,木小馆家庭厨房(新街口店),GaO2itzLZy79ysL3,5.0星,623,￥102,私房菜,新街口地区,巴蜀辣子鸡 | 水煮牛肉 | 泡椒牛蛙,否,否,https://www.dianping.com/shop/GaO2itzLZy79ysL3
+debug_page_17.html,酒哆哆(丽岛路店),H5vEGcwczZDepuva,3.5星,67,￥108,私房菜,弘阳广场/印象汇,秘制十三香炮头青虾 | 美式进口薯条 | 金汤蒜泥炮头龙虾,否,否,https://www.dianping.com/shop/H5vEGcwczZDepuva
+debug_page_17.html,多汁源私房菜(城际空间站H2座店),H4RxrIHTTBbIWscV,3.0星,34,￥64,私房菜,南京南站/喜马拉雅,铁板生焗虾 | 巧妇椒麻鱼 | 二代香辣大虾,否,否,https://www.dianping.com/shop/H4RxrIHTTBbIWscV
+debug_page_17.html,五谷屯·南京菜(西桐店),l4wSRrn9glMi4alM,4.0星,344,￥80,私房菜,苜蓿园,招牌鱼头皇 | 五谷屯烤鸭 | 干锅花菜,否,否,https://www.dianping.com/shop/l4wSRrn9glMi4alM
+debug_page_17.html,香旮旯(中扬新村二小区店),H3UdmlmHIg5IKrP9,3.5星,56,￥100,私房菜,大厂商圈,黄鱼 | 铁板肥肠 | 牛肉锅贴,否,否,https://www.dianping.com/shop/H3UdmlmHIg5IKrP9
+debug_page_18.html,冉生生私房菜馆,G8tTFV4VUwn3ZQo1,3.5星,18,￥56,私房菜,江宁区,蒜蓉铁板虾 | 六合头道菜 | 地锅鸡,是,否,https://www.dianping.com/shop/G8tTFV4VUwn3ZQo1
+debug_page_18.html,IF如果时尚生活馆(湖滨路店),k6fAGvgSU8NPErFc,4.5星,299,￥105,私房菜,胜太路沿线,砂锅大鱼头 | 水晶虾球 | 清汤青海羊肉,是,否,https://www.dianping.com/shop/k6fAGvgSU8NPErFc
+debug_page_18.html,陈香汇·老南京烤鸭馆·南京菜(玄武湖店),EtPjv19XUDSRGpzA,4.0星,2389,￥75,南京/江浙菜,火车站/玄武湖,金陵片皮烤鸭 | 特色荔浦芋头 | 手抓蒙古羊排,是,是,https://www.dianping.com/shop/EtPjv19XUDSRGpzA
+debug_page_18.html,合作宴会会议酒店,l6tDr0ycJjfUP7Ns,4.0星,184,￥90,淮扬菜,浦口区,芹菜肉丝 | 煎饺 | 桥林老豆腐,是,否,https://www.dianping.com/shop/l6tDr0ycJjfUP7Ns
+debug_page_18.html,艺树家精品餐厅(艺树家工场店),k5gUEY4oNR62qCcN,3.0星,170,￥19,私房菜,雨润大街,明炉蒜香小黄鱼 | 蒸蛋 | 秘制霸王蹄,否,否,https://www.dianping.com/shop/k5gUEY4oNR62qCcN
+debug_page_18.html,满堂红(北外街店),Ha7W4hDAqIV4wDp9,3.5星,44,￥100,私房菜,雄州,椒盐脆皮猪手 | 鱼头佛跳墙 | 鲍鱼烧仔排,是,否,https://www.dianping.com/shop/Ha7W4hDAqIV4wDp9
+debug_page_18.html,小壶天(浦口求雨山店),G4QH7IcQoZxhSnjr,4.5星,399,￥50,家常菜,江浦,乡村地锅鸡 | 酸菜鱼 | 特色鱼头泡香米饭,是,否,https://www.dianping.com/shop/G4QH7IcQoZxhSnjr
+debug_page_18.html,五谷屯私房菜(后标营店),H8xLvsUm7GCwm7fH,3.5星,503,￥63,私房菜,瑞金路沿线,赛螃蟹 | 大碗鱼 | 韭菜鸡蛋炒粉丝,否,否,https://www.dianping.com/shop/H8xLvsUm7GCwm7fH
+debug_page_18.html,捞鱼客私房菜(引水河路店),G1MddCpG5OzaaCwR,3.0星,525,￥76,私房菜,明发滨江,烤鱼 | 湄公鱼 | 爆炒花甲,是,否,https://www.dianping.com/shop/G1MddCpG5OzaaCwR
+debug_page_18.html,景雅泓·红酒私宴,k9Hm6GgRGbmAOf7n,3.5星,18,￥321,私房菜,建宁路商圈,小葱香煎自制黑豆腐 | 吊烧清远鸡 | 红烧鲈鱼,是,否,https://www.dianping.com/shop/k9Hm6GgRGbmAOf7n
+debug_page_18.html,张氏砂锅私房菜,H8ejYMbTmibP1aFt,3.5星,104,￥39,私房菜,南大和园,土豆烧肉 | 蒜香鸡翅 | 豆角炒肉沫,否,否,https://www.dianping.com/shop/H8ejYMbTmibP1aFt
+debug_page_18.html,张记私房菜(燕江路店),l1q15sOIaKeaY3J0,4.0星,109,￥76,私房菜,金陵小区,咸蛋黄锅巴 | 蒜爆鲈鱼 | 宫保鸡丁,否,否,https://www.dianping.com/shop/l1q15sOIaKeaY3J0
+debug_page_18.html,飨xiang中味·家烧老南京菜(郁金香路店),H3POoAKO59aBLVs8,4.0星,131,￥70,私房菜,南京南站/明发,纸包清江鱼 | 酱猪手 | 农家小炒肉,是,是,https://www.dianping.com/shop/H3POoAKO59aBLVs8
+debug_page_18.html,虾蟹海塘潮汕生腌(文体西路店),l6lCdkTz5JIYxF7g,3.5星,131,￥65,私房菜,莫愁湖/水西门,龙虾 | 花螺 | 椒盐豆腐鱼,是,否,https://www.dianping.com/shop/l6lCdkTz5JIYxF7g
+debug_page_18.html,炖鸭馆(北漪市场一店),k4vWolDvRjuhZHRj,4.5星,1241,￥76,私房菜,宝塔路沿线,招牌炖鸭汤 | 招牌炖腰花 | 肉汁芋头,是,否,https://www.dianping.com/shop/k4vWolDvRjuhZHRj
+debug_page_19.html,洪宇精品食府(红梅北路店),k1KPaM9NMjDYSYJG,3.5星,4,￥57,私房菜,桠溪镇,银鱼炖蛋 | 蒜泥油麦菜,是,否,https://www.dianping.com/shop/k1KPaM9NMjDYSYJG
+debug_page_19.html,马记锅锅香私房菜(湖心花园店),l5YXt75vHYaR0dcB,3.5星,14,暂无,私房菜,莫愁湖/水西门,特色大肠,否,否,https://www.dianping.com/shop/l5YXt75vHYaR0dcB
+debug_page_19.html,万人私房菜,H7rW99SLPvbB5RDB,3.5星,55,￥70,私房菜,板桥商圈,鱼籽烧鱼泡 | 脆皮蹄髈 | 古桥酸菜鱼,是,否,https://www.dianping.com/shop/H7rW99SLPvbB5RDB
+debug_page_19.html,咱家小院土菜馆(莱茵达路店),H2HawcHXxvMFV4qO,3.5星,68,￥63,快餐简餐,江宁科学园,小丹阳特色羊肉面 | 麻辣小螺丝 | 蒜泥罗氏虾花蛤,是,否,https://www.dianping.com/shop/H2HawcHXxvMFV4qO
+debug_page_19.html,小陈私房菜馆,l6qC282kuwM1JMmN,3.5星,14,￥41,私房菜,莫愁湖/水西门,小炒鸡 | 鱼香肉丝盖浇饭 | 西红柿炒蛋盖浇饭,是,否,https://www.dianping.com/shop/l6qC282kuwM1JMmN
+debug_page_19.html,老南京私房菜,k4gLRetbfwh7qPCv,3.5星,24,￥85,私房菜,南京南站/明发,农家土锅巴 | 爆炒鸡杂 | 外婆菜窝窝头,是,否,https://www.dianping.com/shop/k4gLRetbfwh7qPCv
+debug_page_19.html,百姓私房菜馆(黄山路店),jnnezs29zpNXA2eb,3.5星,9,￥74,私房菜,应天大街/文体路,酸菜鱼 | 尖椒牛柳 | 韭菜炒鸡蛋,否,否,https://www.dianping.com/shop/jnnezs29zpNXA2eb
+debug_page_19.html,云妈妈私房菜小酒馆,H9WVaBvMqUXiZU5h,3.5星,23,￥45,私房菜,摄山,爆炒肥肠 | 麻辣小龙虾 | 碳烤鱼,否,否,https://www.dianping.com/shop/H9WVaBvMqUXiZU5h
+debug_page_19.html,启明私房菜(玉兰路店),k8CCShxOfYrfasVb,3.0星,15,￥52,私房菜,南京南站/明发,糖醋里脊 | 青椒香干炒肉丝 | 臭豆腐肥肠煲,否,否,https://www.dianping.com/shop/k8CCShxOfYrfasVb
+debug_page_19.html,明月私房菜馆(东山街道店),l4EquWiJL4H27kR7,3.5星,14,￥9,私房菜,东山镇,牛筋牛腩 | 干切牛肉 | 砂锅鱼头,否,否,https://www.dianping.com/shop/l4EquWiJL4H27kR7
+debug_page_20.html,食无双私房菜(左邻右里店),kaQo3b0Z7IL8ms4d,3.5星,22,￥71,私房菜,岔路口,红烧鱼头豆腐 | 酸菜黑鱼 | 酸辣土豆丝,否,否,https://www.dianping.com/shop/kaQo3b0Z7IL8ms4d
+debug_page_20.html,聚福楼土菜馆.年夜饭(义乌店),Gaj2KMIH6hlgruVe,4.0星,238,￥64,私房菜,义乌小商品城,香辣铁板蒜蓉虾 | 香酥椒盐猪蹄 | 糖醋排骨,是,否,https://www.dianping.com/shop/Gaj2KMIH6hlgruVe
+debug_page_20.html,鹿香莲土菜馆(汤山店),l3eTi0AXsV9xZUVQ,3.0星,17,￥52,私房菜,汤山镇,糖醋里脊 | 砂锅鱼头汤 | 香波里脊,是,否,https://www.dianping.com/shop/l3eTi0AXsV9xZUVQ
+debug_page_20.html,吴家小院(翠林北路店),H7OMt7cSrYweuuYX,3.5星,131,￥66,私房菜,尧化门街区,农家小炒肉 | 腌菜炖大肠 | 农夫烤鱼,是,否,https://www.dianping.com/shop/H7OMt7cSrYweuuYX
+debug_page_20.html,经典私房菜(黑龙江路店),EpYWuWz9uK3u1ubR,3.5星,17,￥77,私房菜,建宁路商圈,红烧大肠 | 淮扬小炒 | 干锅千页豆腐,否,否,https://www.dianping.com/shop/EpYWuWz9uK3u1ubR
+debug_page_20.html,的士快餐(小行店),k6dvHSJIUq8aVUVf,3.5星,17,￥20,私房菜,安德门/小行,两大荤三素 | 啤酒鸭 | 鸡蛋小排炒面,是,否,https://www.dianping.com/shop/k6dvHSJIUq8aVUVf
+debug_page_20.html,鑫泉私房菜,k33OKNCkVlItP9xr,3.5星,6,￥39,私房菜,汤泉社区,手工煎饺 | 扬州炒饭 | 黄金小馒头,是,否,https://www.dianping.com/shop/k33OKNCkVlItP9xr
+debug_page_20.html,高淳县淳溪镇博客大酒店,l5s9WoAGmVKimmSb,3.5星,13,￥56,私房菜,北岭路沿线,红烧鸡翅 | 蒜泥龙虾 | 雪花菜,否,否,https://www.dianping.com/shop/l5s9WoAGmVKimmSb
+debug_page_20.html,富庆私房菜馆(汇景家园汇安苑店),G7O8cvIPphWv7Do1,3.5星,12,￥16,私房菜,南京南站/喜马拉雅,蒜苗爆鱿鱼须 | 南京正宗盐水鸭 | 私房焖肉,否,否,https://www.dianping.com/shop/G7O8cvIPphWv7Do1
+debug_page_20.html,蜀聚楼私房菜(尊园店),l62p7MScUUgiYJeo,3.5星,27,￥50,私房菜,小市,德国烤猪手 | 蜀香鱼（2.5-3斤） | 椒盐大虾,否,否,https://www.dianping.com/shop/l62p7MScUUgiYJeo
+debug_page_20.html,鼎香传奇私房菜(横梁店),kaNQSOOuV2irYNwW,3.0星,77,￥62,私房菜,横梁镇商圈,暂无,否,否,https://www.dianping.com/shop/kaNQSOOuV2irYNwW
+debug_page_20.html,香香私房菜馆(卸甲甸),k8V1iA3zUAfeV0Ke,3.5星,9,￥29,私房菜,六合区,暂无,否,否,https://www.dianping.com/shop/k8V1iA3zUAfeV0Ke
+debug_page_20.html,其宏私房菜馆,G29rWMhXI70ySnNq,3.5星,3,暂无,私房菜,谷里,暂无,否,否,https://www.dianping.com/shop/G29rWMhXI70ySnNq
+debug_page_20.html,聚味轩餐馆(西善桥店),H5YZTtAvsvwHJOem,3.5星,14,￥96,私房菜,西善桥/油坊桥,暂无,否,否,https://www.dianping.com/shop/H5YZTtAvsvwHJOem
+debug_page_20.html,小夏私房菜馆,l6jVG06wXJxtPF0z,3.5星,4,￥43,私房菜,东屏镇,暂无,否,否,https://www.dianping.com/shop/l6jVG06wXJxtPF0z
+debug_page_21.html,冯肴记创意私房菜,k4luFCSKSL6TPqhL,4.0星,176,￥108,私房菜,山西路/湖南路,高山冷水鱼 | 竹林土公鸡 | 剁椒皮蛋,是,否,https://www.dianping.com/shop/k4luFCSKSL6TPqhL
+debug_page_21.html,童记私房菜(万寿店),H2UeDWJp8ntmBm75,3.5星,19,￥86,私房菜,万寿商业街,麻辣牛蛙 | 肥肠鱼 | 美蛙鱼头,否,否,https://www.dianping.com/shop/H2UeDWJp8ntmBm75
+debug_page_21.html,锁金菜馆,l5yCl9S0H6CoWi2N,3.0星,237,￥47,私房菜,火车站/玄武湖,黄豆煨猪手 | 皮蛋剁椒 | 鸭血,是,否,https://www.dianping.com/shop/l5yCl9S0H6CoWi2N
+debug_page_21.html,涵香壹号私房菜馆,k1SP4IQBBnEc4O5Q,3.5星,18,暂无,私房菜,东山镇,肥肠鱼泡 | 红烧牛尾,否,否,https://www.dianping.com/shop/k1SP4IQBBnEc4O5Q
+debug_page_21.html,与食俱进(浦口店),l3ZLIjHggv5EwpMw,3.5星,11,￥71,私房菜,江浦,酸菜鱼 | 山药灼炒木耳 | 红烧杂鱼,是,否,https://www.dianping.com/shop/l3ZLIjHggv5EwpMw
+debug_page_21.html,农家小炒私房菜(明发外滩广场店),l80OkhhmeWqXjz2X,3.0星,12,￥21,私房菜,明发滨江,土豆丝 | 葱油涨蛋 | 蛋炒饭,否,否,https://www.dianping.com/shop/l80OkhhmeWqXjz2X
+debug_page_21.html,米家饭店,l2LHoxdRkJZWdBgz,3.5星,4,￥40,私房菜,溧水区,红汤羊肉火锅 | 牛肉火锅 | 特色啤酒鸭,否,否,https://www.dianping.com/shop/l2LHoxdRkJZWdBgz
+debug_page_21.html,王掌柜私房菜·徐州特色菜(乐业村店),G4YZoLq6lLNJ5Ae2,3.5星,117,￥68,私房菜,山西路/湖南路,地锅鸡 | 毛血旺 | 干锅包菜,是,否,https://www.dianping.com/shop/G4YZoLq6lLNJ5Ae2
+debug_page_21.html,丈母娘家酒店,G5oaxxFfQyIikT18,3.5星,22,￥83,私房菜,大厂商圈,雷椒烧肥肠 | 大手牵小手 | 鱼头豆腐汤,否,否,https://www.dianping.com/shop/G5oaxxFfQyIikT18
+debug_page_21.html,苏记溢澜阁私房菜(碑亭巷店),k37DWlv7ldtwuZ9z,3.5星,231,￥56,私房菜,珠江路沿线,特制碳烤鱼 | 特制酸菜鱼 | 蒜泥龙虾,是,否,https://www.dianping.com/shop/k37DWlv7ldtwuZ9z
+debug_page_21.html,翔旺阁私房菜(金穗花园店),G4s43Q23zBSn8y93,3.5星,170,￥65,私房菜,建邺区,酸菜鱼 | 酸辣土豆丝 | 麻辣烤鱼,是,否,https://www.dianping.com/shop/G4s43Q23zBSn8y93
+debug_page_21.html,老曹私房菜(盛世花园店),G4gis5yilaBBVKFA,3.0星,19,￥85,私房菜,五塘村,砂锅鱼头汤 | 白果虾仁 | 铁板鱿鱼须,否,否,https://www.dianping.com/shop/G4gis5yilaBBVKFA
+debug_page_21.html,中信私房菜馆,l64DJAMLL01iEz67,3.0星,4,暂无,私房菜,江宁区,酒香螺丝肉 | 尖椒辣子鸡 | 香辣花甲,否,否,https://www.dianping.com/shop/l64DJAMLL01iEz67
+debug_page_21.html,黄记私房菜(万寿商业街店),H6EvpC8blKGEHKfn,3.5星,10,￥18,私房菜,万寿商业街,特色红烧糯米团子 | 干锅茶树菇 | 干锅鸡,是,否,https://www.dianping.com/shop/H6EvpC8blKGEHKfn
+debug_page_21.html,迎宾龙虾私房菜(堂子街店),G6tEtcKHRrQxlRm1,3.5星,6,￥57,私房菜,莫愁湖/水西门,地锅鸡 | 农家小杂鱼 | 龙虾,否,否,https://www.dianping.com/shop/G6tEtcKHRrQxlRm1
+debug_page_22.html,鸿圣私房菜(南邮广场店),k7jxxxdeVDCTgmPx,3.0星,83,￥52,私房菜,南邮广场,湖南小炒肉 | 麻婆豆腐 | 川味毛血旺,是,否,https://www.dianping.com/shop/k7jxxxdeVDCTgmPx
+debug_page_22.html,葛塘饭店•乡野厨房,k550OlX13jc3C0CU,4.0星,301,￥104,私房菜,大厂商圈,农家菜 | 招牌盐水鹅 | 野生甲鱼烧土鸡,是,否,https://www.dianping.com/shop/k550OlX13jc3C0CU
+debug_page_22.html,也炊·AlsoCooking,G7tmF7EUQJs8srIE,4.5星,2622,￥200,私房菜,升州路/集庆路,也炊布丁 | 陈皮牛肉 | 祁连香糯牛膝盖,是,是,https://www.dianping.com/shop/G7tmF7EUQJs8srIE
+debug_page_22.html,月海(泰山路店),k1mBsuFloAT0zPmM,3.5星,32,￥189,私房菜,中央商场/嘉业国际,脆皮乳鸽 | 鲍鱼捞饭 | 潮汕牛肉,否,否,https://www.dianping.com/shop/k1mBsuFloAT0zPmM
+debug_page_22.html,素陶茗茶私房菜,H5NIN0iU02fTgsjW,4.0星,72,￥102,私房菜,火车站/玄武湖,西红柿娃娃菜,否,否,https://www.dianping.com/shop/H5NIN0iU02fTgsjW
+debug_page_22.html,金陵夜猫子私房菜(茂业天地店),l1h20AZpsObWS7KP,3.5星,1464,￥89,私房菜,夫子庙/水游城,松鼠桂鱼 | 金陵盐水鸭 | 炖生敲,否,否,https://www.dianping.com/shop/l1h20AZpsObWS7KP
+debug_page_22.html,南京私房菜馆(龙蟠路店),k6XDIF6Ou381s45M,3.0星,27,￥72,私房菜,火车站/玄武湖,酸菜鱼 | 德国咸猪手 | 肉沫蒸水蛋,是,否,https://www.dianping.com/shop/k6XDIF6Ou381s45M
+debug_page_22.html,劲松牛尾馆,H5Ss0iNPUWc8Z9ht,4.5星,814,￥104,私房菜,莫愁湖/水西门,劲松牛尾煲 | 上海三黄鸡 | 冬瓜鸭舌,否,否,https://www.dianping.com/shop/H5Ss0iNPUWc8Z9ht
+debug_page_22.html,甄之美水饺(丹凤街店),l591Zq6gMYwhN9Z6,4.0星,149,￥51,私房菜,丹凤街,小锅鸡 | 干锅花菜 | 椒麻鱼,是,否,https://www.dianping.com/shop/l591Zq6gMYwhN9Z6
+debug_page_22.html,白马壹品阁,l6zdTdYa4d0TWO4X,3.5星,暂无,暂无,私房菜,火车站/玄武湖,暂无,否,否,https://www.dianping.com/shop/l6zdTdYa4d0TWO4X
+debug_page_22.html,趙記私房菜(北外街店),H9cejoXQPffZOO2Y,3.5星,14,￥28,私房菜,雄州,水芹炒香干 | 黑鱼泡菜鱼 | 地三鲜,是,否,https://www.dianping.com/shop/H9cejoXQPffZOO2Y
+debug_page_22.html,翟记私房菜(久九伴生活广场店),k2ONrf9VVoNoDeNj,3.5星,7,暂无,私房菜,岱山新城,咸水鸭 | 毛豆花生双拼 | 爆炒羊肚,否,否,https://www.dianping.com/shop/k2ONrf9VVoNoDeNj
+debug_page_22.html,朱氏鱼羊道青花椒烤鱼(滨江店),j8c6xCy9gVHM5dhG,3.5星,8,￥61,私房菜,江宁滨江开发区,酸菜鱼 | 梅菜扣肉 | 香辣烤鱼,否,否,https://www.dianping.com/shop/j8c6xCy9gVHM5dhG
+debug_page_22.html,玉香酒楼,H6IpHriACOgufK1G,3.5星,51,￥90,私房菜,江宁大学城,回锅肉 | 奶润小馒头 | 开胃鱼皮,是,否,https://www.dianping.com/shop/H6IpHriACOgufK1G
+debug_page_22.html,名江南精菜馆,l2Uu1a0RLA01GR9n,3.5星,6,￥10,私房菜,北岭路沿线,暂无,否,否,https://www.dianping.com/shop/l2Uu1a0RLA01GR9n
+debug_page_23.html,春伢仔私房菜,F6RCDT0xQm9Iy37i,3.5星,5,暂无,私房菜,栖霞街道商圈,暂无,否,否,https://www.dianping.com/shop/F6RCDT0xQm9Iy37i
+debug_page_23.html,海德私房菜,H9uB1zGoxeYJZoeB,3.5星,34,￥48,私房菜,桥北,川香腰花 | 牛肉白菜粉丝 | 红烧小杂鱼,否,否,https://www.dianping.com/shop/H9uB1zGoxeYJZoeB
+debug_page_23.html,隆琪私房菜,k5rVNK46bpLyq9Pl,3.0星,2,￥51,私房菜,溧水区,暂无,否,否,https://www.dianping.com/shop/k5rVNK46bpLyq9Pl
+debug_page_23.html,阿姚私房菜(浦口店),G313QC8Yy6lThKBm,3.5星,5,￥31,私房菜,浦口区,农家小炒肉 | 特色田螺塞肉 | 咸蛋黄锅巴,否,否,https://www.dianping.com/shop/G313QC8Yy6lThKBm
+debug_page_23.html,马老汉私房菜烧鸡公(迈皋桥店),l3sF610aGOvjH0yT,4.0星,386,￥47,私房菜,和燕路,酸菜鱼 | 烧鸡公 | 马老汉盱眙十三香龙虾,是,否,https://www.dianping.com/shop/l3sF610aGOvjH0yT
+debug_page_23.html,大牙私房菜,H40MXhiONoWvbwNK,3.0星,3,暂无,私房菜,江宁区,干锅鱿鱼须 | 金陵 双臭 | 爆炒腰花,否,否,https://www.dianping.com/shop/H40MXhiONoWvbwNK
+debug_page_23.html,私房小厨(浦东路店),iTK6J6hVoW5BFcHc,3.5星,23,￥71,私房菜,浦口区,徽州小炒 | 蒜蓉空心菜 | 雪花原汁麦,否,否,https://www.dianping.com/shop/iTK6J6hVoW5BFcHc
+debug_page_23.html,星甸 姐妹私房菜(星甸店),G9o2gunF6xTBnFJZ,3.5星,17,￥111,私房菜,浦口区,酸菜鱼（黑鱼） | 土豆烧牛肉 | 番茄鸡蛋汤,是,否,https://www.dianping.com/shop/G9o2gunF6xTBnFJZ
+debug_page_23.html,小武私房菜(七贤街店),H6Pl9bnrpC0LIAE2,3.5星,28,￥48,私房菜,西善桥/油坊桥,爆炒肥肠 | 剁椒鱼头 | 小炒肉,否,否,https://www.dianping.com/shop/H6Pl9bnrpC0LIAE2
+debug_page_23.html,江南私房菜(双牌石),H6FHymujP62jrWg8,3.0星,4,暂无,私房菜,和凤镇商圈,红烧排骨 | 一网打尽 | 酸菜鱼,否,否,https://www.dianping.com/shop/H6FHymujP62jrWg8
+debug_page_23.html,心源酒楼·土味淮扬·自有农场(高楼门店),G5AXK7pcJk18R799,3.5星,662,￥61,私房菜,高楼门,牛肉炒饭 | 蒜蓉铁板大虾 | 油焖大虾,否,否,https://www.dianping.com/shop/G5AXK7pcJk18R799
+debug_page_23.html,念相思餐馆,G75tZGYHMXBv3hBY,暂无,暂无,暂无,私房菜,宝塔路沿线,暂无,否,否,https://www.dianping.com/shop/G75tZGYHMXBv3hBY
+debug_page_23.html,浏家乡酒店,k6ysCzRWvtaK9wnH,3.5星,15,￥154,私房菜,龙池/时代广场,干锅铁棍山药 | 春笋烧麻鸭 | 特色手工牛肉锅贴,否,否,https://www.dianping.com/shop/k6ysCzRWvtaK9wnH
+debug_page_23.html,小厨私房菜(公吴路店),HaYMrULrgWU4cBs4,3.5星,6,￥52,私房菜,六合区,飘香烤鱼 | 酸汤肥牛 | 宫爆鸡丁,否,否,https://www.dianping.com/shop/HaYMrULrgWU4cBs4
+debug_page_23.html,大宅院私房菜(天泰雅居店),l1kOegDrCSp6HKBZ,3.5星,15,￥96,私房菜,北岭路沿线,板栗烧鸡 | 红烧鱼杂 | 油渣,否,否,https://www.dianping.com/shop/l1kOegDrCSp6HKBZ
+debug_page_24.html,大龙私房美食(润玉水苑梅园店),l33P7ODSokPhqcJI,3.5星,1,暂无,私房菜,六合区,酸菜鱼 | 红烧鹅四件,否,否,https://www.dianping.com/shop/l33P7ODSokPhqcJI
+debug_page_24.html,余记饭店(湖熟店),la356xTkMTHP8ofQ,暂无,暂无,暂无,私房菜,湖熟镇,蒜泥空心菜 | 香辣小龙虾 | 鸭血烧豆腐,否,否,https://www.dianping.com/shop/la356xTkMTHP8ofQ
+debug_page_24.html,乡味坊私房菜馆(麒麟紫荆城定林苑店),G40OKtN31QvqDV4E,3.5星,26,￥86,私房菜,麒麟门,糖醋排骨 | 酸汤肥牛 | 干锅包菜,否,否,https://www.dianping.com/shop/G40OKtN31QvqDV4E
+debug_page_24.html,徐州周家全羊馆,k2gaVRbUAe910pFz,4.0星,147,￥70,私房菜,红山动物园/火车站,孜然羊排 | 清汤羊腿 | 羊肉汤,否,否,https://www.dianping.com/shop/k2gaVRbUAe910pFz
+debug_page_24.html,望东亭,H2ed5GL15eiOwhcN,3.5星,1,暂无,私房菜,建邺区,盐阜乌子烧萝卜 | 盐阜头道菜 | 红烧狮子头,否,否,https://www.dianping.com/shop/H2ed5GL15eiOwhcN
+debug_page_24.html,寻味私厨家宴(龙湾路店),G7SSzh5ZWBswp0ws,3.5星,3,暂无,私房菜,龙池/时代广场,暂无,否,否,https://www.dianping.com/shop/G7SSzh5ZWBswp0ws
+debug_page_24.html,客满堂私房菜馆,k8jlQFCaijOgsheE,暂无,暂无,暂无,私房菜,六合区,暂无,否,否,https://www.dianping.com/shop/k8jlQFCaijOgsheE
+debug_page_24.html,周记私房菜·20年老品牌(莫愁湖东路店),G2D5uQwiJcfu1yGK,5.0星,387,￥101,私房菜,莫愁湖/水西门,本椒小蛙 | 赛螃蟹 | 农家草鸡汤,是,是,https://www.dianping.com/shop/G2D5uQwiJcfu1yGK
+debug_page_24.html,雅轩南京古法私房菜,l6ChynnjZYh08HAa,3.5星,24,￥137,私房菜,大桥南路,炖生敲 | 空心烧饼 | 糟香冰镇小龙虾,否,否,https://www.dianping.com/shop/l6ChynnjZYh08HAa
+debug_page_24.html,新苑百姓菜馆(中山科技园商业街店),H8ooSyqyWmRQpOrD,3.5星,3,暂无,私房菜,六合区,暂无,否,否,https://www.dianping.com/shop/H8ooSyqyWmRQpOrD
+debug_page_24.html,子夜轩私房菜,FNVlfRQNWanJE6bn,暂无,暂无,暂无,私房菜,栖霞区,暂无,否,否,https://www.dianping.com/shop/FNVlfRQNWanJE6bn
+debug_page_24.html,孝孝私厨,k9s5iJHkusJzitmb,暂无,暂无,暂无,私房菜,江宁区,暂无,否,否,https://www.dianping.com/shop/k9s5iJHkusJzitmb
+debug_page_24.html,旺角私房菜,k1JCyPQ4eefF8DgU,3.5星,1,暂无,私房菜,江宁滨江开发区,暂无,否,否,https://www.dianping.com/shop/k1JCyPQ4eefF8DgU
+debug_page_24.html,锦上源·新宴,k7FA3N6cgSgVVPZ6,4.0星,88,￥167,私房菜,河西,紫色恋人·天鹅酥 | 招牌千岛湖大鱼头 | 铁板香煎新西兰羊排,是,否,https://www.dianping.com/shop/k7FA3N6cgSgVVPZ6
+debug_page_24.html,光哥私房菜,G1iU1HAT1KDMD4hT,暂无,暂无,￥103,私房菜,板桥商圈,暂无,是,否,https://www.dianping.com/shop/G1iU1HAT1KDMD4hT
+debug_page_25.html,古韵唐风私房菜,G84eCb84CNgR01Mh,3.5星,3,暂无,私房菜,浦口区,糖醋排骨,否,否,https://www.dianping.com/shop/G84eCb84CNgR01Mh
+debug_page_25.html,魏二饭馆,l5x3oxGpysf9zTQq,暂无,1,暂无,私房菜,东山镇,暂无,否,否,https://www.dianping.com/shop/l5x3oxGpysf9zTQq
+debug_page_25.html,琳琳私房菜馆,l6LufH3ohdYwPB8m,暂无,暂无,暂无,私房菜,河定桥,暂无,否,否,https://www.dianping.com/shop/l6LufH3ohdYwPB8m
+debug_page_25.html,宸宝私房菜(宏泰花苑东区店),l7Z6NuTA3xvgm8e4,暂无,暂无,暂无,私房菜,溧水区,暂无,否,否,https://www.dianping.com/shop/l7Z6NuTA3xvgm8e4
+debug_page_25.html,随园别院,k570CV2c6F8y2Bbn,3.5星,50,￥152,私房菜,曼度商业街区,烧饼 | 散养老鸡汤 | 豆芽烧牛肉,否,否,https://www.dianping.com/shop/k570CV2c6F8y2Bbn
+debug_page_25.html,味香村酒店,G1yDbcyNKVGCqL8C,3.5星,31,￥59,私房菜,雄州,淮阳软兜 | 荔浦芋儿焗排骨 | 椒麻脆双鲜,是,否,https://www.dianping.com/shop/G1yDbcyNKVGCqL8C
+debug_page_25.html,明厨私房菜,H2irBdsoxj0r4pt8,暂无,暂无,暂无,私房菜,栖霞区,暂无,否,否,https://www.dianping.com/shop/H2irBdsoxj0r4pt8
+debug_page_25.html,李家厨房·私房菜(芳庭路店),ihoKi1aCX0jZ68ti,3.0星,6,￥9,私房菜,南京信息工程大学,蒜香龙虾中虾 | 酸菜鱼 | 干煸龙虾中虾,否,否,https://www.dianping.com/shop/ihoKi1aCX0jZ68ti
+debug_page_25.html,高鑫小馆·南京菜(应天大街店),k4jDiiBgBQws50aL,5.0星,1016,￥97,私房菜,应天大街/文体路,金陵松子卤烤鸭 | 桂花赤豆元宵 | 青椒诱惑胖鱼头,是,是,https://www.dianping.com/shop/k4jDiiBgBQws50aL
+debug_page_25.html,玄武饭店·锦蝶轩(中央路店),H2sOS4zPmNto15Ps,4.5星,2090,￥157,私房菜,山西路/湖南路,宫保虾球 | 金牌手撕鸽 | 煎焗九龄百合,是,否,https://www.dianping.com/shop/H2sOS4zPmNto15Ps
+debug_page_25.html,聚膳源私房菜(和昌湾景店),H3QpG5jKz3yKxQ0O,3.5星,10,￥36,私房菜,板桥商圈,蒜泥空心菜 | 丝瓜蛋汤 | 酸菜黑鱼,是,否,https://www.dianping.com/shop/H3QpG5jKz3yKxQ0O
+debug_page_25.html,氿玥私宴·私房菜·药膳坊(新民路店),H7R32IyMP1pDESRB,3.5星,11,￥85,私房菜,大桥南路,百合鸡纵菌炒鲜鱿 | 氿玥私宴宫廷炒鸡 | 丘比椒双葱焗排骨,是,否,https://www.dianping.com/shop/H7R32IyMP1pDESRB
+debug_page_25.html,好友汇私房菜(翠林北路店),G6pPsQTpdMC7TwhY,3.5星,7,暂无,私房菜,尧化门街区,芙蓉虾仁 | 鲍鱼烧草鸡 | 脆皮肥肠,否,否,https://www.dianping.com/shop/G6pPsQTpdMC7TwhY
+debug_page_25.html,湖畔烟云私房菜,j91sgYWz2nK5uNPj,暂无,暂无,￥69,私房菜,北岭路沿线,奶香玉米汁 | 高记红烧肉 | 文蛤炖蛋,否,否,https://www.dianping.com/shop/j91sgYWz2nK5uNPj
+debug_page_25.html,陈香汇·老南京南京菜(新街口店),k1tRJMc6elZfFPlZ,4.0星,813,￥79,南京/江浙菜,新街口/五台山体育中心,招牌鱼头手工烙馍 | 临沂炒老公鸡 | 手抓羊排,是,是,https://www.dianping.com/shop/k1tRJMc6elZfFPlZ
+debug_page_26.html,盐阜精菜馆,G8ICtOys4GTJ2v7O,4.0星,80,￥161,私房菜,樱驼花园/花园路,软兜 | 藕粉圆汤 | 油炸黄鱼,否,否,https://www.dianping.com/shop/G8ICtOys4GTJ2v7O
+debug_page_26.html,源味私房菜馆(凤凰花园店),l6Upoai8OFbGBrBQ,3.5星,6,￥37,私房菜,凤凰山公园,锅贴 | 大泉湖老鸡汤 | 酸菜鱼,是,否,https://www.dianping.com/shop/l6Upoai8OFbGBrBQ
+debug_page_26.html,美香阁私房菜,G2r2YuhRzoIEy06k,3.0星,1,暂无,私房菜,溧水区,暂无,否,否,https://www.dianping.com/shop/G2r2YuhRzoIEy06k
+debug_page_26.html,酒蜻蜓·庭院私房菜(天元东路店),G9hhYqfD18JF2vYS,5.0星,580,￥240,私房菜,江宁科学园,迷迭香黑蒜蘑菇煎安格斯雪花牛肉 | 秧草鲍汁巴鱼 | 金汤脆米鲍鱼参翅肚,是,否,https://www.dianping.com/shop/G9hhYqfD18JF2vYS
+debug_page_26.html,若膳房·私宴(爱涛艺术中心店),H76oj744dXIBAaY3,5.0星,776,￥170,私房菜,开发区,藜麦炖辽参 | 坚果密豆雪花牛肉 | 广式虾饺皇,是,否,https://www.dianping.com/shop/H76oj744dXIBAaY3
+debug_page_26.html,和春熙·雅宴(北门桥店),G5r2en8sFDsvdrcm,5.0星,351,￥278,私房菜,北门桥,春熙经典前菜盲盒 | 椒麻妙龄乳鸽 | 青柠脆皮雪花牛小排,是,否,https://www.dianping.com/shop/G5r2en8sFDsvdrcm
+debug_page_26.html,老丈人私厨·茶餐厅,G3D6uS3W6VCTb1LR,5.0星,1922,￥102,私房菜,热河南路/三汊河,黑炭和牛肉 | 砂锅四季豆 | 麻鸭烧豆面,是,否,https://www.dianping.com/shop/G3D6uS3W6VCTb1LR
+debug_page_26.html,叁喜茶肆·本味淮扬,H6ludZKvA93G6T1k,4.0星,134,￥90,私房菜,瑞金路沿线,脱骨黑金猪手 | 韭香淮安软兜 | 砂锅黑猪肉,是,否,https://www.dianping.com/shop/H6ludZKvA93G6T1k
+debug_page_26.html,麦隆咖啡·淮扬菜(龙江店),G5ETIONMCZxNwyzf,4.0星,162,￥117,私房菜,清凉门大街,麦隆咖啡 | 特色龙虾 | 清水龙虾,是,否,https://www.dianping.com/shop/G5ETIONMCZxNwyzf
+debug_page_26.html,乐品苑龙虾馆,l1BCKMgbbIqOd7zw,3.0星,23,￥36,私房菜,百水芊城,大煮干丝 | 精品十三香龙虾 | 蒜泥龙虾,是,否,https://www.dianping.com/shop/l1BCKMgbbIqOd7zw
+debug_page_26.html,南渎·柳堤苇岸,k9QYJ4qMdF52ij1Q,3.5星,5,￥38,私房菜,龙袍镇,油渣青菜 | 蟹黄狮子头 | 龙袍头道菜,是,否,https://www.dianping.com/shop/k9QYJ4qMdF52ij1Q
+debug_page_26.html,一品阁(龙蟠路店),G5v3b4oxPZqMKm4F,3.5星,16,￥214,私房菜,火车站/玄武湖,秘制烤羊排 | 蒜泥龙虾 | 盐水乳鸽,是,否,https://www.dianping.com/shop/G5v3b4oxPZqMKm4F
+debug_page_26.html,有点小赞,G8Dkx87rQ5Z5pUrg,3.5星,4,￥24,私房菜,汤山镇,超美式咖啡 | 鸡蛋火腿鸡肉三明治 | 干锅鱼片,是,否,https://www.dianping.com/shop/G8Dkx87rQ5Z5pUrg
+debug_page_26.html,金陵小院私房菜,G147crFH0WtuRAYK,3.5星,7,暂无,私房菜,金陵小区,蒲菜肉圆 | 蚕豆河虾,否,否,https://www.dianping.com/shop/G147crFH0WtuRAYK
+debug_page_27.html,无痕茶楼•棋牌•私房菜,G4TxKMbFi3t7APJN,3.5星,24,￥105,私房菜,学则路,萝卜烧黑猪肉 | 鲍鱼烧农家土鸡 | 盐水大河虾,是,否,https://www.dianping.com/shop/G4TxKMbFi3t7APJN
+debug_page_27.html,尚鼎鲜·私房菜,l8KELwplXrRBVsWy,3.5星,51,￥105,私房菜,曼度嘉年华/长江路,蒜香排骨 | 特色鱼头砂锅 | 莴笋,是,否,https://www.dianping.com/shop/l8KELwplXrRBVsWy
+debug_page_27.html,晶舍精厨(栖霞古镇店),G9Km8UMrKwGX3YW8,5.0星,415,￥88,私房菜,仙林大学城,香格里拉菌王盅 | 鹌鹑蛋红烧黑豚肉 | 松茸老鸡汤,是,否,https://www.dianping.com/shop/G9Km8UMrKwGX3YW8
+debug_page_27.html,杏福人家,k9c2w6REtL0pxmMW,3.5星,59,￥132,私房菜,九龙湖滨天地,香米烧锅软兜 | 鸡头米手剥虾仁 | 爱马仕椒牛柳,是,否,https://www.dianping.com/shop/k9c2w6REtL0pxmMW
+debug_page_27.html,鸿锦私房菜,G3jhJfSCKB7OV84S,3.5星,2,￥60,私房菜,板桥商圈,暂无,否,否,https://www.dianping.com/shop/G3jhJfSCKB7OV84S
+debug_page_27.html,凯提香•非遗•茶•食,l3ERbYTEEs4tXMoS,4.0星,35,￥150,私房菜,万达广场,凯提香花茶 | 非遗宋代点茶 | 养生茶小吊梨汤,是,否,https://www.dianping.com/shop/l3ERbYTEEs4tXMoS
+debug_page_27.html,渔禾人家(老街店),jOyfiz8HQ3qPkhhe,4.0星,74,￥61,私房菜,高淳老街,咸鹅锅仔 | 牛肉锅仔 | 水鲜大鱼头,是,否,https://www.dianping.com/shop/jOyfiz8HQ3qPkhhe
+debug_page_27.html,优优乐私房菜,G6S7XeSfhzrFscc9,3.5星,15,￥116,私房菜,新街口地区,糖霜番茄 | 鸡爪龙虾 | 糖排,是,否,https://www.dianping.com/shop/G6S7XeSfhzrFscc9
+debug_page_27.html,张府私宴,G6UZhLzVEjDtCG1f,3.0星,暂无,暂无,私房菜,溧水区,暂无,否,否,https://www.dianping.com/shop/G6UZhLzVEjDtCG1f
+debug_page_27.html,萍水居,H2UnZy8oh6290jn0,3.5星,12,￥298,私房菜,大厂商圈,辣炒一品牛仔粒 | 西红柿烧牛腩 | 黑椒三葱爆波龙,否,否,https://www.dianping.com/shop/H2UnZy8oh6290jn0
+debug_page_27.html,八方客菜馆(宏光路店),l28GT4uuA1fUaW2N,3.5星,12,￥54,私房菜,秦虹/大明路,外婆红烧肉,否,否,https://www.dianping.com/shop/l28GT4uuA1fUaW2N
+debug_page_27.html,鑫源私房菜,jAQnFgid3RCZt2D5,暂无,暂无,暂无,私房菜,大厂商圈,暂无,否,否,https://www.dianping.com/shop/jAQnFgid3RCZt2D5
+debug_page_28.html,先锋社·私房菜馆(仁恒晶圆店),k8Di1mUxe2rwBVef,3.5星,116,￥83,私房菜,奥体中心,招牌盐水鹅 | 金汤鱼片 | 清炖狮子头,是,否,https://www.dianping.com/shop/k8Di1mUxe2rwBVef
+debug_page_28.html,香港捞蛮米线,l7gXe6EfbEzLo2Wu,3.5星,16,￥22,私房菜,瑞金路沿线,炸酱小锅米线 | 鲜嫩肥牛 | 番茄牛肉米线,是,否,https://www.dianping.com/shop/l7gXe6EfbEzLo2Wu
+debug_page_28.html,奕景轩·融合菜·私宴餐厅(百家湖店),l71WGOgGwBxYfopJ,5.0星,212,￥200,私房菜,百家湖,帕玛森火焰雪花牛肉 | 黄脆椒掌中宝 | 广式古法蒸东星斑,是,是,https://www.dianping.com/shop/l71WGOgGwBxYfopJ
+debug_page_28.html,涵味轩·隐东·雅致私宴(栖霞店),k8ZNdyHNvk9dk1H4,4.0星,89,￥122,私房菜,学则路,淮扬蟹粉狮子头 | 金陵炖生敲 | 红油手钓南澳鲜鱿,是,是,https://www.dianping.com/shop/k8ZNdyHNvk9dk1H4
+debug_page_28.html,巴蜀人家私房菜,l6pefrOss07ELxni,3.5星,52,￥72,私房菜,尧化门街区,肝腰合炒 | 藤椒水煮鱼 | 农家脆千张,是,否,https://www.dianping.com/shop/l6pefrOss07ELxni
+debug_page_28.html,屏湖湾私房菜,H2u9sHPKutXSuV3a,3.5星,9,暂无,私房菜,东屏镇,松子玉米 | 农家锅巴 | 臭豆腐肥肠煲,是,否,https://www.dianping.com/shop/H2u9sHPKutXSuV3a
+debug_page_28.html,云鸿私房菜,k7sJUUbtLtPBjjFB,3.5星,1,暂无,私房菜,浦口区,猪蹄,否,否,https://www.dianping.com/shop/k7sJUUbtLtPBjjFB
+debug_page_28.html,聚朋私房菜,H1joQE1DlUhL5mrf,暂无,暂无,暂无,私房菜,江宁万达,暂无,否,否,https://www.dianping.com/shop/H1joQE1DlUhL5mrf
+debug_page_28.html,脂肪-家庭厨房(西城夜未央店),k5T5aq3lLWXMsYaW,5.0星,1662,￥112,私房菜,奥体中心,昂刺鱼炖锅 | 鸭舌煲 | 酸豆角炒饭,否,否,https://www.dianping.com/shop/k5T5aq3lLWXMsYaW
+debug_page_28.html,蝉·山间茶餐厅(江宁佘村店),H10SJPjoaUgNBEwP,5.0星,2460,￥107,私房菜,江宁区,勾魂鱼头泡饼 | 茶香脆皮鸡 | 金沙蒜香排骨,是,否,https://www.dianping.com/shop/H10SJPjoaUgNBEwP
+debug_page_28.html,小爽私房菜(新亭西路店),H7VOyjXholOaxlXR,4.0星,1535,￥62,私房菜,东山镇,小爽酸菜鱼 | 自制粉皮烧鱼头 | 牛筋烧牛腩,是,否,https://www.dianping.com/shop/H7VOyjXholOaxlXR
+debug_page_28.html,寻馥居私房菜,H7Rlg3IvAhy1VuHZ,4.0星,993,￥90,私房菜,江宁区,红焖牛魔王 | 虎皮鸡爪 | 红烧肉,是,否,https://www.dianping.com/shop/H7Rlg3IvAhy1VuHZ
+debug_page_28.html,胖胖私房菜,kaISLNnm6tNHsady,3.5星,7,￥83,私房菜,尧化门街区,农家小炒肉 | 咸蛋黄焗鸡翅 | 明月炖生敲,否,否,https://www.dianping.com/shop/kaISLNnm6tNHsady
+debug_page_28.html,红辣椒壹号私厨(文理路店),HawmBbDWnoIN0wfs,3.5星,9,￥23,私房菜,江宁区,招牌肥肠鱼 | 香辣牛肉粒 | 红烧猪手,是,否,https://www.dianping.com/shop/HawmBbDWnoIN0wfs
+debug_page_28.html,红色梅园餐厅,l5Yhdpauzn4IJy9s,3.0星,8,暂无,私房菜,溧水区,暂无,是,否,https://www.dianping.com/shop/l5Yhdpauzn4IJy9s
+debug_page_29.html,南港酒楼,FprptvsxqsD2OtuY,暂无,暂无,￥76,私房菜,六合区,暂无,是,否,https://www.dianping.com/shop/FprptvsxqsD2OtuY
+debug_page_29.html,彩火私房菜馆,G3C1n3whXggDuGrL,3.5星,2,￥75,私房菜,南京信息工程大学,暂无,否,否,https://www.dianping.com/shop/G3C1n3whXggDuGrL
+debug_page_29.html,随缘阁私房菜馆(湖熟店),k85Gn8NEk8idreYs,3.5星,8,￥25,私房菜,湖熟镇,暂无,否,否,https://www.dianping.com/shop/k85Gn8NEk8idreYs
+debug_page_29.html,真知味私房菜(骏府南苑店),laxNDUdCwvTFyWlx,3.0星,1,￥50,私房菜,横梁镇商圈,暂无,否,否,https://www.dianping.com/shop/laxNDUdCwvTFyWlx
+debug_page_29.html,红炉小馆(万达金街店),H2jtcsTO3ZDa7rsa,3.5星,1,￥85,私房菜,茶南美食/万达金街,暂无,是,否,https://www.dianping.com/shop/H2jtcsTO3ZDa7rsa
+debug_page_29.html,雅味阁私房菜(新亭兰苑小区店),G4Lp42qwirpmWNX0,3.5星,13,暂无,私房菜,东山镇,暂无,否,否,https://www.dianping.com/shop/G4Lp42qwirpmWNX0
+debug_page_29.html,庭院,E7gv9bq8wD6qUsAu,3.5星,1,暂无,私房菜,将军大道沿线,土豆肉丝 | 蒜蓉烤鱼 | 滋补鸡汤煲,否,否,https://www.dianping.com/shop/E7gv9bq8wD6qUsAu
+debug_page_29.html,紫金精菜馆,G9q7sRnKmKqjlTLQ,3.5星,53,￥111,私房菜,君临紫金商业街,肥肠盐卤豆腐煲 | 龙虾汤西施泡饭 | 芥味琥珀明虾丸子,是,否,https://www.dianping.com/shop/G9q7sRnKmKqjlTLQ
+debug_page_29.html,至善小馆,H7cdJzXSiKzIaSpz,暂无,暂无,暂无,私房菜,高楼门,暂无,否,否,https://www.dianping.com/shop/H7cdJzXSiKzIaSpz
+debug_page_29.html,潘小厨私房菜,H5Fk8CxztvgmsQ1t,3.5星,57,￥71,私房菜,山西路/湖南路,徽试臭豆腐 | 炒花甲 | 清蒸鲈鱼,是,否,https://www.dianping.com/shop/H5Fk8CxztvgmsQ1t
+debug_page_29.html,口回品私房菜,k4UxdpJmPnMfm64G,3.5星,12,￥101,私房菜,江北新区,羊肉打边炉 | 鳜鱼炸蛋 | 鲍鱼炒鸡,否,否,https://www.dianping.com/shop/k4UxdpJmPnMfm64G
+debug_page_29.html,家·味道饭庄(砂珠巷小区店),H7IUj1En1R0pnsNZ,3.5星,2,暂无,私房菜,夫子庙/水游城,暴躁咸蛋黄大肉圆 | 古法糖醋排骨,是,否,https://www.dianping.com/shop/H7IUj1En1R0pnsNZ
+debug_page_29.html,私房菜,GaHEogqbOBJjDZAM,暂无,暂无,暂无,私房菜,众彩市场,暂无,否,否,https://www.dianping.com/shop/GaHEogqbOBJjDZAM
+debug_page_29.html,汉时月·南京超级大排档,Ga17gUCnh9mbO9fZ,4.5星,300,￥72,私房菜,江北新区,特色勾魂有机鱼头 | 雅居红烧狮子头 | 老母鸡汤,是,否,https://www.dianping.com/shop/Ga17gUCnh9mbO9fZ
+debug_page_29.html,如东私房菜(深业漫埠店),H1awJ9BPP9yDdpgA,3.5星,75,￥111,私房菜,南京西站/阅江楼,蛏汤 | 红烧小黄鱼 | 咸蛋黄炒蟹,是,否,https://www.dianping.com/shop/H1awJ9BPP9yDdpgA
+debug_page_30.html,壹佰號私厨,H3vZAGJhQK6lIzlc,暂无,1,暂无,私房菜,溧水区,暂无,否,否,https://www.dianping.com/shop/H3vZAGJhQK6lIzlc
+debug_page_30.html,正源私房菜(高科店),H11EsMEdByQZlhTf,4.0星,983,￥64,私房菜,摄山,蒜香花甲烤鱼 | 香辣烤鱼 | 干锅牛蛙,是,否,https://www.dianping.com/shop/H11EsMEdByQZlhTf
+debug_page_30.html,青枫,H1IOy5Fx43W5hfc4,3.0星,25,￥55,家常菜,雨润大街,平桥豆腐羹 | 火爆肥肠 | 臭豆腐肥肠煲,否,否,https://www.dianping.com/shop/H1IOy5Fx43W5hfc4
+debug_page_30.html,秦石小厨,l3HKAIWMP6a6PfAe,暂无,暂无,￥33,私房菜,晓庄彩虹广场,暂无,否,否,https://www.dianping.com/shop/l3HKAIWMP6a6PfAe
+debug_page_30.html,浦山堂,l6R1gzpgbX5tqOMR,暂无,暂无,暂无,私房菜,公园北路,暂无,否,否,https://www.dianping.com/shop/l6R1gzpgbX5tqOMR
+debug_page_30.html,福缘聚私房菜,H19HPzsL75YCAGKK,暂无,暂无,暂无,私房菜,六合区,暂无,否,否,https://www.dianping.com/shop/H19HPzsL75YCAGKK
+debug_page_30.html,聚宾楼私房菜,k1lX2EZJqTp4dESi,3.5星,15,￥92,私房菜,溧水区,雪菜黄鱼 | 猪蹄黄豆 | 红烧本鸡,是,否,https://www.dianping.com/shop/k1lX2EZJqTp4dESi
+debug_page_30.html,南缘 · 私房菜,l8DRBLybWwJaiN5u,3.5星,2,￥113,私房菜,南京南站/喜马拉雅,青蒜炒咸肉 | 炝炒空心菜 | 红烧鮰鱼,是,否,https://www.dianping.com/shop/l8DRBLybWwJaiN5u
+debug_page_30.html,辰之业私房菜,l8b0Ujeh88bgrC29,暂无,暂无,暂无,私房菜,新街口地区,肥肠烧鱼泡 | 一品佛跳墙 | 老南京盐水鸭,是,否,https://www.dianping.com/shop/l8b0Ujeh88bgrC29
+debug_page_30.html,七里闲私房菜,FBzsBzOmCD2qAVwL,3.5星,47,￥92,私房菜,栖霞区,金牌蒜香骨 | 广式牛腩煲 | 一鱼三吃,否,否,https://www.dianping.com/shop/FBzsBzOmCD2qAVwL
+debug_page_30.html,鹏飞餐馆(碧水家园店),H77AMADhCGT6JL9b,3.0星,暂无,暂无,私房菜,溧水开发区,暂无,否,否,https://www.dianping.com/shop/H77AMADhCGT6JL9b
+debug_page_30.html,臻宫名人宴,Ga2vmiOzrYdzXjwA,4.5星,1201,￥220,私房菜,山西路/湖南路,盘龙清蒸海石班鱼 | 黑臀肉芦竹笋卷 | 辣汁花螺,是,否,https://www.dianping.com/shop/Ga2vmiOzrYdzXjwA
+debug_page_30.html,莱公馆,G5XjgegQxN48TDup,4.0星,80,￥134,私房菜,高淳老街,毛氏稻香肉 | 三丝油爆虾 | 秘制牛肉,是,否,https://www.dianping.com/shop/G5XjgegQxN48TDup
+debug_page_30.html,紫悦轩私房菜,k2hG0cPNAYf3J7iE,3.5星,80,￥69,私房菜,麒麟门,地锅鸡 | 京酱肉丝 | 特色脆皮蹄膀,是,否,https://www.dianping.com/shop/k2hG0cPNAYf3J7iE
+debug_page_30.html,一姐私房菜,l5CDPWzGHxDS1gH7,暂无,暂无,暂无,私房菜,奥体中心,暂无,否,否,https://www.dianping.com/shop/l5CDPWzGHxDS1gH7
+debug_page_31.html,凯旋门檀木私房菜,GajhevAx1syDGKw1,暂无,暂无,暂无,私房菜,江宁滨江开发区,暂无,否,否,https://www.dianping.com/shop/GajhevAx1syDGKw1
+debug_page_31.html,花锦堂·春晓,H6Q3v3VDbkb7qXem,5.0星,1068,￥228,私房菜,大桥南路,石锅跳水蛙 | 山核桃青柠脆皮牛肉 | 中山妙龄乳鸽,是,否,https://www.dianping.com/shop/H6Q3v3VDbkb7qXem
+debug_page_31.html,珊青私房菜,l8LznYqXeJtAeB2Y,4.0星,92,￥163,私房菜,仙鹤门新天地广场,一鱼双吃 | 红烧土鸡 | 肉末茄子,否,否,https://www.dianping.com/shop/l8LznYqXeJtAeB2Y
+debug_page_31.html,陈少私房菜,k9VFnqLhPzH0guST,3.0星,11,￥64,私房菜,江浦,酸辣土豆丝 | 湖南开胃辣椒炒肉 | 肉末麻辣豆腐,是,否,https://www.dianping.com/shop/k9VFnqLhPzH0guST
+debug_page_31.html,赵家小楼私房菜,FW1gaoM03Y21vBtX,3.5星,7,￥53,私房菜,江浦,暂无,否,否,https://www.dianping.com/shop/FW1gaoM03Y21vBtX
+debug_page_31.html,小厨私房菜(万悦城店),k6EXwOg8ttuqK7OH,3.5星,2,￥45,私房菜,高淳区,糖醋排骨 | 红烧小公鸡 | 西红柿鸡蛋汤,否,否,https://www.dianping.com/shop/k6EXwOg8ttuqK7OH
+debug_page_31.html,小野猪私房菜,G9FZnqrpuiqL9Qyy,暂无,暂无,暂无,私房菜,高淳区中心城区,暂无,否,否,https://www.dianping.com/shop/G9FZnqrpuiqL9Qyy
+debug_page_31.html,凤纬园私房菜(朝凤嘉园南园店),H1kTiu9tL1ikr5us,暂无,暂无,暂无,私房菜,古柏镇,暂无,否,否,https://www.dianping.com/shop/H1kTiu9tL1ikr5us
+debug_page_31.html,蕊心餐厅,G9ITYTW5REp7FlHv,暂无,暂无,￥19,私房菜,新街口地区,大皮肚烫饭 | 大皮肤烫饭 | 大皮肚面,是,否,https://www.dianping.com/shop/G9ITYTW5REp7FlHv
+debug_page_31.html,民国·淼宴·私房菜,k9hbpw73ITUszaGW,5.0星,938,￥120,私房菜,桥北,一骑红尘妃子笑 | 淮安軟兜 | 招牌鱼头泡油条,是,否,https://www.dianping.com/shop/k9hbpw73ITUszaGW
+debug_page_31.html,真口味私房菜,l2T67uR3jeSBNUg6,4.5星,195,￥66,私房菜,溧水区,红烧狮子头 | 红烧小杂鱼 | 招牌红烧鸡,是,否,https://www.dianping.com/shop/l2T67uR3jeSBNUg6
+debug_page_31.html,霞嫂私房菜,l29kNUmEIycyMrzR,4.0星,238,￥88,私房菜,百家湖,有机鱼头泡饼 | 小炒黄牛肉 | 地锅鸡,是,否,https://www.dianping.com/shop/l29kNUmEIycyMrzR
+debug_page_31.html,春霖·家宴,k4MdChFjygHBSFPV,3.5星,5,￥54,私房菜,高楼门,山楂烧谷饲牛肋条 | 椒盐野生小鱼（冷菜） | 姜辣油烧黑脚鸡,是,否,https://www.dianping.com/shop/k4MdChFjygHBSFPV
+debug_page_31.html,九品私房菜,k1bmWBJorxYCEl8P,4.0星,203,￥71,私房菜,热河南路/三汊河,九品酸菜鱼 | 香味小炒肉 | 椒盐大虾,是,否,https://www.dianping.com/shop/k1bmWBJorxYCEl8P
+debug_page_31.html,百味小厨私房菜(金域中央街区店),kaUmb6LfnNCC0aCx,3.5星,52,￥80,私房菜,幕府西路,鸡汁白鱼 | 水煮腰花 | 大别山土鸡,否,否,https://www.dianping.com/shop/kaUmb6LfnNCC0aCx
