@@ -115,8 +115,8 @@ def validate_route_params(data: Dict[str, Any]) -> Tuple[bool, str]:
     
     # 验证出行模式
     mode = data.get('mode', 'walking')
-    if mode not in ['walking', 'biking', 'transit']:
-        return False, 'mode 必须是 walking, biking 或 transit'
+    if mode not in ['walking', 'biking', 'transit', 'subway']:
+        return False, 'mode 必须是 walking, biking, transit 或 subway'
     
     return True, ''
 
@@ -224,3 +224,4 @@ def require_params(*params):
             return f(*args, **kwargs)
         return decorated_function
     return decorator
+

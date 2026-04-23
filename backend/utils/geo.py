@@ -119,21 +119,22 @@ def normalize(value: float, min_val: float, max_val: float) -> float:
 
 def calculate_eta(distance_meters: float, mode: str = 'walking') -> int:
     """
-    根据距离和出行方式估算到达时间
-    
+    Estimate travel time based on distance and travel mode.
+
     Args:
-        distance_meters: 距离（米）
-        mode: 出行方式（walking, biking, transit）
-    
+        distance_meters: Travel distance in meters.
+        mode: Travel mode (walking, biking, transit, subway).
+
     Returns:
-        预估时间（秒）
+        Estimated travel time in seconds.
     """
     speeds = {
-        'walking': 1.4,   # 米/秒，约5km/h
-        'biking': 4.0,    # 米/秒，约14.4km/h
-        'transit': 3.0    # 米/秒，包含等车时间估算
+        'walking': 1.4,   # meters/second, about 5km/h
+        'biking': 4.0,    # meters/second, about 14.4km/h
+        'transit': 3.0,   # includes waiting and transfer time
+        'subway': 4.5     # subway-first estimate
     }
-    
+
     speed = speeds.get(mode, 1.4)
     return int(distance_meters / speed)
 
@@ -200,3 +201,4 @@ def interpolate_point(lat1: float, lng1: float,
     lat = lat1 + (lat2 - lat1) * fraction
     lng = lng1 + (lng2 - lng1) * fraction
     return (lat, lng)
+

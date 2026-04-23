@@ -27,8 +27,11 @@ class Config:
     API_TIMEOUT = int(os.getenv('API_TIMEOUT', 5))
     
     # CORS跨域配置
-    CORS_ORIGINS = os.getenv('CORS_ORIGINS', 'http://127.0.0.1:5500,http://localhost:5500').split(',')
-    
+    # CORS跨域配置！！！！！！！！！！！！！！
+    CORS_ORIGINS = os.getenv('CORS_ORIGINS',
+                             'http://127.0.0.1:5500,http://localhost:5500,http://[::]:8080,http://127.0.0.1:8080,http://localhost:8080').split(
+        ',')
+
     # 推荐算法权重
     WEIGHT_RATING = 0.5      # 评分权重（越高越好）
     WEIGHT_PRICE = 0.3       # 价格权重（越低越好）

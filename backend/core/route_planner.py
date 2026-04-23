@@ -62,7 +62,8 @@ class RoutePlanner:
         path_map = {
             'walking': 'walking',
             'biking': 'bicycling',  # 注意：API使用bicycling而非biking
-            'transit': 'transit/integrated'
+            'transit': 'transit/integrated',
+            'subway': 'transit/integrated'
         }
         
         # 高德API要求经度在前，纬度在后（使用转换后的GCJ-02坐标）
@@ -82,10 +83,12 @@ class RoutePlanner:
                 "output": "JSON"
             }
             
-            # 公交模式需要额外参数
-            if mode == 'transit':
-                params["city"] = "南京"
-                params["cityd"] = "南京"
+            # Transit/subway mode needs extra city params
+            if mode in ('transit', 'subway'):
+                params["city"] = "\u5357\u4eac"
+                params["cityd"] = "\u5357\u4eac"
+                if mode == 'subway':
+                    params["strategy"] = 7  # AMap subway-first strategy
             
             resp = requests.get(url, params=params, timeout=self.timeout)
             data = resp.json()
@@ -121,7 +124,7 @@ class RoutePlanner:
         route = data.get('route', {})
         
         # 获取第一条路径
-        if mode == 'transit':
+        if mode in ('transit', 'subway'):
             paths = route.get('transits', [])
         else:
             paths = route.get('paths', [])
@@ -135,11 +138,11 @@ class RoutePlanner:
         distance = float(path.get('distance', 0))
         duration = float(path.get('duration', 0))
         
-        # 提取路径点 - 从steps中合并polyline
+        # Build the route polyline from API response
         polyline = []
-        
-        if mode == 'transit':
-            # 公交模式：从segments中提取
+
+        if mode in ('transit', 'subway'):
+            # Transit/subway mode: merge segment polylines
             for segment in path.get('segments', []):
                 # 公交车段
                 bus_lines = segment.get('bus', {}).get('buslines', [])
@@ -242,3 +245,4 @@ class RoutePlanner:
         """
         route = self.plan(origin, destination, mode)
         return route.get('distance', 0)
+

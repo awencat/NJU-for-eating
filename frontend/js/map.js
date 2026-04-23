@@ -367,13 +367,15 @@ class MapManager {
         const colors = {
             walking: '#2ecc71',
             biking: '#3498db',
-            transit: '#9b59b6'
+            transit: '#9b59b6',
+            subway: '#e67e22'
         };
         
         const dashArrays = {
             walking: null,
             biking: null,
-            transit: '10, 10'
+            transit: '10, 10',
+            subway: '14, 8'
         };
         
         // 优化路径渲染
@@ -690,3 +692,4 @@ class MapManager {
 
 // 创建全局单例
 const mapManager = new MapManager();
+

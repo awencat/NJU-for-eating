@@ -7,9 +7,10 @@ class RouteManager {
         this.destinationRestaurant = null;
         this.isPlanning = false;
         this.modeNames = {
-            walking: { name: '步行', icon: 'fa-walking', speed: '约5km/h' },
-            biking: { name: '骑行', icon: 'fa-bicycle', speed: '约14km/h' },
-            transit: { name: '公交', icon: 'fa-bus', speed: '含换乘时间' }
+            walking: { name: '\u6b65\u884c', icon: 'fa-walking', speed: '\u7ea65km/h' },
+            biking: { name: '\u9a91\u884c', icon: 'fa-bicycle', speed: '\u7ea614km/h' },
+            transit: { name: '\u516c\u4ea4', icon: 'fa-bus', speed: '\u542b\u6362\u4e58\u65f6\u95f4' },
+            subway: { name: '\u5730\u94c1', icon: 'fa-train-subway', speed: '\u5730\u94c1\u4f18\u5148' }
         };
         this.unavailableModes = new Set(); // 记录不可用的模式
     }
@@ -187,11 +188,10 @@ class RouteManager {
             }
         } catch (error) {
             console.error('路径规划失败:', error);
-            
-            // 如果是骑行模式失败，标记为不可用并切换到步行
-            if (this.currentMode === 'biking' && !this.unavailableModes.has('biking')) {
-                console.warn('骑行路径规划失败，标记为不可用');
-                this.unavailableModes.add('biking');
+            // If a special routing mode fails, mark it unavailable and fall back to walking
+            if (['biking', 'subway'].includes(this.currentMode) && !this.unavailableModes.has(this.currentMode)) {
+                console.warn(`${this.currentMode} route planning failed, marking as unavailable`);
+                this.unavailableModes.add(this.currentMode);
                 
                 // 自动切换到步行模式并重试
                 this.currentMode = 'walking';
