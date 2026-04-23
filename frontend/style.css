@@ -1,0 +1,788 @@
+/* style.css - 智慧校园餐厅推荐系统样式文件 */
+
+/* ==================== 重置样式 ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+    background: #f5f5f5;
+    overflow: hidden;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* ==================== 导航栏 ==================== */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    z-index: 1000;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav-brand {
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.nav-brand i {
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 12px;
+}
+
+.nav-btn {
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.nav-btn i {
+    margin-right: 6px;
+}
+
+.nav-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
+}
+
+.nav-btn:active {
+    transform: translateY(0);
+}
+
+/* ==================== 主容器 ==================== */
+.main-container {
+    display: flex;
+    height: 100vh;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* ==================== 地图容器 ==================== */
+.map-container {
+    flex: 1;
+    height: 100%;
+    position: relative;
+    background: #e8e8e8;
+}
+
+/* Leaflet 地图样式覆盖 */
+.leaflet-container {
+    font-family: inherit;
+}
+
+.leaflet-popup-content-wrapper {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.leaflet-popup-content {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    min-width: 150px;
+}
+
+/* ==================== 推荐侧边栏 ==================== */
+.recommend-sidebar {
+    width: 360px;
+    background: white;
+    border-left: 1px solid #e8e8e8;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -4px 0 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.recommend-sidebar.collapsed {
+    transform: translateX(100%);
+}
+
+.sidebar-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar-header h3 {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.sidebar-header h3 i {
+    color: #f39c12;
+    margin-right: 8px;
+}
+
+.close-sidebar {
+    background: none;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: #bbb;
+    transition: color 0.2s;
+    display: none;
+}
+
+.close-sidebar:hover {
+    color: #e74c3c;
+}
+
+/* ==================== 餐厅列表 ==================== */
+.restaurant-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+}
+
+/* 滚动条样式 */
+.restaurant-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.restaurant-list::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 3px;
+}
+
+.restaurant-list::-webkit-scrollbar-thumb {
+    background: #c0c0c0;
+    border-radius: 3px;
+}
+
+.restaurant-list::-webkit-scrollbar-thumb:hover {
+    background: #a0a0a0;
+}
+
+/* ==================== 餐厅卡片 ==================== */
+.restaurant-card {
+    background: white;
+    border-radius: 14px;
+    padding: 16px;
+    margin-bottom: 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    transition: all 0.25s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    border-color: #2ecc71;
+}
+
+.restaurant-card.selected {
+    border-left: 4px solid #2ecc71;
+    background: linear-gradient(135deg, #f0fff4, #ffffff);
+    box-shadow: 0 4px 12px rgba(46, 204, 113, 0.15);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.card-rating {
+    color: #f39c12;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.card-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    color: #7f8c8d;
+}
+
+.card-info i {
+    width: 14px;
+    margin-right: 4px;
+    color: #95a5a6;
+}
+
+.card-cuisine {
+    background: #e8f5e9;
+    color: #2ecc71;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.card-cuisine i {
+    margin-right: 4px;
+    font-size: 0.7rem;
+}
+
+.card-reason {
+    font-size: 0.75rem;
+    color: #27ae60;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.card-reason i {
+    margin-right: 5px;
+    font-size: 0.7rem;
+}
+
+/* ==================== 加载占位符 ==================== */
+.loading-placeholder {
+    text-align: center;
+    padding: 50px 20px;
+    color: #bdc3c7;
+}
+
+.loading-placeholder i {
+    font-size: 2rem;
+    margin-bottom: 12px;
+    display: inline-block;
+}
+
+/* ==================== 底部控制栏 ==================== */
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+}
+
+.action-btn {
+    background: #f8f9fa;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #2c3e50;
+    transition: all 0.2s ease;
+}
+
+.action-btn i {
+    margin-right: 8px;
+}
+
+.action-btn:hover {
+    background: #2ecc71;
+    color: white;
+    transform: translateY(-1px);
+}
+
+.action-btn:active {
+    transform: translateY(0);
+}
+
+.mode-selector {
+    display: flex;
+    gap: 8px;
+    background: #f8f9fa;
+    padding: 5px;
+    border-radius: 40px;
+}
+
+.mode-btn {
+    background: transparent;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #7f8c8d;
+}
+
+.mode-btn i {
+    margin-right: 6px;
+}
+
+.mode-btn:hover {
+    background: rgba(46, 204, 113, 0.1);
+    color: #2ecc71;
+}
+
+.mode-btn.active {
+    background: #2ecc71;
+    color: white;
+    box-shadow: 0 2px 8px rgba(46, 204, 113, 0.3);
+}
+
+/* ==================== 弹窗样式 ==================== */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px);
+}
+
+.modal-content {
+    background: white;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 520px;
+    max-height: 85vh;
+    overflow-y: auto;
+    animation: modalFadeIn 0.25s ease;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modal-small {
+    max-width: 420px;
+}
+
+.modal-header {
+    padding: 18px 24px;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fafafa;
+    border-radius: 20px 20px 0 0;
+}
+
+.modal-header h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.modal-header h3 i {
+    margin-right: 8px;
+    color: #2ecc71;
+}
+
+.close-modal,
+.close-detail-modal,
+.close-about-modal {
+    font-size: 28px;
+    cursor: pointer;
+    color: #bbb;
+    transition: color 0.2s;
+    line-height: 1;
+}
+
+.close-modal:hover,
+.close-detail-modal:hover,
+.close-about-modal:hover {
+    color: #e74c3c;
+}
+
+.modal-body {
+    padding: 24px;
+}
+
+.modal-footer {
+    padding: 16px 24px;
+    border-top: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    background: #fafafa;
+    border-radius: 0 0 20px 20px;
+}
+
+/* ==================== 设置项 ==================== */
+.setting-group {
+    margin-bottom: 24px;
+}
+
+.setting-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 0.9rem;
+}
+
+.setting-group input[type="range"] {
+    width: 100%;
+    height: 4px;
+    -webkit-appearance: none;
+    background: #e0e0e0;
+    border-radius: 2px;
+    outline: none;
+}
+
+.setting-group input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    background: #2ecc71;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(46, 204, 113, 0.4);
+    border: none;
+}
+
+.setting-group input[type="range"]::-webkit-slider-thumb:hover {
+    transform: scale(1.15);
+}
+
+.setting-range-value {
+    display: inline-block;
+    margin-left: 10px;
+    color: #2ecc71;
+    font-weight: 600;
+}
+
+/* 菜系复选框组 */
+.cuisine-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 5px;
+}
+
+.cuisine-checkboxes label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+    cursor: pointer;
+    background: #f8f9fa;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    transition: all 0.2s;
+}
+
+.cuisine-checkboxes label:hover {
+    background: #e8f5e9;
+}
+
+.cuisine-checkboxes input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: #2ecc71;
+}
+
+/* ==================== 按钮样式 ==================== */
+.btn-primary {
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(46, 204, 113, 0.3);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+.btn-secondary {
+    background: #ecf0f1;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #7f8c8d;
+}
+
+.btn-secondary:hover {
+    background: #dfe6e9;
+    color: #2c3e50;
+}
+
+/* ==================== 餐厅详情样式 ==================== */
+.detail-info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+}
+
+.detail-info-row i {
+    width: 20px;
+    color: #2ecc71;
+}
+
+.detail-address {
+    margin: 15px 0;
+    padding: 12px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    font-size: 0.85rem;
+}
+
+.detail-reason {
+    margin-top: 15px;
+    padding: 12px;
+    background: #f0fff4;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    color: #27ae60;
+}
+
+/* ==================== 地图标记样式 ==================== */
+.user-marker {
+    background: none;
+    border: none;
+}
+
+.restaurant-marker {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.restaurant-marker:hover {
+    transform: scale(1.1);
+}
+
+/* ==================== 关于弹窗样式 ==================== */
+.about-content {
+    line-height: 1.6;
+}
+
+.about-content p {
+    margin-bottom: 12px;
+}
+
+.about-divider {
+    margin: 16px 0;
+    border: none;
+    border-top: 1px solid #f0f0f0;
+}
+
+.about-version {
+    font-size: 0.8rem;
+    color: #bdc3c7;
+}
+
+/* ==================== 响应式设计 ==================== */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 16px;
+    }
+    
+    .nav-brand span {
+        font-size: 1rem;
+    }
+    
+    .nav-btn span {
+        display: none;
+    }
+    
+    .nav-btn i {
+        margin: 0;
+        font-size: 1.2rem;
+    }
+    
+    .nav-btn {
+        padding: 8px 14px;
+    }
+    
+    .recommend-sidebar {
+        position: absolute;
+        right: 0;
+        top: 60px;
+        bottom: 60px;
+        z-index: 999;
+        width: 85%;
+        max-width: 320px;
+        box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
+    }
+    
+    .close-sidebar {
+        display: block;
+    }
+    
+    .bottom-bar {
+        padding: 0 12px;
+    }
+    
+    .mode-btn span {
+        display: none;
+    }
+    
+    .mode-btn i {
+        margin: 0;
+        font-size: 1.1rem;
+    }
+    
+    .mode-btn {
+        padding: 8px 16px;
+    }
+    
+    .action-btn span {
+        display: none;
+    }
+    
+    .action-btn i {
+        margin: 0;
+        font-size: 1.2rem;
+    }
+    
+    .action-btn {
+        padding: 10px 16px;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 20px;
+    }
+    
+    .card-info {
+        gap: 10px;
+        font-size: 0.7rem;
+    }
+    
+    .sidebar-header h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .recommend-sidebar {
+        width: 100%;
+        max-width: none;
+    }
+    
+    .mode-selector {
+        gap: 4px;
+    }
+    
+    .mode-btn {
+        padding: 6px 12px;
+    }
+    
+    .action-btn {
+        padding: 8px 12px;
+    }
+}
+
+/* ==================== 打印样式 ==================== */
+@media print {
+    .navbar,
+    .bottom-bar,
+    .recommend-sidebar {
+        display: none;
+    }
+    
+    .main-container {
+        padding: 0;
+    }
+    
+    .map-container {
+        height: 100vh;
+    }
+}
+
+/* ==================== 辅助类 ==================== */
+.text-center {
+    text-align: center;
+}
+
+.text-muted {
+    color: #bdc3c7;
+}
+
+.mt-2 {
+    margin-top: 8px;
+}
+
+.mt-3 {
+    margin-top: 12px;
+}
+
+.mb-2 {
+    margin-bottom: 8px;
+}
+
+.mb-3 {
+    margin-bottom: 12px;
+}
+
+.hidden {
+    display: none;
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜索功能测试</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background: #2ecc71;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #27ae60;
+        }
+        #results {
+            margin-top: 20px;
+            padding: 10px;
+            background: #f5f5f5;
+            border-radius: 4px;
+            min-height: 100px;
+        }
+        .result-item {
+            padding: 10px;
+            margin: 5px 0;
+            background: white;
+            border-left: 3px solid #2ecc71;
+        }
+        .error {
+            color: red;
+            padding: 10px;
+            background: #ffebee;
+            border-radius: 4px;
+        }
+        .success {
+            color: green;
+            padding: 10px;
+            background: #e8f5e9;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔍 搜索功能测试</h1>
+    
+    <div class="test-section">
+        <h2>测试1: 直接API调用</h2>
+        <input type="text" id="testInput" placeholder="输入搜索关键词，例如：川菜">
+        <button onclick="testSearch()">测试搜索</button>
+        <div id="results"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>测试2: 检查全局变量</h2>
+        <button onclick="checkGlobals()">检查全局变量</button>
+        <div id="globalsResult"></div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        const API_BASE_URL = 'http://127.0.0.1:5000/api';
+        
+        async function testSearch() {
+            const keyword = document.getElementById('testInput').value.trim();
+            const resultsDiv = document.getElementById('results');
+            
+            if (!keyword) {
+                resultsDiv.innerHTML = '<div class="error">请输入搜索关键词</div>';
+                return;
+            }
+            
+            resultsDiv.innerHTML = '<div class="success">正在搜索...</div>';
+            
+            try {
+                const response = await axios.get(`${API_BASE_URL}/search`, {
+                    params: {
+                        keyword: keyword,
+                        limit: 20
+                    }
+                });
+                
+                console.log('搜索结果:', response.data);
+                
+                if (response.data.success) {
+                    const data = response.data.data;
+                    resultsDiv.innerHTML = `
+                        <div class="success">✅ 搜索成功! 找到 ${data.length} 个结果</div>
+                        ${data.map(r => `
+                            <div class="result-item">
+                                <strong>${r.name}</strong><br>
+                                📍 ${r.address}<br>
+                                🍜 ${r.cuisine} | 💰 ¥${r.price} | ⭐ ${r.rating}
+                            </div>
+                        `).join('')}
+                    `;
+                } else {
+                    resultsDiv.innerHTML = `<div class="error">❌ ${response.data.message}</div>`;
+                }
+            } catch (error) {
+                console.error('搜索失败:', error);
+                resultsDiv.innerHTML = `
+                    <div class="error">
+                        ❌ 搜索失败<br>
+                        ${error.message}<br>
+                        ${error.response ? JSON.stringify(error.response.data) : ''}
+                    </div>
+                `;
+            }
+        }
+        
+        function checkGlobals() {
+            const resultDiv = document.getElementById('globalsResult');
+            const checks = {
+                'window.app': typeof window.app !== 'undefined',
+                'apiService': typeof apiService !== 'undefined',
+                'searchManager': typeof searchManager !== 'undefined',
+                'settingsManager': typeof settingsManager !== 'undefined'
+            };
+            
+            resultDiv.innerHTML = Object.entries(checks).map(([key, exists]) => 
+                `<div class="${exists ? 'success' : 'error'}">
+                    ${exists ? '✅' : '❌'} ${key}: ${exists ? '已定义' : '未定义'}
+                </div>`
+            ).join('');
+        }
+    </script>
+</body>
+</html>
