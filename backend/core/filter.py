@@ -2,7 +2,7 @@
 # 偏好过滤器
 
 from typing import List, Dict, Any, Optional
-from utils.geo import mixed_system_distance
+from utils.geo import distance_to_gcj02_poi
 
 
 class PreferenceFilter:
@@ -54,7 +54,7 @@ class PreferenceFilter:
     
     @staticmethod
     def filter_by_distance(restaurants: List[Dict], lat: float, lng: float,
-                           max_distance: float) -> List[Dict]:
+                           max_distance: float, coord_system: str = 'gcj02') -> List[Dict]:
         """
         按距离过滤，并添加距离字段
         
@@ -68,7 +68,7 @@ class PreferenceFilter:
         """
         filtered = []
         for r in restaurants:
-            distance = mixed_system_distance(lat, lng, r['lat'], r['lng'])
+            distance = distance_to_gcj02_poi(lat, lng, r['lat'], r['lng'], coord_system)
             if distance <= max_distance:
                 r['distance'] = round(distance)
                 filtered.append(r)
@@ -190,6 +190,7 @@ class PreferenceFilter:
     @staticmethod
     def apply_all_filters(restaurants: List[Dict],
                           lat: float = None, lng: float = None,
+                          coord_system: str = 'gcj02',
                           max_price: float = None,
                           max_distance: float = None,
                           cuisines: List[str] = None,
@@ -224,7 +225,7 @@ class PreferenceFilter:
         
         # 距离过滤（同时添加distance字段）
         if lat is not None and lng is not None and max_distance is not None:
-            result = PreferenceFilter.filter_by_distance(result, lat, lng, max_distance)
+            result = PreferenceFilter.filter_by_distance(result, lat, lng, max_distance, coord_system)
         
         # 排队过滤
         if not accept_wait:

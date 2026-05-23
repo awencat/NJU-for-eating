@@ -73,10 +73,11 @@ def get_nearby_restaurants():
     - 分页信息
     """
     try:
-        from utils.geo import mixed_system_distance
+        from utils.geo import distance_to_gcj02_poi
         
         lat = float(request.args.get('lat', 0))
         lng = float(request.args.get('lng', 0))
+        coord_system = request.args.get('coord_system', 'gcj02')
         max_distance = int(request.args.get('max_distance', 3000))
         page = int(request.args.get('page', 1))
         page_size = int(request.args.get('page_size', 20))
@@ -95,7 +96,7 @@ def get_nearby_restaurants():
         # 计算距离并过滤
         nearby_restaurants = []
         for rest in all_restaurants:
-            distance = mixed_system_distance(lat, lng, rest['lat'], rest['lng'])
+            distance = distance_to_gcj02_poi(lat, lng, rest['lat'], rest['lng'], coord_system)
             if distance <= max_distance:
                 rest_with_distance = dict(rest)
                 rest_with_distance['distance'] = round(distance)
@@ -157,13 +158,14 @@ def filter_restaurants():
     - 筛选条件统计
     """
     try:
-        from utils.geo import mixed_system_distance
+        from utils.geo import distance_to_gcj02_poi
         from datetime import datetime
         
         data = request.get_json()
         
         lat = float(data.get('lat', 0))
         lng = float(data.get('lng', 0))
+        coord_system = data.get('coord_system', 'gcj02')
         
         # 筛选条件
         price_min = data.get('price_min')
@@ -192,7 +194,7 @@ def filter_restaurants():
         filtered = []
         for rest in all_restaurants:
             # 计算距离
-            distance = mixed_system_distance(lat, lng, rest['lat'], rest['lng'])
+            distance = distance_to_gcj02_poi(lat, lng, rest['lat'], rest['lng'], coord_system)
             
             # 距离过滤
             if distance > max_distance:
@@ -345,7 +347,8 @@ def search_restaurants():
                 user_lng = request.args.get('lng', type=float)
                 
                 if user_lat and user_lng:
-                    distance = mixed_system_distance(user_lat, user_lng, rest_dict['lat'], rest_dict['lng'])
+                    coord_system = request.args.get('coord_system', 'gcj02')
+                    distance = distance_to_gcj02_poi(user_lat, user_lng, rest_dict['lat'], rest_dict['lng'], coord_system)
                     rest_dict['distance'] = round(distance)
                 else:
                     rest_dict['distance'] = None

@@ -5,7 +5,7 @@ import math
 from datetime import datetime
 from flask import request, jsonify
 from api import recommend_bp
-from utils.geo import mixed_system_distance
+from utils.geo import distance_to_gcj02_poi
 from utils.validator import validate_recommend_params
 from core.recommender import calculate_restaurant_score
 from data.database import get_db
@@ -49,6 +49,7 @@ def recommend_restaurants():
         # 获取参数
         lat = float(data.get('lat'))
         lng = float(data.get('lng'))
+        coord_system = data.get('coord_system', 'gcj02')
         
         config = get_config()
         max_price = float(data.get('max_price', config.DEFAULT_MAX_PRICE))
@@ -74,9 +75,10 @@ def recommend_restaurants():
         
         for restaurant in restaurants:
             # 计算距离
-            distance = mixed_system_distance(
+            distance = distance_to_gcj02_poi(
                 lat, lng,
-                restaurant['lat'], restaurant['lng']
+                restaurant['lat'], restaurant['lng'],
+                coord_system
             )
             
             # 菜系过滤

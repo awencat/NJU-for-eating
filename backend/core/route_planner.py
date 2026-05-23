@@ -2,239 +2,148 @@
 # 路径规划引擎
 
 import requests
-import math
-from typing import Dict, Any, Tuple, List, Optional
+from typing import Any, Dict, Tuple
 
-from utils.geo import haversine_distance, calculate_eta
+from utils.geo import calculate_eta, haversine_distance, wgs84_to_gcj02_tuple
 
 
 class RoutePlanner:
     """路径规划引擎"""
-    
+
     def __init__(self, amap_api_key: str = None, timeout: int = 5):
-        """
-        初始化路径规划器
-        
-        Args:
-            amap_api_key: 高德地图API密钥（可选，不配置则使用直线路径）
-            timeout: API请求超时时间（秒）
-        """
         self.amap_api_key = amap_api_key
         self.timeout = timeout
         self.use_amap = bool(amap_api_key)
-    
-    def plan(self, origin: Tuple[float, float], 
+
+    def _origin_to_gcj02(self, origin: Tuple[float, float, str]) -> Tuple[float, float]:
+        lat, lng = origin[0], origin[1]
+        coord_system = origin[2] if len(origin) > 2 else 'gcj02'
+        if (coord_system or '').lower() == 'wgs84':
+            return wgs84_to_gcj02_tuple(lat, lng)
+        return lat, lng
+
+    def plan(self, origin: Tuple[float, float, str],
              destination: Tuple[float, float],
              mode: str = 'walking') -> Dict[str, Any]:
-        """
-        规划路径
-        
-        Args:
-            origin: 起点坐标 (lat, lng)
-            destination: 终点坐标 (lat, lng)
-            mode: 出行方式 (walking, biking, transit)
-        
-        Returns:
-            路径信息，包含 distance, duration, polyline, mode
-        """
+        origin_gcj02 = self._origin_to_gcj02(origin)
+        destination_gcj02 = destination
+
         if self.use_amap:
-            return self._plan_with_amap(origin, destination, mode)
-        else:
-            return self._plan_simple(origin, destination, mode)
-    
-    def _plan_with_amap(self, origin: Tuple[float, float],
-                        destination: Tuple[float, float],
+            return self._plan_with_amap(origin_gcj02, destination_gcj02, mode)
+        return self._plan_simple(origin_gcj02, destination_gcj02, mode)
+
+    def _plan_with_amap(self, origin_gcj02: Tuple[float, float],
+                        destination_gcj02: Tuple[float, float],
                         mode: str) -> Dict[str, Any]:
-        """使用高德地图API规划路径"""
-        
-        origin_lat, origin_lng = origin
-        dest_lat, dest_lng = destination
-        
-        # 将WGS-84坐标转换为GCJ-02
-        from utils.geo import wgs84_to_gcj02
-        origin_gcj02 = wgs84_to_gcj02(origin_lat, origin_lng)
-        dest_gcj02 = wgs84_to_gcj02(dest_lat, dest_lng)
-        
-        print(f"[RoutePlanner] 坐标转换: WGS84({origin_lat:.6f},{origin_lng:.6f}) -> GCJ02({origin_gcj02['lat']:.6f},{origin_gcj02['lng']:.6f})")
-        
         path_map = {
             'walking': 'walking',
-            'biking': 'bicycling', 
-            'transit': 'transit/integrated'
+            'biking': 'bicycling',
+            'transit': 'transit/integrated',
+            'subway': 'transit/integrated',
         }
-        
-        origin_str = f"{origin_gcj02['lng']},{origin_gcj02['lat']}"
-        dest_str = f"{dest_gcj02['lng']},{dest_gcj02['lat']}"
-        
+
+        origin_str = f"{origin_gcj02[1]},{origin_gcj02[0]}"
+        destination_str = f"{destination_gcj02[1]},{destination_gcj02[0]}"
+
         try:
-            api_path = path_map.get(mode, 'walking')
-            url = f"https://restapi.amap.com/v3/direction/{api_path}"
-            
-            # 构建请求参数
+            url = f"https://restapi.amap.com/v3/direction/{path_map.get(mode, 'walking')}"
             params = {
                 "origin": origin_str,
-                "destination": dest_str,
+                "destination": destination_str,
                 "key": self.amap_api_key,
-                "output": "JSON"
+                "output": "JSON",
             }
-            
-            # 公交模式需要额外参数
-            if mode == 'transit':
+
+            if mode in ('transit', 'subway'):
                 params["city"] = "南京"
                 params["cityd"] = "南京"
-            
+                if mode == 'subway':
+                    params["strategy"] = 7
+
             resp = requests.get(url, params=params, timeout=self.timeout)
             data = resp.json()
-            
-            # 检查是否服务不可用（特别是骑行模式）
-            if data.get('status') == '0':
-                error_info = data.get('info', '未知错误')
-                error_code = data.get('infocode', 'N/A')
-                
-                # 如果是骑行模式且服务不可用，自动降级为步行
-                if mode == 'biking' and 'SERVICE_NOT_AVAILABLE' in error_info:
-                    print(f"[RoutePlanner] 骑行服务不可用，自动降级为步行模式")
-                    return self._plan_with_amap(origin, destination, 'walking')
-                
-                print(f"[RoutePlanner] 高德API错误: {error_info} (infocode: {error_code})")
-                return self._plan_simple(origin, destination, mode)
-            
+
             if data.get('status') == '1' and data.get('route'):
                 return self._parse_amap_response(data, mode)
-            else:
-                error_info = data.get('info', '未知错误')
-                error_code = data.get('infocode', 'N/A')
-                print(f"[RoutePlanner] 高德API错误: {error_info} (infocode: {error_code})")
-                return self._plan_simple(origin, destination, mode)
-                
+
+            error_info = data.get('info', '未知错误')
+            error_code = data.get('infocode', 'N/A')
+            print(f"[RoutePlanner] 高德API错误: {error_info} (infocode: {error_code})")
+            return self._plan_simple(origin_gcj02, destination_gcj02, mode)
         except requests.RequestException as e:
             print(f"[RoutePlanner] 高德API请求失败: {e}")
-            return self._plan_simple(origin, destination, mode)
-    
+            return self._plan_simple(origin_gcj02, destination_gcj02, mode)
+
     def _parse_amap_response(self, data: Dict, mode: str) -> Dict[str, Any]:
-        """解析高德API响应"""
-        
         route = data.get('route', {})
-        
-        # 获取第一条路径
-        if mode == 'transit':
-            paths = route.get('transits', [])
-        else:
-            paths = route.get('paths', [])
-        
+        paths = route.get('transits', []) if mode in ('transit', 'subway') else route.get('paths', [])
+
         if not paths:
             raise ValueError("无路径数据")
-        
+
         path = paths[0]
-        
-        # 提取距离和时间
-        distance = float(path.get('distance', 0))
-        duration = float(path.get('duration', 0))
-        
-        # 提取路径点 - 从steps中合并polyline
         polyline = []
-        
-        if mode == 'transit':
-            # 公交模式：从segments中提取
+
+        if mode in ('transit', 'subway'):
             for segment in path.get('segments', []):
-                # 公交车段
-                bus_lines = segment.get('bus', {}).get('buslines', [])
-                for bus in bus_lines:
-                    polyline_str = bus.get('polyline', '')
-                    if polyline_str:
-                        points = polyline_str.split(';')
-                        for point in points:
-                            lng, lat = point.split(',')
-                            polyline.append([float(lat), float(lng)])
-                
-                # 步行段
-                walk_polyline = segment.get('walking', {}).get('polyline', '')
-                if walk_polyline:
-                    points = walk_polyline.split(';')
-                    for point in points:
-                        lng, lat = point.split(',')
-                        polyline.append([float(lat), float(lng)])
+                for bus in segment.get('bus', {}).get('buslines', []):
+                    self._append_polyline(polyline, bus.get('polyline', ''))
+                self._append_polyline(polyline, segment.get('walking', {}).get('polyline', ''))
         else:
-            # 步行/骑行模式：从steps中合并polyline
-            steps = path.get('steps', [])
-            for step in steps:
-                polyline_str = step.get('polyline', '')
-                if polyline_str:
-                    points = polyline_str.split(';')
-                    for point in points:
-                        lng, lat = point.split(',')
-                        polyline.append([float(lat), float(lng)])
-        
-        # 去重（移除连续重复点）
+            for step in path.get('steps', []):
+                self._append_polyline(polyline, step.get('polyline', ''))
+
         unique_polyline = []
         for point in polyline:
             if not unique_polyline or unique_polyline[-1] != point:
                 unique_polyline.append(point)
-        
+
         return {
-            'distance': distance,
-            'duration': duration,
+            'distance': float(path.get('distance', 0)),
+            'duration': float(path.get('duration', 0)),
             'polyline': unique_polyline,
             'mode': mode,
-            'provider': 'amap'
+            'provider': 'amap',
         }
-    
+
+    @staticmethod
+    def _append_polyline(polyline: list, polyline_str: str) -> None:
+        if not polyline_str:
+            return
+        for point in polyline_str.split(';'):
+            lng, lat = point.split(',')
+            polyline.append([float(lat), float(lng)])
+
     def _plan_simple(self, origin: Tuple[float, float],
                      destination: Tuple[float, float],
                      mode: str) -> Dict[str, Any]:
-        """简单直线路径规划（fallback）"""
-        
         distance = haversine_distance(origin[0], origin[1], destination[0], destination[1])
         duration = calculate_eta(distance, mode)
-        
-        # 生成直线路径点
-        steps = 30
+
         polyline = []
-        for i in range(steps + 1):
-            t = i / steps
+        for i in range(31):
+            t = i / 30
             lat = origin[0] + (destination[0] - origin[0]) * t
             lng = origin[1] + (destination[1] - origin[1]) * t
             polyline.append([lat, lng])
-        
+
         return {
             'distance': distance,
             'duration': duration,
             'polyline': polyline,
             'mode': mode,
             'provider': 'simple',
-            'fallback': True
+            'fallback': True,
         }
-    
-    def get_travel_time(self, origin: Tuple[float, float],
+
+    def get_travel_time(self, origin: Tuple[float, float, str],
                         destination: Tuple[float, float],
                         mode: str = 'walking') -> int:
-        """
-        获取预估旅行时间（秒）
-        
-        Args:
-            origin: 起点坐标
-            destination: 终点坐标
-            mode: 出行方式
-        
-        Returns:
-            预估时间（秒）
-        """
         route = self.plan(origin, destination, mode)
         return route.get('duration', 0)
-    
-    def get_travel_distance(self, origin: Tuple[float, float],
+
+    def get_travel_distance(self, origin: Tuple[float, float, str],
                             destination: Tuple[float, float],
                             mode: str = 'walking') -> float:
-        """
-        获取预估旅行距离（米）
-        
-        Args:
-            origin: 起点坐标
-            destination: 终点坐标
-            mode: 出行方式
-        
-        Returns:
-            预估距离（米）
-        """
         route = self.plan(origin, destination, mode)
         return route.get('distance', 0)

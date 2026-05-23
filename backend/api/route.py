@@ -47,6 +47,7 @@ def plan_route():
         
         origin_lat = float(origin['lat'])
         origin_lng = float(origin['lng'])
+        origin_coord_system = origin.get('coord_system', data.get('coord_system', 'gcj02'))
         dest_lat = float(destination['lat'])
         dest_lng = float(destination['lng'])
         
@@ -55,7 +56,7 @@ def plan_route():
         planner = RoutePlanner(amap_api_key=config.AMAP_API_KEY, timeout=config.API_TIMEOUT)
         
         # 调用路径规划
-        origin_coord = (origin_lat, origin_lng)
+        origin_coord = (origin_lat, origin_lng, origin_coord_system)
         dest_coord = (dest_lat, dest_lng)
         route_data = planner.plan(origin_coord, dest_coord, mode)
         

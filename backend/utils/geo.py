@@ -97,6 +97,20 @@ def mixed_system_distance(user_lat_wgs84: float, user_lng_wgs84: float,
     return haversine_distance(user_lat_gcj02, user_lng_gcj02, poi_lat_gcj02, poi_lng_gcj02)
 
 
+def distance_to_gcj02_poi(user_lat: float, user_lng: float,
+                          poi_lat_gcj02: float, poi_lng_gcj02: float,
+                          user_coord_system: str = 'gcj02') -> float:
+    """
+    Calculate distance to a POI stored in GCJ-02.
+
+    Browser geolocation can be platform-dependent in China, so callers pass the
+    coordinate system they are using instead of relying on a hidden assumption.
+    """
+    if (user_coord_system or '').lower() == 'wgs84':
+        return mixed_system_distance(user_lat, user_lng, poi_lat_gcj02, poi_lng_gcj02)
+    return haversine_distance(user_lat, user_lng, poi_lat_gcj02, poi_lng_gcj02)
+
+
 def euclidean_distance(lat1: float, lng1: float, lat2: float, lng2: float) -> float:
     """
     计算欧几里得距离（近似，适用于小范围）

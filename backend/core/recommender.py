@@ -4,7 +4,7 @@
 import math
 from typing import List, Dict, Any, Tuple
 
-from utils.geo import mixed_system_distance
+from utils.geo import distance_to_gcj02_poi
 
 
 def normalize(value: float, min_val: float, max_val: float) -> float:
@@ -110,7 +110,8 @@ class RecommenderEngine:
     
     def recommend(self, restaurants: List[Dict], user_lat: float, user_lng: float,
                   max_price: float = None, max_distance: float = None,
-                  cuisines: List[str] = None, accept_wait: bool = None) -> List[Dict]:
+                  cuisines: List[str] = None, accept_wait: bool = None,
+                  coord_system: str = 'gcj02') -> List[Dict]:
         """
         获取推荐餐厅列表
         
@@ -140,9 +141,10 @@ class RecommenderEngine:
         
         for restaurant in restaurants:
             # 计算距离
-            distance = mixed_system_distance(
+            distance = distance_to_gcj02_poi(
                 user_lat, user_lng,
-                restaurant['lat'], restaurant['lng']
+                restaurant['lat'], restaurant['lng'],
+                coord_system
             )
             
             # 菜系过滤
