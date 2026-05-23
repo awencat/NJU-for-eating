@@ -38,6 +38,17 @@ function wgs84ToGcj02(lat, lng) {
     };
 }
 
+// Browser Geolocation follows WGS-84. AMap tiles and restaurant POIs are GCJ-02,
+// so user coordinates must be converted once before displaying or routing.
+const USER_LOCATION_COORD_SYSTEM = 'wgs84';
+
+function userLocationToMapCoords(lat, lng) {
+    if (USER_LOCATION_COORD_SYSTEM === 'wgs84') {
+        return wgs84ToGcj02(lat, lng);
+    }
+    return { lat, lng };
+}
+
 class MapManager {
     constructor() {
         this.map = null;
@@ -54,8 +65,8 @@ class MapManager {
 
     /**
      * 初始化地图
-     * @param {number} lat - 纬度 (WGS-84)
-     * @param {number} lng - 经度 (WGS-84)
+     * @param {number} lat - 纬度
+     * @param {number} lng - 经度
      * @param {number} zoom - 缩放级别
      */
     init(lat, lng, zoom = 15) {
@@ -66,9 +77,8 @@ class MapManager {
             mapContainer.style.width = '100%';
         }
         
-        // ⚠️ 关键修复：将WGS-84坐标转换为GCJ-02（高德地图需要）
-        const gcj02 = wgs84ToGcj02(lat, lng);
-        console.log(`🗺️ 地图初始化 - WGS84: (${lat.toFixed(6)}, ${lng.toFixed(6)}) -> GCJ02: (${gcj02.lat.toFixed(6)}, ${gcj02.lng.toFixed(6)})`);
+        const mapCoords = userLocationToMapCoords(lat, lng);
+        console.log(`🗺️ 地图初始化 - 用户坐标(${USER_LOCATION_COORD_SYSTEM}): (${lat.toFixed(6)}, ${lng.toFixed(6)}) -> 地图: (${mapCoords.lat.toFixed(6)}, ${mapCoords.lng.toFixed(6)})`);
         
         this.map = L.map('map', {
             zoomControl: false,  // 禁用默认缩放控件，自定义位置
@@ -76,7 +86,7 @@ class MapManager {
             preferCanvas: true,  // 使用Canvas渲染器提升性能
             fadeAnimation: true,  // 启用淡入淡出动画
             zoomAnimation: true   // 启用缩放动画
-        }).setView([gcj02.lat, gcj02.lng], zoom);  // ✅ 使用GCJ-02坐标
+        }).setView([mapCoords.lat, mapCoords.lng], zoom);
         
         // 添加缩放控件到右上角
         L.control.zoom({
@@ -101,7 +111,7 @@ class MapManager {
         this.addUserMarker(lat, lng);
         
         // ⚠️ 重要：currentLocation存储原始WGS-84坐标，用于后续计算
-        this.currentLocation = { lat, lng };
+        this.currentLocation = { lat, lng, coordSystem: USER_LOCATION_COORD_SYSTEM };
         
         // 添加比例尺
         L.control.scale({ metric: true, imperial: false }).addTo(this.map);
@@ -129,8 +139,7 @@ class MapManager {
             this.map.removeLayer(this.userMarker);
         }
         
-        // 转换为GCJ-02坐标（高德地图需要）
-        const gcj02 = wgs84ToGcj02(lat, lng);
+        const mapCoords = userLocationToMapCoords(lat, lng);
         
         // 如果有精度信息，添加精度圆圈
         if (accuracy && accuracy < 500) {  // 只显示精度<500米的圆圈
@@ -138,7 +147,7 @@ class MapManager {
                 this.map.removeLayer(this.accuracyCircle);
             }
             
-            this.accuracyCircle = L.circle([gcj02.lat, gcj02.lng], {
+            this.accuracyCircle = L.circle([mapCoords.lat, mapCoords.lng], {
                 radius: accuracy,
                 color: '#2ecc71',
                 fillColor: '#2ecc71',
@@ -158,7 +167,7 @@ class MapManager {
             popupAnchor: [0, -12]
         });
         
-        this.userMarker = L.marker([gcj02.lat, gcj02.lng], { icon: userIcon })
+        this.userMarker = L.marker([mapCoords.lat, mapCoords.lng], { icon: userIcon })
             .addTo(this.map)
             .bindPopup(`<strong>您的位置</strong><br>精度: ${accuracy ? accuracy.toFixed(0) + '米' : '未知'}`)
             .openPopup();
@@ -176,7 +185,7 @@ class MapManager {
         // 首次定位或currentLocation为空时，强制更新（不受防抖限制）
         if (!this.currentLocation) {
             console.log('🎯 首次定位，强制更新位置');
-            this.currentLocation = { lat, lng };
+            this.currentLocation = { lat, lng, coordSystem: USER_LOCATION_COORD_SYSTEM };
             this.addUserMarker(lat, lng, accuracy);  // 传递精度参数
             
             // 显示定位精度圆圈
@@ -184,11 +193,10 @@ class MapManager {
                 this.showAccuracyCircle(lat, lng, accuracy);
             }
             
-            // ⚠️ 关键修复：将WGS-84转换为GCJ-02后再设置地图视图
-            const gcj02 = wgs84ToGcj02(lat, lng);
-            this.map.setView([gcj02.lat, gcj02.lng], this.defaultZoom);
+            const mapCoords = userLocationToMapCoords(lat, lng);
+            this.map.setView([mapCoords.lat, mapCoords.lng], this.defaultZoom);
             this.lastLocationUpdate = now;
-            console.log(`✅ 位置已更新（首次）: WGS84(${lat.toFixed(6)}, ${lng.toFixed(6)}) -> GCJ02(${gcj02.lat.toFixed(6)}, ${gcj02.lng.toFixed(6)})`);
+            console.log(`✅ 位置已更新（首次）: ${USER_LOCATION_COORD_SYSTEM}(${lat.toFixed(6)}, ${lng.toFixed(6)}) -> 地图(${mapCoords.lat.toFixed(6)}, ${mapCoords.lng.toFixed(6)})`);
             return;
         }
         
@@ -207,7 +215,7 @@ class MapManager {
             console.log(`🔄 位置变化较大 (${distance.toFixed(0)}米)，更新位置`);
         }
         
-        this.currentLocation = { lat, lng };
+        this.currentLocation = { lat, lng, coordSystem: USER_LOCATION_COORD_SYSTEM };
         this.addUserMarker(lat, lng, accuracy);  // 传递精度参数
         
         // 更新定位精度圆圈
@@ -215,11 +223,10 @@ class MapManager {
             this.showAccuracyCircle(lat, lng, accuracy);
         }
         
-        // ⚠️ 关键修复：将WGS-84转换为GCJ-02后再设置地图视图
-        const gcj02 = wgs84ToGcj02(lat, lng);
-        this.map.setView([gcj02.lat, gcj02.lng], this.defaultZoom);
+        const mapCoords = userLocationToMapCoords(lat, lng);
+        this.map.setView([mapCoords.lat, mapCoords.lng], this.defaultZoom);
         this.lastLocationUpdate = now;
-        console.log(`✅ 位置已更新: WGS84(${lat.toFixed(6)}, ${lng.toFixed(6)}) -> GCJ02(${gcj02.lat.toFixed(6)}, ${gcj02.lng.toFixed(6)})`);
+        console.log(`✅ 位置已更新: ${USER_LOCATION_COORD_SYSTEM}(${lat.toFixed(6)}, ${lng.toFixed(6)}) -> 地图(${mapCoords.lat.toFixed(6)}, ${mapCoords.lng.toFixed(6)})`);
     }
 
     /**
@@ -234,11 +241,10 @@ class MapManager {
             this.map.removeLayer(this.accuracyCircle);
         }
         
-        // 转换为GCJ-02坐标
-        const gcj02 = wgs84ToGcj02(lat, lng);
+        const mapCoords = userLocationToMapCoords(lat, lng);
         
         // 添加新的精度圆圈
-        this.accuracyCircle = L.circle([gcj02.lat, gcj02.lng], {
+        this.accuracyCircle = L.circle([mapCoords.lat, mapCoords.lng], {
             radius: accuracy,
             color: '#2ecc71',
             fillColor: '#2ecc71',
@@ -569,13 +575,12 @@ class MapManager {
      * @param {number} zoom - 缩放级别
      */
     setView(lat, lng, zoom = null) {
-        // ⚠️ 关键修复：将WGS-84坐标转换为GCJ-02
-        const gcj02 = wgs84ToGcj02(lat, lng);
+        const mapCoords = userLocationToMapCoords(lat, lng);
         
         if (zoom) {
-            this.map.setView([gcj02.lat, gcj02.lng], zoom);
+            this.map.setView([mapCoords.lat, mapCoords.lng], zoom);
         } else {
-            this.map.panTo([gcj02.lat, gcj02.lng]);
+            this.map.panTo([mapCoords.lat, mapCoords.lng]);
         }
     }
 
@@ -613,10 +618,9 @@ class MapManager {
                 break;
         }
         
-        // ⚠️ 关键修复：将新位置转换为GCJ-02后再设置地图视图
-        const gcj02 = wgs84ToGcj02(newLat, newLng);
-        this.map.panTo([gcj02.lat, gcj02.lng]);
-        console.log(`🗺️ 地图向${direction}平移${distance}米 (WGS84: ${newLat.toFixed(6)}, ${newLng.toFixed(6)} -> GCJ02: ${gcj02.lat.toFixed(6)}, ${gcj02.lng.toFixed(6)})`);
+        const mapCoords = userLocationToMapCoords(newLat, newLng);
+        this.map.panTo([mapCoords.lat, mapCoords.lng]);
+        console.log(`🗺️ 地图向${direction}平移${distance}米 (${USER_LOCATION_COORD_SYSTEM}: ${newLat.toFixed(6)}, ${newLng.toFixed(6)} -> 地图: ${mapCoords.lat.toFixed(6)}, ${mapCoords.lng.toFixed(6)})`);
     }
 
     /**

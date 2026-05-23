@@ -77,6 +77,7 @@ class APIService {
                 params: {
                     lat: params.lat,
                     lng: params.lng,
+                    coord_system: params.coord_system || 'gcj02',
                     max_distance: params.max_distance || 3000,
                     page: params.page || 1,
                     page_size: params.page_size || 20

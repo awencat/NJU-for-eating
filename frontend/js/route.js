@@ -163,7 +163,8 @@ class RouteManager {
             const params = {
                 origin: {
                     lat: mapManager.currentLocation.lat,
-                    lng: mapManager.currentLocation.lng
+                    lng: mapManager.currentLocation.lng,
+                    coord_system: mapManager.currentLocation.coordSystem || 'gcj02'
                 },
                 destination: {
                     lat: this.destinationRestaurant.lat,

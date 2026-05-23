@@ -124,6 +124,7 @@ class App {
         try {
             const params = {
                 lat, lng,
+                coord_system: mapManager.currentLocation?.coordSystem || 'gcj02',
                 max_price: preferences.maxPrice,
                 max_distance: preferences.maxDistance,
                 cuisines: preferences.cuisines,
@@ -373,6 +374,7 @@ class App {
             const result = await apiService.filterRestaurants({
                 lat: mapManager.currentLocation.lat,
                 lng: mapManager.currentLocation.lng,
+                coord_system: mapManager.currentLocation.coordSystem || 'gcj02',
                 ...filters,
                 page: 1,
                 page_size: 20
@@ -497,6 +499,7 @@ class App {
         filters.page_size = 20;
         filters.lat = mapManager.currentLocation.lat;
         filters.lng = mapManager.currentLocation.lng;
+        filters.coord_system = mapManager.currentLocation.coordSystem || 'gcj02';
         
         await this.applyAdvancedFilter(filters);
         
@@ -522,6 +525,7 @@ class App {
             const result = await apiService.getNearbyRestaurants({
                 lat,
                 lng,
+                coord_system: mapManager.currentLocation?.coordSystem || 'gcj02',
                 max_distance: preferences.maxDistance,
                 page: page,
                 page_size: 20
