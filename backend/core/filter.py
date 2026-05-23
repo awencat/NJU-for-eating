@@ -2,7 +2,7 @@
 # 偏好过滤器
 
 from typing import List, Dict, Any, Optional
-from utils.geo import haversine_distance
+from utils.geo import mixed_system_distance
 
 
 class PreferenceFilter:
@@ -68,7 +68,7 @@ class PreferenceFilter:
         """
         filtered = []
         for r in restaurants:
-            distance = haversine_distance(lat, lng, r['lat'], r['lng'])
+            distance = mixed_system_distance(lat, lng, r['lat'], r['lng'])
             if distance <= max_distance:
                 r['distance'] = round(distance)
                 filtered.append(r)

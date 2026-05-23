@@ -52,6 +52,14 @@ def wgs84_to_gcj02(lat: float, lng: float) -> Dict[str, float]:
     }
 
 
+def wgs84_to_gcj02_tuple(lat: float, lng: float) -> Tuple[float, float]:
+    """
+    Convert a WGS-84 point to a `(lat, lng)` tuple in GCJ-02.
+    """
+    point = wgs84_to_gcj02(lat, lng)
+    return point['lat'], point['lng']
+
+
 def haversine_distance(lat1: float, lng1: float, lat2: float, lng2: float) -> float:
     """
     使用Haversine公式计算两点间球面距离
@@ -77,6 +85,16 @@ def haversine_distance(lat1: float, lng1: float, lat2: float, lng2: float) -> fl
     c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
     
     return R * c
+
+
+def mixed_system_distance(user_lat_wgs84: float, user_lng_wgs84: float,
+                          poi_lat_gcj02: float, poi_lng_gcj02: float) -> float:
+    """
+    Calculate distance between a user point from browser geolocation (WGS-84)
+    and a POI stored from AMap data (GCJ-02).
+    """
+    user_lat_gcj02, user_lng_gcj02 = wgs84_to_gcj02_tuple(user_lat_wgs84, user_lng_wgs84)
+    return haversine_distance(user_lat_gcj02, user_lng_gcj02, poi_lat_gcj02, poi_lng_gcj02)
 
 
 def euclidean_distance(lat1: float, lng1: float, lat2: float, lng2: float) -> float:

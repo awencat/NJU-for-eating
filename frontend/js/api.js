@@ -161,12 +161,16 @@ class APIService {
      */
     async getRestaurantById(id) {
         try {
-            const response = await this.client.get(`/restaurants/${id}`);
+            const response = await this.client.get(`/restaurant/${id}`);
             return response.data.data;
         } catch (error) {
             console.error('获取餐厅详情错误:', error);
             return null;
         }
+    }
+
+    async getRestaurantDetail(id) {
+        return this.getRestaurantById(id);
     }
 
     /**

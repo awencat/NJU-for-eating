@@ -73,7 +73,7 @@ def get_nearby_restaurants():
     - 分页信息
     """
     try:
-        from utils.geo import haversine_distance
+        from utils.geo import mixed_system_distance
         
         lat = float(request.args.get('lat', 0))
         lng = float(request.args.get('lng', 0))
@@ -95,7 +95,7 @@ def get_nearby_restaurants():
         # 计算距离并过滤
         nearby_restaurants = []
         for rest in all_restaurants:
-            distance = haversine_distance(lat, lng, rest['lat'], rest['lng'])
+            distance = mixed_system_distance(lat, lng, rest['lat'], rest['lng'])
             if distance <= max_distance:
                 rest_with_distance = dict(rest)
                 rest_with_distance['distance'] = round(distance)
@@ -157,7 +157,7 @@ def filter_restaurants():
     - 筛选条件统计
     """
     try:
-        from utils.geo import haversine_distance
+        from utils.geo import mixed_system_distance
         from datetime import datetime
         
         data = request.get_json()
@@ -192,7 +192,7 @@ def filter_restaurants():
         filtered = []
         for rest in all_restaurants:
             # 计算距离
-            distance = haversine_distance(lat, lng, rest['lat'], rest['lng'])
+            distance = mixed_system_distance(lat, lng, rest['lat'], rest['lng'])
             
             # 距离过滤
             if distance > max_distance:
@@ -345,7 +345,7 @@ def search_restaurants():
                 user_lng = request.args.get('lng', type=float)
                 
                 if user_lat and user_lng:
-                    distance = haversine_distance(user_lat, user_lng, rest_dict['lat'], rest_dict['lng'])
+                    distance = mixed_system_distance(user_lat, user_lng, rest_dict['lat'], rest_dict['lng'])
                     rest_dict['distance'] = round(distance)
                 else:
                     rest_dict['distance'] = None

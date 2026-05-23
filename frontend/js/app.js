@@ -21,6 +21,7 @@ class App {
         settingsManager.init();
         filterManager.init();  // 初始化筛选管理器
         favoritesManager.init();  // 初始化收藏管理器
+        this.syncFavoritesUI();
         searchManager.init();  // 初始化搜索管理器
         routeManager.init();
         
@@ -175,6 +176,11 @@ class App {
                     <span class="card-cuisine"><i class="fas fa-utensils"></i> ${rest.cuisine}</span>
                 </div>
                 ${rest.reason ? `<div class="card-reason"><i class="fas fa-lightbulb"></i> ${rest.reason}</div>` : ''}
+                <div class="card-footer">
+                    <span class="price-tag">¥${rest.price}</span>
+                    ${this.renderFavoriteButton(rest.id)}
+                    <button class="btn-detail-small" onclick="event.stopPropagation(); app.showRestaurantDetailById(${rest.id})">详情</button>
+                </div>
             </div>
         `).join('');
         
@@ -221,10 +227,12 @@ class App {
         const modal = document.getElementById('detailModal');
         const nameSpan = document.getElementById('detailName');
         const bodyDiv = document.getElementById('detailBody');
+        const distanceText = Number.isFinite(Number(restaurant.distance)) ? `${restaurant.distance}米` : '未知';
         
         if (!modal || !nameSpan || !bodyDiv) return;
         
         nameSpan.textContent = restaurant.name;
+        const isFavorited = favoritesManager.isFavorited(restaurant.id);
         bodyDiv.innerHTML = `
             <div>
                 <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
@@ -232,7 +240,7 @@ class App {
                     <span><i class="fas fa-yen-sign"></i> 人均：¥${restaurant.price}</span>
                 </div>
                 <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
-                    <span><i class="fas fa-location-dot"></i> 距离：${restaurant.distance}米</span>
+                    <span><i class="fas fa-location-dot"></i> 距离：${distanceText}</span>
                     <span><i class="fas fa-clock"></i> 排队：${restaurant.wait_time}分钟</span>
                 </div>
                 <div style="margin-bottom: 12px;">
@@ -259,6 +267,19 @@ class App {
             newBtn.addEventListener('click', () => {
                 modal.style.display = 'none';
                 routeManager.navigateToRestaurant(restaurant);
+            });
+        }
+
+        const favoriteBtn = document.getElementById('detailFavoriteBtn');
+        if (favoriteBtn) {
+            favoriteBtn.dataset.restaurantId = restaurant.id;
+            favoriteBtn.classList.toggle('favorited', isFavorited);
+            favoriteBtn.innerHTML = `<i class="fas fa-heart"></i> ${isFavorited ? '已收藏' : '收藏'}`;
+
+            const newBtn = favoriteBtn.cloneNode(true);
+            favoriteBtn.parentNode.replaceChild(newBtn, favoriteBtn);
+            newBtn.addEventListener('click', async () => {
+                await this.toggleFavorite(restaurant.id);
             });
         }
     }
@@ -570,7 +591,8 @@ class App {
                 <div class="card-footer">
                     <span class="price-tag">¥${rest.price}</span>
                     <span class="wait-time">⏱️ ${rest.wait_time}分钟</span>
-                    <button class="btn-detail-small" onclick="app.showRestaurantDetailById(${rest.id})">详情</button>
+                    ${this.renderFavoriteButton(rest.id)}
+                    <button class="btn-detail-small" onclick="event.stopPropagation(); app.showRestaurantDetailById(${rest.id})">详情</button>
                 </div>
             </div>
         `).join('');
@@ -691,7 +713,8 @@ class App {
                 </div>
                 <div class="card-footer">
                     <span class="price-tag">¥${rest.price}</span>
-                    <button class="btn-detail-small" onclick="app.showRestaurantDetailById(${rest.id})">详情</button>
+                    ${this.renderFavoriteButton(rest.id)}
+                    <button class="btn-detail-small" onclick="event.stopPropagation(); app.showRestaurantDetailById(${rest.id})">详情</button>
                 </div>
             </div>
         `).join('');
@@ -749,13 +772,13 @@ class App {
         const modal = document.getElementById('favoritesModal');
         const listContainer = document.getElementById('favoritesList');
         const countHeader = document.getElementById('favoritesCountHeader');
+        const clearBtn = document.getElementById('clearFavoritesBtn');
         
         if (!modal || !listContainer) return;
         
-        // 更新收藏数量
-        const count = favoritesManager.getCount();
-        countHeader.textContent = count;
-        document.getElementById('favoritesCount').textContent = count;
+        const count = favorites.length;
+        if (countHeader) countHeader.textContent = count;
+        if (clearBtn) clearBtn.disabled = count === 0;
         
         if (count === 0) {
             listContainer.innerHTML = `
@@ -775,13 +798,15 @@ class App {
                             <span>💰 ¥${rest.price}</span>
                             <span>🍜 ${this.escapeHtml(rest.cuisine)}</span>
                         </div>
+                        <div class="favorite-address">收藏于 ${this.formatFavoriteTime(rest.favoritedAt)}</div>
                         <div class="favorite-address">${this.escapeHtml(rest.address || '')}</div>
                     </div>
                     <div class="favorite-actions">
-                        <button class="btn-navigate" onclick="app.navigateToFavorite(${rest.id})">
+                        <button class="btn-detail-small" onclick="event.stopPropagation(); app.showRestaurantDetailById(${rest.id})">详情</button>
+                        <button class="btn-navigate" onclick="event.stopPropagation(); app.navigateToFavorite(${rest.id})">
                             <i class="fas fa-location-arrow"></i> 导航
                         </button>
-                        <button class="btn-remove-favorite" onclick="app.removeFavorite(${rest.id})">
+                        <button class="btn-remove-favorite" onclick="event.stopPropagation(); app.removeFavorite(${rest.id})">
                             <i class="fas fa-trash"></i>
                         </button>
                     </div>
@@ -790,6 +815,14 @@ class App {
         }
         
         modal.style.display = 'flex';
+
+        listContainer.querySelectorAll('.favorite-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const id = Number(item.dataset.id);
+                modal.style.display = 'none';
+                this.showRestaurantDetailById(id);
+            });
+        });
     }
 
     /**
@@ -807,7 +840,7 @@ class App {
         if (!restaurant) {
             // 如果当前列表中没有，尝试从API获取
             try {
-                restaurant = await apiService.getRestaurantDetail(restaurantId);
+                restaurant = await apiService.getRestaurantById(restaurantId);
             } catch (error) {
                 console.error('获取餐厅信息失败:', error);
                 this.showNotification('操作失败', 'error');
@@ -823,12 +856,9 @@ class App {
         // 切换收藏
         const isFavorited = favoritesManager.toggleFavorite(restaurant);
         
-        // 更新UI
+        this.syncFavoritesUI();
         this.updateFavoriteButtonUI(restaurantId, isFavorited);
-        
-        // 更新收藏数量显示
-        const count = favoritesManager.getCount();
-        document.getElementById('favoritesCount').textContent = count;
+        this.updateDetailFavoriteButton(restaurantId, isFavorited);
         
         // 显示提示
         if (isFavorited) {
@@ -844,13 +874,71 @@ class App {
      * @param {boolean} isFavorited - 是否已收藏
      */
     updateFavoriteButtonUI(restaurantId, isFavorited) {
-        const buttons = document.querySelectorAll(`[onclick*="toggleFavorite(${restaurantId})"]`);
+        const buttons = document.querySelectorAll(
+            `[onclick*="toggleFavorite(${restaurantId})"], [data-favorite-id="${restaurantId}"]`
+        );
         buttons.forEach(btn => {
-            if (isFavorited) {
-                btn.classList.add('favorited');
-            } else {
-                btn.classList.remove('favorited');
+            btn.classList.toggle('favorited', isFavorited);
+            const label = btn.dataset.favoriteLabel;
+            if (label === 'icon-text') {
+                btn.innerHTML = `<i class="fas fa-heart"></i> ${isFavorited ? '已收藏' : '收藏'}`;
             }
+        });
+    }
+
+    updateDetailFavoriteButton(restaurantId, isFavorited = favoritesManager.isFavorited(restaurantId)) {
+        const detailBtn = document.getElementById('detailFavoriteBtn');
+        if (!detailBtn) return;
+
+        if (Number(detailBtn.dataset.restaurantId) !== Number(restaurantId)) return;
+
+        detailBtn.classList.toggle('favorited', isFavorited);
+        detailBtn.innerHTML = `<i class="fas fa-heart"></i> ${isFavorited ? '已收藏' : '收藏'}`;
+    }
+
+    syncFavoritesUI() {
+        const count = favoritesManager.getCount();
+        const countBadge = document.getElementById('favoritesCount');
+        const countHeader = document.getElementById('favoritesCountHeader');
+        const clearBtn = document.getElementById('clearFavoritesBtn');
+        const favoritesModal = document.getElementById('favoritesModal');
+
+        if (countBadge) countBadge.textContent = count;
+        if (countHeader) countHeader.textContent = count;
+        if (clearBtn) clearBtn.disabled = count === 0;
+
+        if (favoritesModal && favoritesModal.style.display === 'flex') {
+            this.showFavorites();
+        }
+    }
+
+    renderFavoriteButton(restaurantId, { text = false } = {}) {
+        const isFavorited = favoritesManager.isFavorited(restaurantId);
+        const classes = `btn-favorite-small ${isFavorited ? 'favorited' : ''}`.trim();
+        const label = text ? (isFavorited ? '已收藏' : '收藏') : '';
+        return `
+            <button
+                class="${classes}"
+                data-favorite-id="${restaurantId}"
+                data-favorite-label="${text ? 'icon-text' : 'icon'}"
+                onclick="event.stopPropagation(); app.toggleFavorite(${restaurantId})"
+                title="${isFavorited ? '取消收藏' : '收藏餐厅'}"
+            >
+                <i class="fas fa-heart"></i>${text ? ` ${label}` : ''}
+            </button>
+        `;
+    }
+
+    formatFavoriteTime(value) {
+        if (!value) return '刚刚';
+        const date = new Date(value);
+        if (Number.isNaN(date.getTime())) return '刚刚';
+
+        return date.toLocaleString('zh-CN', {
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit'
         });
     }
 
@@ -861,7 +949,9 @@ class App {
     removeFavorite(restaurantId) {
         const result = favoritesManager.removeFavorite(restaurantId);
         if (result) {
-            // 重新显示收藏列表
+            this.syncFavoritesUI();
+            this.updateFavoriteButtonUI(restaurantId, false);
+            this.updateDetailFavoriteButton(restaurantId, false);
             this.showFavorites();
             this.showNotification('已取消收藏', 'info');
         }
@@ -873,6 +963,7 @@ class App {
     clearFavorites() {
         if (confirm('确定要清空所有收藏吗？')) {
             favoritesManager.clearAll();
+            this.syncFavoritesUI();
             this.showFavorites();
             this.showNotification('已清空所有收藏', 'info');
         }
@@ -986,6 +1077,10 @@ class App {
                 this.showFavorites();
             });
         }
+
+        window.addEventListener('favorites:changed', () => {
+            this.syncFavoritesUI();
+        });
         
         // 刷新按钮
         const refreshBtn = document.getElementById('refreshBtn');

@@ -252,7 +252,7 @@ class MapManager {
 
     /**
      * 添加餐厅标记
-     * @param {Array} restaurants - 餐厅列表 (WGS-84坐标)
+     * @param {Array} restaurants - 餐厅列表 (注意:数据库中已是GCJ-02坐标)
      * @param {Function} onMarkerClick - 点击回调
      */
     addRestaurantMarkers(restaurants, onMarkerClick) {
@@ -267,8 +267,10 @@ class MapManager {
         }
         
         displayRestaurants.forEach(restaurant => {
-            // 转换为GCJ-02坐标（高德地图需要）
-            const gcj02 = wgs84ToGcj02(restaurant.lat, restaurant.lng);
+            // ⚠️ 重要: 数据库中已经是GCJ-02坐标,无需转换!
+            // 之前的wgs84ToGcj02转换会导致双重转换,位置错误
+            const markerLat = restaurant.lat;
+            const markerLng = restaurant.lng;
             
             const ratingColor = this.getRatingColor(restaurant.rating);
             const restaurantIcon = L.divIcon({
@@ -278,7 +280,7 @@ class MapManager {
                 popupAnchor: [0, -17]
             });
             
-            const marker = L.marker([gcj02.lat, gcj02.lng], { 
+            const marker = L.marker([markerLat, markerLng], { 
                 icon: restaurantIcon,
                 riseOnHover: true
             })
@@ -314,18 +316,16 @@ class MapManager {
 
     /**
      * 调整地图视野以包含所有标记点
-     * @param {Array} restaurants - 餐厅列表（需要有lat和lng字段）
+     * @param {Array} restaurants - 餐厅列表（数据库中已是GCJ-02坐标）
      */
     fitBoundsToMarkers(restaurants) {
         if (!this.map || !restaurants || restaurants.length === 0) return;
         
-        // 转换为GCJ-02坐标
-        const gcj02Points = restaurants.map(r => wgs84ToGcj02(r.lat, r.lng));
+        // ⚠️ 重要: 数据库已是GCJ-02,直接使用,无需转换
+        const points = restaurants.map(r => [r.lat, r.lng]);
         
         // 计算边界
-        const bounds = L.latLngBounds(
-            gcj02Points.map(p => [p.lat, p.lng])
-        );
+        const bounds = L.latLngBounds(points);
         
         // 调整地图视野，添加padding
         this.map.fitBounds(bounds, {

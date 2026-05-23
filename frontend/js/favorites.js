@@ -6,146 +6,163 @@ class FavoritesManager {
         this.favorites = [];
     }
 
-    /**
-     * 初始化收藏管理器
-     */
     init() {
         this.loadFavorites();
-        console.log(`❤️ 收藏管理器初始化完成,已加载 ${this.favorites.length} 个收藏`);
+        this.notifyChange('init');
+        console.log(`❤️ 收藏管理器初始化完成，已加载 ${this.favorites.length} 个收藏`);
     }
 
-    /**
-     * 从localStorage加载收藏
-     */
     loadFavorites() {
         try {
             const stored = localStorage.getItem(this.storageKey);
-            if (stored) {
-                this.favorites = JSON.parse(stored);
-            } else {
-                this.favorites = [];
-            }
+            const parsed = stored ? JSON.parse(stored) : [];
+            this.favorites = this.normalizeFavorites(parsed);
         } catch (error) {
             console.error('加载收藏失败:', error);
             this.favorites = [];
         }
     }
 
-    /**
-     * 保存收藏到localStorage
-     */
-    saveFavorites() {
+    saveFavorites(source = 'save') {
         try {
             localStorage.setItem(this.storageKey, JSON.stringify(this.favorites));
+            this.notifyChange(source);
         } catch (error) {
             console.error('保存收藏失败:', error);
         }
     }
 
-    /**
-     * 添加收藏
-     * @param {Object} restaurant - 餐厅对象
-     * @returns {boolean} 是否添加成功
-     */
+    normalizeFavorites(list) {
+        if (!Array.isArray(list)) return [];
+
+        const unique = new Map();
+        list.forEach(item => {
+            const normalized = this.normalizeFavorite(item);
+            if (!normalized) return;
+
+            const existing = unique.get(normalized.id);
+            if (!existing) {
+                unique.set(normalized.id, normalized);
+                return;
+            }
+
+            const existingTime = new Date(existing.favoritedAt || 0).getTime();
+            const newTime = new Date(normalized.favoritedAt || 0).getTime();
+            unique.set(normalized.id, newTime >= existingTime ? normalized : existing);
+        });
+
+        return Array.from(unique.values()).sort((a, b) => {
+            return new Date(b.favoritedAt).getTime() - new Date(a.favoritedAt).getTime();
+        });
+    }
+
+    normalizeFavorite(restaurant) {
+        if (!restaurant || restaurant.id == null) return null;
+
+        const id = Number(restaurant.id);
+        if (!Number.isFinite(id)) return null;
+
+        return {
+            id,
+            name: restaurant.name || '未命名餐厅',
+            lat: Number(restaurant.lat) || 0,
+            lng: Number(restaurant.lng) || 0,
+            address: restaurant.address || '',
+            cuisine: restaurant.cuisine || '未知',
+            price: Number(restaurant.price) || 0,
+            rating: Number(restaurant.rating) || 0,
+            wait_time: Number(restaurant.wait_time) || 0,
+            phone: restaurant.phone || '',
+            hours: restaurant.hours || '',
+            tags: Array.isArray(restaurant.tags) ? restaurant.tags : (restaurant.tags || ''),
+            favoritedAt: restaurant.favoritedAt || new Date().toISOString()
+        };
+    }
+
     addFavorite(restaurant) {
-        // 检查是否已收藏
-        if (this.isFavorited(restaurant.id)) {
-            console.log('该餐厅已在收藏中');
+        const favorite = this.normalizeFavorite(restaurant);
+        if (!favorite) {
+            console.warn('收藏失败：餐厅数据无效');
             return false;
         }
 
-        // 添加收藏(只保存必要信息)
-        const favorite = {
-            id: restaurant.id,
-            name: restaurant.name,
-            lat: restaurant.lat,
-            lng: restaurant.lng,
-            address: restaurant.address,
-            cuisine: restaurant.cuisine,
-            price: restaurant.price,
-            rating: restaurant.rating,
-            wait_time: restaurant.wait_time,
-            phone: restaurant.phone,
-            hours: restaurant.hours,
-            tags: restaurant.tags,
-            favoritedAt: new Date().toISOString()
-        };
+        const index = this.favorites.findIndex(f => f.id === favorite.id);
+        if (index !== -1) {
+            this.favorites[index] = {
+                ...this.favorites[index],
+                ...favorite,
+                favoritedAt: this.favorites[index].favoritedAt || favorite.favoritedAt
+            };
+            this.saveFavorites('favorite-updated');
+            return true;
+        }
 
-        this.favorites.push(favorite);
-        this.saveFavorites();
-        
-        console.log(`❤️ 已收藏: ${restaurant.name}`);
+        this.favorites.unshift(favorite);
+        this.saveFavorites('favorite-added');
+        console.log(`❤️ 已收藏: ${favorite.name}`);
         return true;
     }
 
-    /**
-     * 取消收藏
-     * @param {number} restaurantId - 餐厅ID
-     * @returns {boolean} 是否取消成功
-     */
     removeFavorite(restaurantId) {
-        const index = this.favorites.findIndex(f => f.id === restaurantId);
+        const id = Number(restaurantId);
+        const index = this.favorites.findIndex(f => f.id === id);
         if (index === -1) {
             console.log('该餐厅不在收藏中');
             return false;
         }
 
         const removed = this.favorites.splice(index, 1)[0];
-        this.saveFavorites();
-        
+        this.saveFavorites('favorite-removed');
         console.log(`💔 已取消收藏: ${removed.name}`);
         return true;
     }
 
-    /**
-     * 切换收藏状态
-     * @param {Object} restaurant - 餐厅对象
-     * @returns {boolean} true表示已收藏,false表示已取消
-     */
     toggleFavorite(restaurant) {
-        if (this.isFavorited(restaurant.id)) {
-            this.removeFavorite(restaurant.id);
+        const id = Number(restaurant?.id);
+        if (!Number.isFinite(id)) return false;
+
+        if (this.isFavorited(id)) {
+            this.removeFavorite(id);
             return false;
-        } else {
-            this.addFavorite(restaurant);
-            return true;
         }
+
+        this.addFavorite(restaurant);
+        return true;
     }
 
-    /**
-     * 检查是否已收藏
-     * @param {number} restaurantId - 餐厅ID
-     * @returns {boolean}
-     */
     isFavorited(restaurantId) {
-        return this.favorites.some(f => f.id === restaurantId);
+        const id = Number(restaurantId);
+        return this.favorites.some(f => f.id === id);
     }
 
-    /**
-     * 获取所有收藏
-     * @returns {Array} 收藏列表
-     */
+    getFavoriteById(restaurantId) {
+        const id = Number(restaurantId);
+        return this.favorites.find(f => f.id === id) || null;
+    }
+
     getFavorites() {
-        return this.favorites;
+        return this.normalizeFavorites(this.favorites);
     }
 
-    /**
-     * 获取收藏数量
-     * @returns {number}
-     */
     getCount() {
         return this.favorites.length;
     }
 
-    /**
-     * 清空所有收藏
-     */
     clearAll() {
         this.favorites = [];
-        this.saveFavorites();
+        this.saveFavorites('favorites-cleared');
         console.log('🗑️ 已清空所有收藏');
+    }
+
+    notifyChange(source = 'unknown') {
+        window.dispatchEvent(new CustomEvent('favorites:changed', {
+            detail: {
+                source,
+                count: this.getCount(),
+                favorites: this.getFavorites()
+            }
+        }));
     }
 }
 
-// 创建全局实例
 const favoritesManager = new FavoritesManager();

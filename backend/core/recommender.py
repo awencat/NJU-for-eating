@@ -4,7 +4,7 @@
 import math
 from typing import List, Dict, Any, Tuple
 
-from utils.geo import haversine_distance
+from utils.geo import mixed_system_distance
 
 
 def normalize(value: float, min_val: float, max_val: float) -> float:
@@ -140,7 +140,7 @@ class RecommenderEngine:
         
         for restaurant in restaurants:
             # 计算距离
-            distance = haversine_distance(
+            distance = mixed_system_distance(
                 user_lat, user_lng,
                 restaurant['lat'], restaurant['lng']
             )

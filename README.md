@@ -78,15 +78,22 @@ python app.py
 方式一: VS Code Live Server (推荐)
 1. 安装 "Live Server" 扩展
 2. 右键 `frontend/index.html` → "Open with Live Server"
+3. 默认端口: **5500**
 
 方式二: Python简易服务器
 ```bash
 cd frontend
 python -m http.server 8080
 ```
-
 访问 `http://localhost:8080`
 
+> 💡 **提示**: 
+> - 方式一使用端口 5500,方式二使用端口 8080
+> - 两种方式都已配置CORS白名单,可正常访问后端API
+> - 如需使用其他端口,请在 `backend/.env` 中添加:
+>   ```env
+>   CORS_ORIGINS=http://127.0.0.1:5500,http://localhost:5500,http://127.0.0.1:8080,http://localhost:8080,http://127.0.0.1:你的端口
+>   ```
 
 
 ---

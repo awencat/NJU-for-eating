@@ -47,31 +47,26 @@ class RoutePlanner:
                         mode: str) -> Dict[str, Any]:
         """使用高德地图API规划路径"""
         
-        # 保存原始坐标用于fallback
         origin_lat, origin_lng = origin
         dest_lat, dest_lng = destination
         
-        # 将WGS-84坐标转换为GCJ-02（高德API需要）
+        # 将WGS-84坐标转换为GCJ-02
         from utils.geo import wgs84_to_gcj02
         origin_gcj02 = wgs84_to_gcj02(origin_lat, origin_lng)
         dest_gcj02 = wgs84_to_gcj02(dest_lat, dest_lng)
         
         print(f"[RoutePlanner] 坐标转换: WGS84({origin_lat:.6f},{origin_lng:.6f}) -> GCJ02({origin_gcj02['lat']:.6f},{origin_gcj02['lng']:.6f})")
         
-        # 高德API路径映射（使用英文）
         path_map = {
             'walking': 'walking',
-            'biking': 'bicycling',  # 注意：API使用bicycling而非biking
-            'transit': 'transit/integrated',
-            'subway': 'transit/integrated'
+            'biking': 'bicycling', 
+            'transit': 'transit/integrated'
         }
         
-        # 高德API要求经度在前，纬度在后（使用转换后的GCJ-02坐标）
         origin_str = f"{origin_gcj02['lng']},{origin_gcj02['lat']}"
         dest_str = f"{dest_gcj02['lng']},{dest_gcj02['lat']}"
         
         try:
-            # 构建API路径
             api_path = path_map.get(mode, 'walking')
             url = f"https://restapi.amap.com/v3/direction/{api_path}"
             
@@ -83,12 +78,10 @@ class RoutePlanner:
                 "output": "JSON"
             }
             
-            # Transit/subway mode needs extra city params
-            if mode in ('transit', 'subway'):
-                params["city"] = "\u5357\u4eac"
-                params["cityd"] = "\u5357\u4eac"
-                if mode == 'subway':
-                    params["strategy"] = 7  # AMap subway-first strategy
+            # 公交模式需要额外参数
+            if mode == 'transit':
+                params["city"] = "南京"
+                params["cityd"] = "南京"
             
             resp = requests.get(url, params=params, timeout=self.timeout)
             data = resp.json()
@@ -124,7 +117,7 @@ class RoutePlanner:
         route = data.get('route', {})
         
         # 获取第一条路径
-        if mode in ('transit', 'subway'):
+        if mode == 'transit':
             paths = route.get('transits', [])
         else:
             paths = route.get('paths', [])
@@ -138,11 +131,11 @@ class RoutePlanner:
         distance = float(path.get('distance', 0))
         duration = float(path.get('duration', 0))
         
-        # Build the route polyline from API response
+        # 提取路径点 - 从steps中合并polyline
         polyline = []
-
-        if mode in ('transit', 'subway'):
-            # Transit/subway mode: merge segment polylines
+        
+        if mode == 'transit':
+            # 公交模式：从segments中提取
             for segment in path.get('segments', []):
                 # 公交车段
                 bus_lines = segment.get('bus', {}).get('buslines', [])
@@ -245,4 +238,3 @@ class RoutePlanner:
         """
         route = self.plan(origin, destination, mode)
         return route.get('distance', 0)
-

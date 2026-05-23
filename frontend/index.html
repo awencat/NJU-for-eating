@@ -532,6 +532,16 @@
             background: #ccc;
         }
 
+        .btn-secondary.favorited {
+            background: #fdeaea;
+            color: #c0392b;
+        }
+
+        .btn-secondary:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
         /* 加载动画 */
         .loading-placeholder {
             text-align: center;
@@ -993,6 +1003,9 @@
                 <!-- 动态填充 -->
             </div>
             <div class="modal-footer">
+                <button id="detailFavoriteBtn" class="btn-secondary">
+                    <i class="fas fa-heart"></i> 收藏
+                </button>
                 <button id="navigateBtn" class="btn-primary">导航到这里</button>
             </div>
         </div>

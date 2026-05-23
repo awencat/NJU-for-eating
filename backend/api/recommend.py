@@ -5,7 +5,7 @@ import math
 from datetime import datetime
 from flask import request, jsonify
 from api import recommend_bp
-from utils.geo import haversine_distance
+from utils.geo import mixed_system_distance
 from utils.validator import validate_recommend_params
 from core.recommender import calculate_restaurant_score
 from data.database import get_db
@@ -74,7 +74,7 @@ def recommend_restaurants():
         
         for restaurant in restaurants:
             # 计算距离
-            distance = haversine_distance(
+            distance = mixed_system_distance(
                 lat, lng,
                 restaurant['lat'], restaurant['lng']
             )
